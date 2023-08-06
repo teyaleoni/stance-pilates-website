@@ -89,7 +89,7 @@ const IndexPage = () => {
           <p>
             A Pilates Instructor based in Las Vegas, Nevada, focusing on helping
             people achieve a healthier, pain-free lifestyle through
-            transformative and personalized Pilates training.
+            personalized private Pilates training.
           </p>
         </section>
 
