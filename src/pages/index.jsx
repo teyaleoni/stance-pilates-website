@@ -158,7 +158,8 @@ const IndexPage = () => {
 
         <section id="testimonials" class="grid-row">
           <div class="test">
-            <h1>Maryloie E.</h1>
+            <h1>Testimonials</h1>
+            <h2>Maryloie E.</h2>
             <p>
               Teya is a huge contribution to my pregnancy journey. Going to her
               twice a week set me up for success during delivery. After seeing
@@ -171,7 +172,7 @@ const IndexPage = () => {
             </p>
           </div>
           <div class="test">
-            <h1>Chelsea W.</h1>
+            <h2>Chelsea W.</h2>
             <p>
               Training will Teya is a treat! I suffer from a lot of muscle
               imbalances due to past injuries. Teya helped me strengthen and
@@ -183,7 +184,7 @@ const IndexPage = () => {
             </p>
           </div>
           <div class="test">
-            <h1>Skyler B.</h1>
+            <h2>Skyler B.</h2>
             <p>
               While training with Teya, she was able to explain why the workouts
               were beneficial for my needs. I appreciated her patience and that
