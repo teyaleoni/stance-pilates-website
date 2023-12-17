@@ -14,6 +14,7 @@ const NavItems = () => (
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#faq">FAQ</a>
+    <a href="#contact">Testimonials</a>
     <a href="#contact">Contact</a>
   </>
 );
@@ -88,8 +89,8 @@ const IndexPage = () => {
           <h2>Hi, I'm Teya</h2>
           <p>
             A Pilates Instructor based in Las Vegas, Nevada, focusing on helping
-            people achieve a healthier, pain-free lifestyle through
-            personalized private Pilates training.
+            people achieve a healthier, pain-free lifestyle through personalized
+            private Pilates training.
           </p>
         </section>
 
@@ -140,7 +141,10 @@ const IndexPage = () => {
           </div>
           <div>
             <h3>Where are you located?</h3>
-            <p>Las Vegas, Nevada.</p>
+            <p>
+              Inside of Q Wellness & Family Chiropractic 5980 S Durango Dr, Las
+              Vegas, NV 89113
+            </p>
           </div>
           <div>
             <h3>Why should I take private lessons?</h3>
@@ -148,6 +152,43 @@ const IndexPage = () => {
               Taking private Pilates lessons is beneficial because it allows for
               personalized attention, customized workouts, and quicker progress
               towards achieving your individual goals.
+            </p>
+          </div>
+        </section>
+
+        <section id="testimonials" class="grid-row">
+          <div class="test">
+            <h1>Maryloie E.</h1>
+            <p>
+              Teya is a huge contribution to my pregnancy journey. Going to her
+              twice a week set me up for success during delivery. After seeing
+              her every session my body felt stronger and help alleviate pain
+              and strengthened my body to carry my beautiful baby. She listened
+              to my concerns and pain points and tailored each session to what
+              my body needed. Teya is passionate about her craft and cares
+              deeply about her clients. She is collaborative and caring. I look
+              forward to each session with her.
+            </p>
+          </div>
+          <div class="test">
+            <h1>Chelsea W.</h1>
+            <p>
+              Training will Teya is a treat! I suffer from a lot of muscle
+              imbalances due to past injuries. Teya helped me strengthen and
+              stretch those areas that so desperately needed it. She explains
+              which muscles we are targeting in each exercise. She also will fix
+              your form like no other (something you'll never get in a group
+              pilates class). Taking pilates lessons will Teya has been amazing
+              for my body!
+            </p>
+          </div>
+          <div class="test">
+            <h1>Skyler B.</h1>
+            <p>
+              While training with Teya, she was able to explain why the workouts
+              were beneficial for my needs. I appreciated her patience and that
+              each workout was modified/tailored to help me get in the best
+              workout for my level. She is an excellent pilates instructor!
             </p>
           </div>
         </section>
