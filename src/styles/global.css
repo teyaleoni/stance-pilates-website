@@ -147,6 +147,11 @@ p {
   gap: 2rem;
 }
 
+#testimonials {
+  display: grid;
+  gap: 1rem;
+}
+
 .social {
   margin-top: 2rem;
 }
