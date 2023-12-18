@@ -143,6 +143,28 @@ const IndexPage = () => {
         <section id="testimonials">
           <h1>Testimonials</h1>
           <div>
+            <h2>Annabelle B.</h2>
+            <p>
+              Teya has truly been a game-changer in my life. I came to her with
+              persistent knee and back injuries that had haunted me for over a
+              decade. Despite seeking help from doctors and massages, nothing
+              provided lasting relief until I began consistently attending
+              Teya's Pilates sessions. Teya's approach is nothing short of
+              remarkable. She exudes patience, understanding the unique
+              challenges each individual faces. What sets her apart is her
+              ability to create a judgment-free environment, ensuring I never
+              felt discouraged when struggling to grasp certain exercises. This
+              encouragement played a pivotal role in building my confidence and
+              commitment to the practice. The impact on my physical well-being
+              has been astonishing. I now live pain-free, something I hadn't
+              thought possible after years of discomfort. The strength and
+              flexibility I've gained through Pilates have not only alleviated
+              my injuries but have also empowered me to navigate my daily
+              activities and work without the burden of constant pain. If you
+              want to change your life for the better, go to Teya.
+            </p>
+          </div>
+          <div>
             <h2>Maryloie E.</h2>
             <p>
               Teya is a huge contribution to my pregnancy journey. Going to her
