@@ -16,24 +16,11 @@ const NavItems = () => (
   </>
 );
 
-const Bugrer = () => (
-  <div
-    style={{
-      display: "grid",
-      gap: 5,
-      width: 20,
-    }}
-  >
-    {[0, 1, 2].map((n) => (
-      <div
-        key={n}
-        style={{
-          background: "var(--color-dark)",
-          height: 3,
-          borderRadius: 2,
-        }}
-      />
-    ))}
+const MenuIcon = () => (
+  <div className="MenuIcon">
+    <div />
+    <div />
+    <div />
   </div>
 );
 
@@ -69,7 +56,7 @@ const IndexPage = () => {
             setNavOpen((o) => !o);
           }}
         >
-          <Bugrer />
+          <MenuIcon />
         </button>
       </header>
       <nav id="nav-drawer" className={navOpen ? "open" : "closed"}>
