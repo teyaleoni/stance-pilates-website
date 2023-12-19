@@ -70,9 +70,9 @@ const IndexPage = () => {
         </section>
 
         <section id="greeting">
-          <h2>Hi, I'm Teya</h2>
+          <h2>Private Pilates Sessions in Las Vegas</h2>
           <p>
-            A Pilates Instructor based in Las Vegas, Nevada, focusing on helping
+            Hi, I'm Teya! A Pilates Instructor based in Las Vegas, Nevada, focusing on helping
             people achieve a healthier, pain-free lifestyle through personalized
             private Pilates training.
           </p>
