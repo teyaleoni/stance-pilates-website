@@ -72,9 +72,9 @@ const IndexPage = () => {
         <section id="greeting">
           <h2>Private Pilates Sessions in Las Vegas</h2>
           <p>
-            Hi, I'm Teya! A Pilates Instructor based in Las Vegas, Nevada, focusing on helping
-            people achieve a healthier, pain-free lifestyle through personalized
-            private Pilates training.
+            Hi, I'm Teya! A Pilates Instructor based in Las Vegas, Nevada,
+            focusing on helping people achieve a healthier, pain-free lifestyle
+            through personalized private Pilates training.
           </p>
         </section>
 
@@ -105,9 +105,25 @@ const IndexPage = () => {
           </div>
         </section>
 
+        <section id="quote">
+          <h2>
+            “In 10 sessions you'll feel the difference, in 20 sessions you'll
+            see a difference, and in 30 sessions you'll have a whole new body” - Joseph Pilates
+          </h2>
+        </section>
+
         <section id="faq">
           <h2>FAQ</h2>
           <div>
+            <h3>What should I expect in a session?</h3>
+            <p>
+              Embark on a personalized Pilates journey with me in a private
+              session tailored to YOU. We'll use apparatuses like
+              the reformer, mat, and cadillac. I'll support you every step of
+              the way, ensuring proper form and technique. It will be a
+              comprehensive work out targeting various muscle groups, leading to
+              a stronger and more balanced version of yourself.
+            </p>
             <h3>What is Pilates?</h3>
             <p>
               Pilates is a form of exercise that focuses on building core
