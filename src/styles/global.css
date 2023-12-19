@@ -90,6 +90,7 @@ button.reset {
 
 section {
   padding: 3rem var(--side-space);
+  display: grid;
 }
 
 section:nth-of-type(2n) {
@@ -111,6 +112,7 @@ h3,
 h4 {
   margin: unset;
   font-family: Lato;
+  line-height: 1.5;
 }
 
 h1 {
@@ -120,6 +122,10 @@ h1 {
 
 h2 {
   font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 p {
@@ -140,11 +146,6 @@ p {
 #greeting > p {
   font-size: 1.3rem;
   max-width: 64rem;
-}
-
-#faq {
-  display: grid;
-  gap: 2rem;
 }
 
 #testimonials {
@@ -182,7 +183,8 @@ p {
   opacity: 0.8;
 }
 
-.grid-row {
+.grid-row,
+.grid-row-lg {
   display: grid;
   gap: 3rem;
 }
@@ -190,6 +192,16 @@ p {
   .grid-row {
     grid-template-columns: 1fr 1fr;
   }
+}
+@media (min-width: 64rem) {
+  .grid-row-lg {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.nottoowide {
+  max-width: 56rem;
+  margin: auto;
 }
 
 #nav-drawer {

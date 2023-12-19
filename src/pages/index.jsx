@@ -70,12 +70,14 @@ const IndexPage = () => {
         </section>
 
         <section id="greeting">
-          <h2>Private Pilates Sessions in Southwest Las Vegas</h2>
-          <p>
-            Hi, I'm Teya! A Pilates Instructor based in Las Vegas, Nevada,
-            focusing on helping people achieve a healthier, pain-free lifestyle
-            through personalized private Pilates training.
-          </p>
+          <div className="nottoowide">
+            <h2>Private Pilates Sessions in Southwest Las Vegas</h2>
+            <p>
+              Hi, I'm Teya! A Pilates Instructor based in Las Vegas, Nevada,
+              focusing on helping people achieve a healthier, pain-free
+              lifestyle through personalized private Pilates training.
+            </p>
+          </div>
         </section>
 
         <section id="about" class="grid-row">
@@ -106,113 +108,124 @@ const IndexPage = () => {
         </section>
 
         <section id="quote">
-          <h2>
-            “In 10 sessions you'll feel the difference, in 20 sessions you'll
-            see a difference, and in 30 sessions you'll have a whole new body” - Joseph Pilates
-          </h2>
+          <div className="nottoowide">
+            <h3 style={{ fontStyle: "italic" }}>
+              In 10 sessions you'll feel the difference, in 20 sessions you'll
+              see a difference, and in 30 sessions you'll have a whole new body
+            </h3>
+            <p style={{ textAlign: "end" }}>- Joseph Pilates</p>
+          </div>
         </section>
 
         <section id="faq">
-          <h2>FAQ</h2>
-          <div>
-            <h3>What should I expect in a session?</h3>
-            <p>
-              Embark on a personalized Pilates journey with me in a private
-              session tailored to YOU. We'll use apparatuses like
-              the reformer, mat, and cadillac. I'll support you every step of
-              the way, ensuring proper form and technique. It will be a
-              comprehensive work out targeting various muscle groups, leading to
-              a stronger and more balanced version of yourself.
-            </p>
-            <h3>What is Pilates?</h3>
-            <p>
-              Pilates is a form of exercise that focuses on building core
-              strength, improving flexibility, and promoting mind-body awareness
-              through controlled movements and beneficial breath work.
-            </p>
-          </div>
-          <div>
-            <h3>Who is Pilates for?</h3>
-            <p>
-              EVERYONE! Pilates can be modified to suit any fitness level or
-              physical ability, and provides numerous physical and mental
-              benefits.
-            </p>
-          </div>
-          <div>
-            <h3>Where are you located?</h3>
-            <p>
-              Inside of Q Wellness & Family Chiropractic 5980 S Durango Dr, Las
-              Vegas, NV 89113
-            </p>
-          </div>
-          <div>
-            <h3>Why should I take private lessons?</h3>
-            <p>
-              Taking private Pilates lessons is beneficial because it allows for
-              personalized attention, customized workouts, and quicker progress
-              towards achieving your individual goals.
-            </p>
+          <div className="nottoowide" style={{ display: "grid", gap: "2rem" }}>
+            <h2>FAQ</h2>
+            <div>
+              <h3>What should I expect in a session?</h3>
+              <p>
+                Embark on a personalized Pilates journey with me in a private
+                session tailored to YOU. We'll use apparatuses like the
+                reformer, mat, and cadillac. I'll support you every step of the
+                way, ensuring proper form and technique. It will be a
+                comprehensive work out targeting various muscle groups, leading
+                to a stronger and more balanced version of yourself.
+              </p>
+              <h3>What is Pilates?</h3>
+              <p>
+                Pilates is a form of exercise that focuses on building core
+                strength, improving flexibility, and promoting mind-body
+                awareness through controlled movements and beneficial breath
+                work.
+              </p>
+            </div>
+            <div>
+              <h3>Who is Pilates for?</h3>
+              <p>
+                EVERYONE! Pilates can be modified to suit any fitness level or
+                physical ability, and provides numerous physical and mental
+                benefits.
+              </p>
+            </div>
+            <div>
+              <h3>Where are you located?</h3>
+              <p>
+                Inside of Q Wellness & Family Chiropractic 5980 S Durango Dr,
+                Las Vegas, NV 89113
+              </p>
+            </div>
+            <div>
+              <h3>Why should I take private lessons?</h3>
+              <p>
+                Taking private Pilates lessons is beneficial because it allows
+                for personalized attention, customized workouts, and quicker
+                progress towards achieving your individual goals.
+              </p>
+            </div>
           </div>
         </section>
 
         <section id="testimonials">
           <h1>Testimonials</h1>
-          <div>
-            <h2>Annabelle B.</h2>
-            <p>
-              Teya has truly been a game-changer in my life. I came to her with
-              persistent knee and back injuries that had haunted me for over a
-              decade. Despite seeking help from doctors and massages, nothing
-              provided lasting relief until I began consistently attending
-              Teya's Pilates sessions. Teya's approach is nothing short of
-              remarkable. She exudes patience, understanding the unique
-              challenges each individual faces. What sets her apart is her
-              ability to create a judgment-free environment, ensuring I never
-              felt discouraged when struggling to grasp certain exercises. This
-              encouragement played a pivotal role in building my confidence and
-              commitment to the practice. The impact on my physical well-being
-              has been astonishing. I now live pain-free, something I hadn't
-              thought possible after years of discomfort. The strength and
-              flexibility I've gained through Pilates have not only alleviated
-              my injuries but have also empowered me to navigate my daily
-              activities and work without the burden of constant pain. If you
-              want to change your life for the better, go to Teya.
-            </p>
-          </div>
-          <div>
-            <h2>Maryloie E.</h2>
-            <p>
-              Teya is a huge contribution to my pregnancy journey. Going to her
-              twice a week set me up for success during delivery. After seeing
-              her every session my body felt stronger and help alleviate pain
-              and strengthened my body to carry my beautiful baby. She listened
-              to my concerns and pain points and tailored each session to what
-              my body needed. Teya is passionate about her craft and cares
-              deeply about her clients. She is collaborative and caring. I look
-              forward to each session with her.
-            </p>
-          </div>
-          <div>
-            <h2>Chelsea W.</h2>
-            <p>
-              Training will Teya is a treat! I suffer from a lot of muscle
-              imbalances due to past injuries. Teya helped me strengthen and
-              stretch those areas that so desperately needed it. She explains
-              which muscles we are targeting in each exercise. She also will fix
-              your form like no other (something you'll never get in a group
-              pilates class). Taking pilates lessons will Teya has been amazing
-              for my body!
-            </p>
-          </div>
-          <div>
-            <h2>Skyler B.</h2>
-            <p>
-              While training with Teya, she was able to explain why the workouts
-              were beneficial for my needs. I appreciated her patience and that
-              each workout was modified/tailored to help me get in the best
-              workout for my level. She is an excellent pilates instructor!
-            </p>
+          <div className="grid-row-lg">
+            <div>
+              <h2>Annabelle B.</h2>
+              <p>
+                Teya has truly been a game-changer in my life. I came to her
+                with persistent knee and back injuries that had haunted me for
+                over a decade. Despite seeking help from doctors and massages,
+                nothing provided lasting relief until I began consistently
+                attending Teya's Pilates sessions. Teya's approach is nothing
+                short of remarkable. She exudes patience, understanding the
+                unique challenges each individual faces. What sets her apart is
+                her ability to create a judgment-free environment, ensuring I
+                never felt discouraged when struggling to grasp certain
+                exercises. This encouragement played a pivotal role in building
+                my confidence and commitment to the practice. The impact on my
+                physical well-being has been astonishing. I now live pain-free,
+                something I hadn't thought possible after years of discomfort.
+                The strength and flexibility I've gained through Pilates have
+                not only alleviated my injuries but have also empowered me to
+                navigate my daily activities and work without the burden of
+                constant pain. If you want to change your life for the better,
+                go to Teya.
+              </p>
+            </div>
+            <div>
+              <h2>Maryloie E.</h2>
+              <p>
+                Teya is a huge contribution to my pregnancy journey. Going to
+                her twice a week set me up for success during delivery. After
+                seeing her every session my body felt stronger and help
+                alleviate pain and strengthened my body to carry my beautiful
+                baby. She listened to my concerns and pain points and tailored
+                each session to what my body needed. Teya is passionate about
+                her craft and cares deeply about her clients. She is
+                collaborative and caring. I look forward to each session with
+                her.
+              </p>
+            </div>
+            <div>
+              <h2>Chelsea W.</h2>
+              <p>
+                Training will Teya is a treat! I suffer from a lot of muscle
+                imbalances due to past injuries. Teya helped me strengthen and
+                stretch those areas that so desperately needed it. She explains
+                which muscles we are targeting in each exercise. She also will
+                fix your form like no other (something you'll never get in a
+                group pilates class). Taking pilates lessons will Teya has been
+                amazing for my body!
+              </p>
+            </div>
+            <div>
+              <h2>Skyler B.</h2>
+              <p>
+                While training with Teya, she was able to explain why the
+                workouts were beneficial for my needs. I appreciated her
+                patience and that each workout was modified/tailored to help me
+                get in the best workout for my level. She is an excellent
+                pilates instructor!
+              </p>
+            </div>
           </div>
         </section>
 
