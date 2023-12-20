@@ -73,9 +73,10 @@ const IndexPage = () => {
           <div className="nottoowide">
             <h2>Private Pilates Sessions in Southwest Las Vegas</h2>
             <p>
-              Hi, I'm Teya! A Pilates Instructor based in Las Vegas, Nevada,
-              focusing on helping people achieve a healthier, pain-free
-              lifestyle through personalized private Pilates training.
+              Empowering a pain-free, healthier lifestyle through personalized
+              Pilates training. Our mission at Stance Pilates is to provide
+              sustainable workouts for a higher quality of life and lifelong
+              mobility.
             </p>
           </div>
         </section>
@@ -86,23 +87,36 @@ const IndexPage = () => {
           </div>
           <div class="about-container-text">
             <h2>Get to Know Me</h2>
+            <p>Hi, I'm Teya!</p>
             <p>
-              Growing up as a competitive dancer I have experienced my fair
-              share of injuries. But it is because of those injuries that I
-              discovered the power of Pilates firsthand. After consistently
-              practicing and seeing remarkable results within myself, I decided
-              to pursue my Pilates certification through BASI Pilates in order
-              to help others achieve their own personal benefits. As an
-              instructor, my core goal is to help my clients lead healthier,
-              pain-free lives by teaching them how to safely move their bodies
-              with more awareness, balance, and control.
+              Growing up as a dancer, I intimately understood the joys and
+              challenges of a body in motion. However, as time passed and
+              injuries lingered, I discovered the profound impact they had on my
+              once-effortless movements. Navigating the demands of work and life
+              while striving for a healthy, balanced existence became my
+              journey.
             </p>
             <p>
-              Whether you're recovering from an injury or simply looking to
-              improve your overall fitness, I'm here to guide and support you on
-              your journey towards a stronger, more vibrant you. With that being
-              said, I can't wait to work together as we achieve your goals and
-              unlock your full potential with Pilates!
+              Witnessing the transformative power of Pilates on my own body, I
+              recognized its potential to defy the aging process and enhance the
+              quality of life. As adults, we face the constant challenge of
+              maintaining our well-being, and Pilates emerged as my answer—a
+              preventive measure to safeguard against the degradation that can
+              accompany aging.
+            </p>
+            <p>
+              I hold dear the values of quality of life, family, relationships,
+              work-life balance, and the pursuit of a pain-free existence.
+              Pilates has been my steadfast companion in realizing these values.
+              It's an investment in oneself, a commitment to a future where we
+              not only age gracefully but thrive.
+            </p>
+            <p>
+              In my role as a Pilates instructor, I am passionate about
+              imparting the life-changing benefits of this practice. Teaching is
+              not just a profession for me; it's a calling. Join me on this
+              journey, and let's invest in the well-being of our future selves.
+              Because your future self deserves the very best.
             </p>
           </div>
         </section>
