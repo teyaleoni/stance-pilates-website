@@ -100,7 +100,7 @@ const IndexPage = () => {
               Witnessing the transformative power of Pilates on my own body, I
               recognized its potential to defy the aging process and enhance the
               quality of life. As adults, we face the constant challenge of
-              maintaining our well-being, and Pilates emerged as my answer—a
+              maintaining our well-being, and Pilates emerged as my answer— a
               preventive measure to safeguard against the degradation that can
               accompany aging.
             </p>
@@ -206,13 +206,11 @@ const IndexPage = () => {
               work out targeting various muscle groups, leading to a stronger
               and more balanced version of yourself.
             </p>
-            <div>
-              <h3>Where are you located?</h3>
-              <p>
-                Inside of Q Wellness & Family Chiropractic 5980 S Durango Dr,
-                Las Vegas, NV 89113
-              </p>
-            </div>
+            <h3>Where are you located?</h3>
+            <p>
+              Inside of Q Wellness & Family Chiropractic 5980 S Durango Dr, Las
+              Vegas, NV 89113
+            </p>
           </div>
         </section>
 
