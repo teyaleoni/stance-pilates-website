@@ -2,7 +2,13 @@
   --color-dark: rgb(31, 29, 26);
   --color-offwhite: rgb(241, 238, 234);
   --side-space: 2rem;
+  --expand-duration: 0.2s;
 }
+
+* {
+  box-sizing: border-box;
+}
+
 @media (min-width: 48rem) {
   :root {
     --side-space: 5rem;
@@ -83,6 +89,8 @@ header.wide {
 }
 
 button.reset {
+  padding: unset;
+  margin: unset;
   background: unset;
   border: unset;
   cursor: pointer;

@@ -1,0 +1,12 @@
+.root {
+  display: flex;
+  width: 24px;
+}
+
+.segment {
+  flex: 1;
+  background: black;
+  height: 3px;
+  border-radius: 2px;
+  transition: transform var(--expand-duration);
+}

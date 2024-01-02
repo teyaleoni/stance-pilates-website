@@ -1,0 +1,28 @@
+.root {
+  display: grid;
+}
+
+.root p {
+  margin: 0;
+  padding-top: 1em;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.question {
+  text-align: left;
+}
+
+.bodyOuter {
+  overflow: hidden;
+  transition: height var(--expand-duration);
+}
+
+.bodyInner {
+  transition: transform var(--expand-duration);
+}

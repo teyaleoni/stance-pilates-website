@@ -1,5 +1,6 @@
 import * as React from "react";
 import InstagramIcon from "../InstagramIcon";
+import Faq from "../components/Faq";
 import aboutImg from "../images/lunge-cropped.jpg";
 import headerImg from "../images/sitting-1024.jpg";
 import "../styles/global.css";
@@ -45,6 +46,7 @@ const IndexPage = () => {
           <p class="logo">STANCE PILATES</p>
         </div>
         <button
+          type="button"
           className="reset"
           style={{
             position: "absolute",
@@ -52,6 +54,7 @@ const IndexPage = () => {
             right: 0,
           }}
           onClick={(e) => {
+            e.preventDefault();
             e.stopPropagation();
             setNavOpen((o) => !o);
           }}
@@ -134,83 +137,91 @@ const IndexPage = () => {
         <section id="faq">
           <div className="nottoowide" style={{ display: "grid", gap: "2rem" }}>
             <h2>FAQ</h2>
-            <div>
-              <h3>What is Pilates?</h3>
+
+            <Faq question="What is Pilates?">
               <p>
                 Pilates is a form of exercise that focuses on building core
                 strength, improving flexibility, and promoting mind-body
                 awareness through controlled movements and beneficial breath
                 work.
               </p>
-              <h3>Who is Pilates for?</h3>
+            </Faq>
+
+            <Faq question="Who is Pilates for?">
               <p>
                 EVERYONE! Pilates can be modified to suit any fitness level or
                 physical ability, and provides numerous physical and mental
                 benefits.
               </p>
-              <h3>Why should I even do Pilates?</h3>
+            </Faq>
+
+            <Faq question="Why should I even do Pilates?">
               <p>
                 Consider Pilates for the long-term benefits it offers. Picture
-                yourself 20 years from now – playing with your kids/grandkids,
-                effortlessly enjoying your favorite activities, or maintaining a
-                high quality of life. Pilates is not just a workout; it's an
-                investment in injury prevention, building strength, and overall
-                functional fitness. It's a sustainable approach that adapts to
-                various fitness levels and ages. It can even aid in faster
-                recovery from injuries. Your future self relies on the work you
-                put in today, ensuring a strong, agile, and resilient body for
-                years to come. Use Pilates as a preventive measure – because
-                it's not just about today's workout; it's about securing a
-                healthier and more active future.
+                yourself 20 years from now &ndash; playing with your
+                kids/grandkids, effortlessly enjoying your favorite activities,
+                or maintaining a high quality of life. Pilates is not just a
+                workout; it's an investment in injury prevention, building
+                strength, and overall functional fitness. It's a sustainable
+                approach that adapts to various fitness levels and ages. It can
+                even aid in faster recovery from injuries. Your future self
+                relies on the work you put in today, ensuring a strong, agile,
+                and resilient body for years to come. Use Pilates as a
+                preventive measure &ndash; because it's not just about today's
+                workout; it's about securing a healthier and more active future.
               </p>
-              <h3>Why should I take private lessons?</h3>
-              <div>
-                <p>
-                  Opting for private Pilates sessions offers a tailored and
-                  focused approach that goes beyond the group class experience.
-                  In a full Pilates class, individual nuances can be overlooked,
-                  and mastering the correct technique becomes crucial.
-                  Practicing with improper form not only hinders progress but
-                  also poses a risk of injury.
-                </p>
-                <p>
-                  In a private session, there are no distractions; my undivided
-                  attention is solely on you. This allows for a personalized
-                  assessment of your strengths, weaknesses, and movement
-                  patterns. With this focused attention, we can meticulously
-                  work on building the proper technique tailored to your body.
-                </p>
-                <p>
-                  By honing in on the correct technique, you pave the way for
-                  reaching your fitness goals more efficiently. Private Pilates
-                  sessions offer a space where every movement is analyzed,
-                  adjusted, and perfected, ensuring that each exercise is
-                  performed with precision. This attention to detail not only
-                  maximizes the effectiveness of the workout but also minimizes
-                  the risk of injuries associated with incorrect form.
-                </p>
-                <p>
-                  Choosing private Pilates sessions is an investment in your
-                  well-being. It provides the opportunity to receive
-                  personalized guidance, correct any imbalances, and progress
-                  towards your goals with confidence and safety.
-                </p>
-              </div>
-            </div>
-            <h3>What should I expect in a session?</h3>
-            <p>
-              Embark on a personalized Pilates journey with me in a private
-              session tailored to YOU. We'll use apparatuses like the reformer,
-              mat, and cadillac. I'll support you every step of the way,
-              ensuring proper form and technique. It will be a comprehensive
-              work out targeting various muscle groups, leading to a stronger
-              and more balanced version of yourself.
-            </p>
-            <h3>Where are you located?</h3>
-            <p>
-              Inside of Q Wellness & Family Chiropractic 5980 S Durango Dr, Las
-              Vegas, NV 89113
-            </p>
+            </Faq>
+
+            <Faq question="Why should I take private lessons?">
+              <p>
+                Opting for private Pilates sessions offers a tailored and
+                focused approach that goes beyond the group class experience. In
+                a full Pilates class, individual nuances can be overlooked, and
+                mastering the correct technique becomes crucial. Practicing with
+                improper form not only hinders progress but also poses a risk of
+                injury.
+              </p>
+              <p>
+                In a private session, there are no distractions; my undivided
+                attention is solely on you. This allows for a personalized
+                assessment of your strengths, weaknesses, and movement patterns.
+                With this focused attention, we can meticulously work on
+                building the proper technique tailored to your body.
+              </p>
+              <p>
+                By honing in on the correct technique, you pave the way for
+                reaching your fitness goals more efficiently. Private Pilates
+                sessions offer a space where every movement is analyzed,
+                adjusted, and perfected, ensuring that each exercise is
+                performed with precision. This attention to detail not only
+                maximizes the effectiveness of the workout but also minimizes
+                the risk of injuries associated with incorrect form.
+              </p>
+              <p>
+                Choosing private Pilates sessions is an investment in your
+                well-being. It provides the opportunity to receive personalized
+                guidance, correct any imbalances, and progress towards your
+                goals with confidence and safety.
+              </p>
+            </Faq>
+
+            <Faq question="What should I expect in a session?">
+              <p>
+                Embark on a personalized Pilates journey with me in a private
+                session tailored to YOU. We'll use apparatuses like the
+                reformer, mat, and cadillac. I'll support you every step of the
+                way, ensuring proper form and technique. It will be a
+                comprehensive work out targeting various muscle groups, leading
+                to a stronger and more balanced version of yourself.
+              </p>
+            </Faq>
+
+            <Faq question="Where are you located?">
+              <p>
+                Inside of Q Wellness & Family Chiropractic 5980 S Durango Dr,
+                Las Vegas, NV 89113
+              </p>
+            </Faq>
           </div>
         </section>
 
