@@ -92,6 +92,7 @@ button.reset {
   padding: unset;
   margin: unset;
   background: unset;
+  color: unset;
   border: unset;
   cursor: pointer;
 }
