@@ -1,6 +1,7 @@
 import * as React from "react";
 import InstagramIcon from "../InstagramIcon";
 import Faq from "../components/Faq";
+import Fixer from '../components/Fixer';
 import aboutImg from "../images/lunge-cropped.jpg";
 import headerImg from "../images/sitting-1024.jpg";
 import "../styles/global.css";
@@ -30,38 +31,40 @@ const IndexPage = () => {
 
   return (
     <div id="page" onClick={() => setNavOpen(false)}>
-      <header className="wide">
-        <div>
-          <p class="logo">STANCE PILATES</p>
-        </div>
-        <nav>
-          <NavItems />
-        </nav>
-        <div class="logo-mirror-space">
-          <p class="logo">STANCE PILATES</p>
-        </div>
-      </header>
-      <header className="narrow">
-        <div>
-          <p class="logo">STANCE PILATES</p>
-        </div>
-        <button
-          type="button"
-          className="reset"
-          style={{
-            position: "absolute",
-            padding: "1rem",
-            right: 0,
-          }}
-          onClick={(e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            setNavOpen((o) => !o);
-          }}
-        >
-          <MenuIcon />
-        </button>
-      </header>
+      <Fixer>
+        <header className="wide">
+          <div>
+            <p class="logo">STANCE PILATES</p>
+          </div>
+          <nav>
+            <NavItems />
+          </nav>
+          <div class="logo-mirror-space">
+            <p class="logo">STANCE PILATES</p>
+          </div>
+        </header>
+        <header className="narrow">
+          <div>
+            <p class="logo">STANCE PILATES</p>
+          </div>
+          <button
+            type="button"
+            className="reset"
+            style={{
+              position: "absolute",
+              padding: "1rem",
+              right: 0,
+            }}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              setNavOpen((o) => !o);
+            }}
+          >
+            <MenuIcon />
+          </button>
+        </header>
+      </Fixer>
       <nav id="nav-drawer" className={navOpen ? "open" : "closed"}>
         <NavItems />
       </nav>
