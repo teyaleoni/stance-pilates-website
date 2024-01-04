@@ -29,7 +29,9 @@ export default function Faq({ question, children }) {
         }}
       >
         <h3 className={classes.question}>{question}</h3>
-        <UpDownArrow direction={open ? "up" : "down"} />
+        <div>
+          <UpDownArrow direction={open ? "up" : "down"} />
+        </div>
       </button>
       <div
         className={classes.bodyOuter}
