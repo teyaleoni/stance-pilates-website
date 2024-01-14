@@ -1,7 +1,10 @@
 import * as React from "react";
 import InstagramIcon from "../InstagramIcon";
 import Faq from "../components/Faq";
-import Fixer from '../components/Fixer';
+import Fixer from "../components/Fixer";
+import PricingCard, {
+  PricingCtaHeightProvider,
+} from "../components/PricingCard";
 import aboutImg from "../images/lunge-cropped.jpg";
 import headerImg from "../images/sitting-1024.jpg";
 import "../styles/global.css";
@@ -12,6 +15,7 @@ const NavItems = () => (
   <>
     <a href="#home">Home</a>
     <a href="#about">About</a>
+    <a href="#pricing">Pricing</a>
     <a href="#faq">FAQ</a>
     <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
@@ -135,6 +139,50 @@ const IndexPage = () => {
             </h3>
             <p style={{ textAlign: "end" }}>- Joseph Pilates</p>
           </div>
+        </section>
+
+        <section id="pricing">
+          <h2>Pricing</h2>
+          <PricingCtaHeightProvider>
+            <div className="grid-row-4" style={{ gap: "1rem" }}>
+              <PricingCard
+                bundleSize={1}
+                price={100}
+                expiry="1 month"
+                cta="Start Your Pilates Experience"
+              >
+                Try a single Pilates session for $100. Perfect for those wanting
+                to experience our approach.
+              </PricingCard>
+              <PricingCard
+                bundleSize={5}
+                price={450}
+                expiry="3 months"
+                cta="Get Started"
+              >
+                Kickstart your fitness journey with 5 tailored Pilates sessions.
+                Perfect for beginners or those with busy schedules.
+              </PricingCard>
+              <PricingCard
+                bundleSize={10}
+                price={850}
+                expiry="3 months"
+                cta="Start Your Transformation"
+              >
+                Commit to wellness with 10 dynamic Pilates sessions. Flexibility
+                for your lifestyle.
+              </PricingCard>
+              <PricingCard
+                bundleSize={20}
+                price={1750}
+                expiry="6 months"
+                cta="Transform Your Lifestyle"
+              >
+                Experience the full benefits with 20 transformative Pilates
+                sessions. Ideal for long-term goals.
+              </PricingCard>
+            </div>
+          </PricingCtaHeightProvider>
         </section>
 
         <section id="faq">
