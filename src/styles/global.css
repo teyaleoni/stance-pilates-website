@@ -1,5 +1,6 @@
 :root {
   --color-dark: rgb(31, 29, 26);
+  --color-blue-steel: #7E8A9B;
   --color-offwhite: rgb(241, 238, 234);
   --side-space: 2rem;
   --expand-duration: 0.2s;
@@ -184,7 +185,7 @@ p {
 }
 
 .button {
-  background-color: var(--color-dark);
+  background-color: var(--color-blue-steel);
   color: white;
   font-family: Jost;
   border: none;
@@ -199,7 +200,7 @@ p {
 
 .savings-badge {
   font-family: Jost;
-  background-color: var(--color-dark);
+  background-color: var(--color-blue-steel);
   color: white;
   position: absolute;
   z-index: 1;
