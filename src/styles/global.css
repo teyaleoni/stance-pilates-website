@@ -310,5 +310,5 @@ p {
 }
 
 .elevated {
-  box-shadow: 0 1rem 3rem rgb(0 0 0 / 0.1);
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 0.07);
 }
