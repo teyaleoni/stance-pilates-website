@@ -48,7 +48,7 @@ export default function PricingCard({
             alignContent: "space-between",
           }}
         >
-          <div>{children}</div>
+          {children && <div>{children}</div>}
           <div>Expires in {expiry}.</div>
         </div>
       </div>

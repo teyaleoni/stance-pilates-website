@@ -143,29 +143,25 @@ const IndexPage = () => {
 
         <section id="pricing" style={{ display: "grid", gap: "2rem" }}>
           <h2>Pricing</h2>
-          <h3>Grand Opening Specials</h3>
+          <h3 style={{ color: "var(--color-blue-steel)" }}>
+            ✨🥳 Opening Specials 🥳✨
+          </h3>
           <PricingCtaHeightProvider>
             <div className="grid-row" style={{ gap: "1rem" }}>
               <PricingCard
                 bundleSize={3}
                 price={199}
                 expiry="1 month"
-                cta="Start Your Pilates Experience"
+                cta="Let's Go"
                 noSavingsBadge
-              >
-                Kickstart your fitness journey with 3 tailored Pilates sessions.
-                Perfect for beginners or those with busy schedules.
-              </PricingCard>
+              ></PricingCard>
               <PricingCard
                 bundleSize={5}
                 price={349}
                 expiry="2 months"
-                cta="Get Started"
+                cta="I'm In"
                 noSavingsBadge
-              >
-                Kickstart your fitness journey with 5 tailored Pilates sessions.
-                Perfect for beginners or those with busy schedules.
-              </PricingCard>
+              ></PricingCard>
             </div>
           </PricingCtaHeightProvider>
 
