@@ -10,6 +10,7 @@ export default function PricingCard({
   expiry,
   cta,
   children,
+  noSavingsBadge = false,
 }) {
   const savings = bundleSize * singleSessionPrice - price;
 
@@ -35,7 +36,7 @@ export default function PricingCard({
           {bundleSize === 1 ? "Single Session" : `${bundleSize} Class Bundle`}
           <br />${price}
         </h3>
-        {savings > 0 && (
+        {savings > 0 && !noSavingsBadge && (
           <div className="savings-badge" style={{}}>
             Save ${savings}
           </div>

@@ -1,6 +1,6 @@
 :root {
   --color-dark: rgb(31, 29, 26);
-  --color-blue-steel: #7E8A9B;
+  --color-blue-steel: #7e8a9b;
   --color-offwhite: rgb(241, 238, 234);
   --side-space: 2rem;
   --expand-duration: 0.2s;
@@ -156,11 +156,6 @@ p {
 #greeting > p {
   font-size: 1.3rem;
   max-width: 64rem;
-}
-
-#pricing {
-  display: grid;
-  gap: 1rem;
 }
 
 #testimonials {
