@@ -24,12 +24,15 @@ export default function PricingCard({
         gap: "1rem",
         alignContent: "space-between",
         position: "relative",
+        gridTemplateRows: "1fr auto",
       }}
     >
       <div
         style={{
           display: "grid",
           gap: "1rem",
+          alignContent: "start",
+          gridTemplateRows: "auto 1fr",
         }}
       >
         <h3>
@@ -49,7 +52,7 @@ export default function PricingCard({
           }}
         >
           {children && <div>{children}</div>}
-          <div>Expires in {expiry}.</div>
+          <div style={{ fontStyle: "italic" }}>Expires in {expiry}</div>
         </div>
       </div>
       <a href="#contact" className="button">

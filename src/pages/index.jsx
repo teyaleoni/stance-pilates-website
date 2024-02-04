@@ -143,69 +143,83 @@ const IndexPage = () => {
 
         <section id="pricing" style={{ display: "grid", gap: "2rem" }}>
           <h2>Pricing</h2>
-          <h3 style={{ color: "var(--color-blue-steel)" }}>
-            ✨🥳 Opening Specials 🥳✨
-          </h3>
-          <PricingCtaHeightProvider>
-            <div className="grid-row" style={{ gap: "1rem" }}>
-              <PricingCard
-                bundleSize={3}
-                price={199}
-                expiry="1 month"
-                cta="Let's Go"
-                noSavingsBadge
-              ></PricingCard>
-              <PricingCard
-                bundleSize={5}
-                price={349}
-                expiry="2 months"
-                cta="I'm In"
-                noSavingsBadge
-              ></PricingCard>
-            </div>
-          </PricingCtaHeightProvider>
 
-          <h3>Regular Pricing</h3>
-          <PricingCtaHeightProvider>
-            <div className="grid-row-4" style={{ gap: "1rem" }}>
-              <PricingCard
-                bundleSize={1}
-                price={100}
-                expiry="1 month"
-                cta="Start Your Pilates Experience"
-              >
-                Try a single Pilates session for $100. Perfect for those wanting
-                to experience our approach.
-              </PricingCard>
-              <PricingCard
-                bundleSize={5}
-                price={450}
-                expiry="3 months"
-                cta="Get Started"
-              >
-                Kickstart your fitness journey with 5 tailored Pilates sessions.
-                Perfect for beginners or those with busy schedules.
-              </PricingCard>
-              <PricingCard
-                bundleSize={10}
-                price={850}
-                expiry="3 months"
-                cta="Start Your Transformation"
-              >
-                Commit to wellness with 10 dynamic Pilates sessions. Flexibility
-                for your lifestyle.
-              </PricingCard>
-              <PricingCard
-                bundleSize={20}
-                price={1750}
-                expiry="6 months"
-                cta="Transform Your Lifestyle"
-              >
-                Experience the full benefits with 20 transformative Pilates
-                sessions. Ideal for long-term goals.
-              </PricingCard>
-            </div>
-          </PricingCtaHeightProvider>
+          <div style={{ display: "grid", gap: "1rem" }}>
+            <h3 style={{ color: "var(--color-blue-steel)" }}>
+              ✨🥳 Opening Specials 🥳✨
+            </h3>
+            <PricingCtaHeightProvider>
+              <div className="grid-row-4" style={{ gap: "1rem" }}>
+                <PricingCard
+                  bundleSize={3}
+                  price={199}
+                  expiry="1 month"
+                  cta="Let's Go"
+                  noSavingsBadge
+                >
+                  Begin your path to strength, flexibility, and well-being as
+                  you discover the transformative benefits of Pilates. Let's
+                  start your fitness adventure together!
+                </PricingCard>
+                <PricingCard
+                  bundleSize={5}
+                  price={349}
+                  expiry="2 months"
+                  cta="I'm In"
+                  noSavingsBadge
+                >
+                  Dive deeper into strength, flexibility, and wellness. Elevate
+                  your fitness experience with pilates!
+                </PricingCard>
+              </div>
+            </PricingCtaHeightProvider>
+          </div>
+
+          <div style={{ display: "grid", gap: "1rem" }}>
+            <h3 style={{ color: "var(--color-blue-steel)" }}>
+              💪 Regular Pricing 🫶
+            </h3>
+            <PricingCtaHeightProvider>
+              <div className="grid-row-4" style={{ gap: "1rem" }}>
+                <PricingCard
+                  bundleSize={1}
+                  price={100}
+                  expiry="1 month"
+                  cta="Start Your Pilates Experience"
+                >
+                  Try a single Pilates session for $100. Perfect for those
+                  wanting to experience our approach.
+                </PricingCard>
+                <PricingCard
+                  bundleSize={5}
+                  price={450}
+                  expiry="3 months"
+                  cta="Get Started"
+                >
+                  Kickstart your fitness journey with 5 tailored Pilates
+                  sessions. Perfect for beginners or those with busy schedules.
+                </PricingCard>
+                <PricingCard
+                  bundleSize={10}
+                  price={850}
+                  expiry="3 months"
+                  cta="Start Your Transformation"
+                >
+                  Commit to wellness with 10 dynamic Pilates sessions.
+                  Flexibility for your lifestyle.
+                </PricingCard>
+                <PricingCard
+                  bundleSize={20}
+                  price={1750}
+                  expiry="6 months"
+                  cta="Transform Your Lifestyle"
+                >
+                  Experience the full benefits with 20 transformative Pilates
+                  sessions. Ideal for long-term goals.
+                </PricingCard>
+              </div>
+            </PricingCtaHeightProvider>
+          </div>
         </section>
 
         <section id="faq">
