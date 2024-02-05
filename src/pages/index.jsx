@@ -382,13 +382,17 @@ const IndexPage = () => {
           <div>
             <h2>Contact</h2>
             <p>
-              To inquire about scheduling, lessons, questions please click the
-              button below.
+              To inquire about scheduling, lessons, questions please email/call/text.
             </p>
             <div>
               <a class="button" href="mailto:info@stancepilates.com">
                 info@stancepilates.com
               </a>
+              <div style={{
+              marginTop: "1rem",
+            }}>
+                <h4>702-608-2065</h4>
+              </div>
             </div>
             <div class="social">
               <a
