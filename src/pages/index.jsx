@@ -381,18 +381,28 @@ const IndexPage = () => {
         <section id="contact">
           <div>
             <h2>Contact</h2>
+            <div
+              style={{
+                marginTop: "1rem",
+              }}
+            ></div>
+            <h3>Teya Lorts</h3>
+
             <p>
-              To inquire about scheduling, lessons, questions please email/call/text.
+              To inquire about scheduling, lessons, questions please
+              email/call/text.
             </p>
             <div>
               <a class="button" href="mailto:info@stancepilates.com">
                 info@stancepilates.com
               </a>
-              <div style={{
-              marginTop: "1rem",
-            }}>
-                <h4>702-608-2065</h4>
-              </div>
+
+              <p>702-608-2065</p>
+              <a href="https://maps.app.goo.gl/ZywfJdjJqj5wrvNs8">
+                5980 S Durango Dr #113-114 <br />
+                Las Vegas, NV 89113 <br />
+                (Inside of Q Wellness)
+              </a>
             </div>
             <div class="social">
               <a
