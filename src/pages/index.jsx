@@ -307,7 +307,7 @@ const IndexPage = () => {
               </p>
             </Faq>
 
-            <Faq question="Do you sell Pilates gift certificates">
+            <Faq question="Do you sell Pilates gift certificates?">
               <p>
                 Absolutely! We're all about spreading the Pilates love with our
                 Stance Pilates gift certificates. Feel free to contact us to
