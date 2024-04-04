@@ -83,10 +83,12 @@ const IndexPage = () => {
           <div className="nottoowide">
             <h2>Private Pilates Sessions in Southwest Las Vegas</h2>
             <p>
-              Empowering a pain-free, healthier lifestyle through personalized
-              Pilates training. Our mission at Stance Pilates is to provide
-              sustainable workouts for a higher quality of life and lifelong
-              mobility.
+              Empowering individuals to discover their strength and thrive
+              through personalized Pilates training. At Stance Pilates, our
+              mission is to provide sustainable workouts that guide each person
+              towards a pain-free, vibrant life, fostering resilience and
+              lifelong mobility. We tailor our practices to each individual's
+              unique journey towards optimal well-being.
             </p>
           </div>
         </section>
@@ -148,6 +150,7 @@ const IndexPage = () => {
             <h3 style={{ color: "var(--color-blue-steel)" }}>
               ✨🥳 Opening Specials 🥳✨
             </h3>
+            <p>*This special package is limited to one purchase per person.</p>
             <PricingCtaHeightProvider>
               <div className="grid-row-4" style={{ gap: "1rem" }}>
                 <PricingCard
@@ -301,6 +304,14 @@ const IndexPage = () => {
                 way, ensuring proper form and technique. It will be a
                 comprehensive work out targeting various muscle groups, leading
                 to a stronger and more balanced version of yourself.
+              </p>
+            </Faq>
+
+            <Faq question="Do you sell Pilates gift certificates">
+              <p>
+                Absolutely! We're all about spreading the Pilates love with our
+                Stance Pilates gift certificates. Feel free to contact us to
+                purchase one today!
               </p>
             </Faq>
 
