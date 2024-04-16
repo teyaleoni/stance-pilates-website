@@ -19,6 +19,7 @@ const NavItems = () => (
     <a href="#faq">FAQ</a>
     <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
+    <a href="#contact">Blog</a>
   </>
 );
 
@@ -81,14 +82,13 @@ const IndexPage = () => {
 
         <section id="greeting">
           <div className="nottoowide">
-            <h2>Private Pilates Sessions in Southwest Las Vegas</h2>
+            <h2>Private Pilates Sessions in southwest Las Vegas</h2>
             <p>
-              Empowering individuals to discover their strength and thrive
-              through personalized Pilates training. At Stance Pilates, our
-              mission is to provide sustainable workouts that guide each person
-              towards a pain-free, vibrant life, fostering resilience and
-              lifelong mobility. We tailor our practices to each individual's
-              unique journey towards optimal well-being.
+              The Stance Pilates mission is to provide sustainable workouts that
+              guide each person toward a pain-free, vibrant life that fosters
+              resilience and lifelong mobility. Be empowered to discover your
+              strength and thrive through private, personalized Pilates training
+              tailored to your unique needs and well-being journey.
             </p>
           </div>
         </section>
@@ -98,37 +98,36 @@ const IndexPage = () => {
             <img src={aboutImg} alt="me" width="100%" />
           </div>
           <div class="about-container-text">
-            <h2>Get to Know Me</h2>
+            <h2>About your instructor</h2>
             <p>Hi, I'm Teya!</p>
             <p>
-              Growing up as a dancer, I intimately understood the joys and
-              challenges of a body in motion. However, as time passed and
-              injuries lingered, I discovered the profound impact they had on my
-              once-effortless movements. Navigating the demands of work and life
-              while striving for a healthy, balanced existence became my
-              journey.
+              Growing up as a dancer, I have experienced first-hand all the joys
+              and challenges of a body in motion. Through the years, I
+              discovered how the passage of time along with lingering injuries
+              had a profound impact on my once-effortless movements. As a
+              result, navigating the demands of work and life while striving for
+              a healthy, balanced existence became part of my wellness journey.
             </p>
             <p>
               Witnessing the transformative power of Pilates on my own body, I
-              recognized its potential to defy the aging process and enhance the
+              recognized its potential to promote healthy aging and enhance
               quality of life. As adults, we face the constant challenge of
-              maintaining our well-being, and Pilates emerged as my answer— a
-              preventive measure to safeguard against the degradation that can
-              accompany aging.
+              maintaining our well-being. Pilates emerged as my answer—a
+              proactive step toward enduring strength and optimal healthspan.
             </p>
             <p>
-              I hold dear the values of quality of life, family, relationships,
-              work-life balance, and the pursuit of a pain-free existence.
-              Pilates has been my steadfast companion in realizing these values.
-              It's an investment in oneself, a commitment to a future where we
-              not only age gracefully but thrive.
+              I value a high quality of life that prioritizes family,
+              relationships, work-life balance, and the pursuit of a pain-free
+              existence. Pilates has been my steadfast companion in realizing
+              that for me. It's an investment in oneself, a commitment to a
+              future where we not only age gracefully, but thrive.
             </p>
             <p>
               In my role as a Pilates instructor, I am passionate about
               imparting the life-changing benefits of this practice. Teaching is
               not just a profession for me; it's a calling. Join me on this
               journey, and let's invest in the well-being of our future selves.
-              Because your future self deserves the very best.
+              Because your future self deserves the very best!
             </p>
           </div>
         </section>
@@ -136,8 +135,8 @@ const IndexPage = () => {
         <section id="quote">
           <div className="nottoowide">
             <h3 style={{ fontStyle: "italic" }}>
-              In 10 sessions you'll feel the difference, in 20 sessions you'll
-              see a difference, and in 30 sessions you'll have a whole new body
+              "In 10 sessions you will feel the difference, in 20 you will see
+              the difference, and in 30 you’ll have a whole new body."
             </h3>
             <p style={{ textAlign: "end" }}>- Joseph Pilates</p>
           </div>
@@ -148,9 +147,11 @@ const IndexPage = () => {
 
           <div style={{ display: "grid", gap: "1rem" }}>
             <h3 style={{ color: "var(--color-blue-steel)" }}>
-              ✨🥳 Opening Specials 🥳✨
+              Opening specials
             </h3>
-            <p>*This special package is limited to one purchase per person.</p>
+            <p>
+              These special packages are limited to one purchase per person.
+            </p>
             <PricingCtaHeightProvider>
               <div className="grid-row-4" style={{ gap: "1rem" }}>
                 <PricingCard
@@ -172,7 +173,7 @@ const IndexPage = () => {
                   noSavingsBadge
                 >
                   Dive deeper into strength, flexibility, and wellness. Elevate
-                  your fitness experience with pilates!
+                  your fitness experience with Pilates!
                 </PricingCard>
               </div>
             </PricingCtaHeightProvider>
@@ -180,7 +181,7 @@ const IndexPage = () => {
 
           <div style={{ display: "grid", gap: "1rem" }}>
             <h3 style={{ color: "var(--color-blue-steel)" }}>
-              💪 Regular Pricing 🫶
+              Regular pricing
             </h3>
             <PricingCtaHeightProvider>
               <div className="grid-row-4" style={{ gap: "1rem" }}>
@@ -191,7 +192,7 @@ const IndexPage = () => {
                   cta="Start Your Pilates Experience"
                 >
                   Try a single Pilates session for $100. Perfect for those
-                  wanting to experience our approach.
+                  wanting to experience the Stance Pilates approach.
                 </PricingCard>
                 <PricingCard
                   bundleSize={5}
@@ -241,17 +242,17 @@ const IndexPage = () => {
             <Faq question="Who is Pilates for?">
               <p>
                 EVERYONE! Pilates can be modified to suit any fitness level or
-                physical ability, and provides numerous physical and mental
-                benefits.
+                physical ability, and provides numerous physiological and mental
+                health benefits.
               </p>
             </Faq>
 
-            <Faq question="Why should I even do Pilates?">
+            <Faq question="Why should I do Pilates?">
               <p>
                 Consider Pilates for the long-term benefits it offers. Picture
-                yourself 20 years from now &ndash; playing with your
-                kids/grandkids, effortlessly enjoying your favorite activities,
-                or maintaining a high quality of life. Pilates is not just a
+                yourself 20 years from now &ndash; being active with your loved
+                ones, effortlessly enjoying your favorite activities, or
+                maintaining a high quality of life. Pilates is not just a
                 workout; it's an investment in injury prevention, building
                 strength, and overall functional fitness. It's a sustainable
                 approach that adapts to various fitness levels and ages. It can
@@ -263,17 +264,17 @@ const IndexPage = () => {
               </p>
             </Faq>
 
-            <Faq question="Why should I take private lessons?">
+            <Faq question="Why should I take private Pilates sessions?">
               <p>
                 Opting for private Pilates sessions offers a tailored and
                 focused approach that goes beyond the group class experience. In
-                a full Pilates class, individual nuances can be overlooked, and
-                mastering the correct technique becomes crucial. Practicing with
-                improper form not only hinders progress but also poses a risk of
-                injury.
+                a full Pilates class, individual nuances are often overlooked.
+                Mastering the correct technique becomes crucial; practicing with
+                improper form not only hinders progress, but also poses a risk
+                of injury.
               </p>
               <p>
-                In a private session, there are no distractions; my undivided
+                In a private session, there are no distractions- my undivided
                 attention is solely on you. This allows for a personalized
                 assessment of your strengths, weaknesses, and movement patterns.
                 With this focused attention, we can meticulously work on
@@ -302,7 +303,7 @@ const IndexPage = () => {
                 session tailored to YOU. We'll use apparatuses like the
                 reformer, mat, and cadillac. I'll support you every step of the
                 way, ensuring proper form and technique. It will be a
-                comprehensive work out targeting various muscle groups, leading
+                comprehensive workout targeting various muscle groups, leading
                 to a stronger and more balanced version of yourself.
               </p>
             </Faq>
@@ -317,8 +318,8 @@ const IndexPage = () => {
 
             <Faq question="Where are you located?">
               <p>
-                Inside of Q Wellness & Family Chiropractic 5980 S Durango Dr,
-                Las Vegas, NV 89113
+                Inside of Q Wellness & Family Chiropractic located at 5980 S
+                Durango Dr, Las Vegas, NV 89113
               </p>
             </Faq>
           </div>
@@ -400,8 +401,8 @@ const IndexPage = () => {
             <h3>Teya Lorts</h3>
 
             <p>
-              To inquire about scheduling, lessons, questions please
-              email/call/text.
+              To schedule a session or ask any questions, please email, call, or
+              text.
             </p>
             <div>
               <a class="button" href="mailto:info@stancepilates.com">
@@ -436,3 +437,13 @@ const IndexPage = () => {
 export default IndexPage;
 
 export const Head = () => <title>Stance Pilates</title>;
+
+// <!-- Google tag (gtag.js) -->
+// <script async src="https://www.googletagmanager.com/gtag/js?id=G-NB4VFNEXCY"></script>
+// <script>
+//   window.dataLayer = window.dataLayer || [];
+//   function gtag(){dataLayer.push(arguments);}
+//   gtag('js', new Date());
+
+//   gtag('config', 'G-NB4VFNEXCY');
+// </script>

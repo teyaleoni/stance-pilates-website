@@ -36,7 +36,7 @@ export default function PricingCard({
         }}
       >
         <h3>
-          {bundleSize === 1 ? "Single Session" : `${bundleSize} Class Bundle`}
+          {bundleSize === 1 ? "Single Session" : `${bundleSize}-Class Bundle`}
           <br />${price}
         </h3>
         {savings > 0 && !noSavingsBadge && (
