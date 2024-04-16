@@ -8,6 +8,7 @@ import PricingCard, {
 import aboutImg from "../images/lunge-cropped.jpg";
 import headerImg from "../images/sitting-1024.jpg";
 import "../styles/global.css";
+import logoHeader from "../images/stance-logo.svg";
 
 const presentYear = new Date().getFullYear();
 
@@ -19,7 +20,7 @@ const NavItems = () => (
     <a href="#faq">FAQ</a>
     <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
-    <a href="#contact">Blog</a>
+    {/* <a href="#contact">Blog</a> */}
   </>
 );
 
@@ -76,7 +77,12 @@ const IndexPage = () => {
 
       <main>
         <section id="home" class="grid-row">
-          <h1>The Power of Pilates - Creating a Stronger, Healthier You</h1>
+          <div>
+            <img src={logoHeader} alt="" />
+            <h1>
+              Creating a stronger, healthier you through the power or Pilates.
+            </h1>
+          </div>
           <img src={headerImg} alt="" width="100%" />
         </section>
 
