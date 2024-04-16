@@ -78,7 +78,7 @@ const IndexPage = () => {
       <main>
         <section id="home" class="grid-row">
           <div>
-            <img src={logoHeader} alt="" />
+            <img src={logoHeader} alt="" width="30%" />
             <h1>
               Creating a stronger, healthier you through the power or Pilates.
             </h1>
