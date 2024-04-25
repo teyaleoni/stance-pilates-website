@@ -5,8 +5,10 @@ export const PricingCtaHeightContext = React.createContext();
 const singleSessionPrice = 100;
 
 export default function PricingCard({
+  heading,
   bundleSize,
   price,
+  endDate,
   expiry,
   cta,
   children,
@@ -36,7 +38,10 @@ export default function PricingCard({
         }}
       >
         <h3>
-          {bundleSize === 1 ? "Single Session" : `${bundleSize}-Class Bundle`}
+          {heading ||
+            (bundleSize === 1
+              ? "Single Session"
+              : `${bundleSize}-Class Bundle`)}
           <br />${price}
         </h3>
         {savings > 0 && !noSavingsBadge && (
@@ -52,7 +57,9 @@ export default function PricingCard({
           }}
         >
           {children && <div>{children}</div>}
-          <div style={{ fontStyle: "italic" }}>Expires in {expiry}</div>
+          <div style={{ fontStyle: "italic" }}>
+            {endDate ? <>Valid through {endDate}</> : <>Expires in {expiry}</>}
+          </div>
         </div>
       </div>
       <a href="#contact" className="button">

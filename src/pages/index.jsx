@@ -153,6 +153,27 @@ const IndexPage = () => {
 
           <div style={{ display: "grid", gap: "1rem" }}>
             <h3 style={{ color: "var(--color-blue-steel)" }}>
+              Mother's Day special
+            </h3>
+            <p>
+              These special packages are limited to one purchase per person.
+            </p>
+            <PricingCtaHeightProvider>
+              <div className="grid-row-4" style={{ gap: "1rem" }}>
+                <PricingCard
+                  heading={"BUY ONE GIFT ONE"}
+                  price={100}
+                  endDate="5/31/24"
+                  cta="Happy Mother's Day!"
+                  noSavingsBadge
+                >
+                  BUY ONE GIFT ONE! Give the gift of a pirvate pilates session to you and a loved one to celebrate Mother's Day!
+                </PricingCard>
+              </div>
+            </PricingCtaHeightProvider>
+          </div>
+          <div style={{ display: "grid", gap: "1rem" }}>
+            <h3 style={{ color: "var(--color-blue-steel)" }}>
               Opening specials
             </h3>
             <p>
@@ -423,6 +444,7 @@ const IndexPage = () => {
               </a>
             </div>
             <div class="social">
+              <p>Let's keep in touch on Instagram!</p>
               <a
                 className="instagram-link"
                 target="_blank"
