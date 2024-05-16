@@ -150,15 +150,6 @@ const IndexPage = () => {
 
         <section id="pricing" style={{ display: "grid", gap: "2rem" }}>
           <h2>Pricing</h2>
-
-          <div style={{ display: "grid", gap: "1rem" }}>
-            <h3 style={{ color: "var(--color-blue-steel)" }}>
-              Mother's Day special
-            </h3>
-            <p>
-              These special packages are limited to one purchase per person.
-            </p>
-          </div>
           <div style={{ display: "grid", gap: "1rem" }}>
             <h3 style={{ color: "var(--color-blue-steel)" }}>
               Opening specials
@@ -246,10 +237,9 @@ const IndexPage = () => {
 
             <Faq question="What is Pilates?">
               <p>
-                Pilates is a method that focuses on building core
-                strength, improving flexibility, and promoting mind-body
-                awareness through controlled movements and beneficial breath
-                work.
+                Pilates is a method that focuses on building core strength,
+                improving flexibility, and promoting mind-body awareness through
+                controlled movements and beneficial breath work.
               </p>
             </Faq>
 
