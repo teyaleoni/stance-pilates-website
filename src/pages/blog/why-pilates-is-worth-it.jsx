@@ -1,3 +1,10 @@
+// TODO
+// - Scroll to the top button at bottom of page
+// - Ability to share blog
+// Add footer for copyright
+// Nav bar
+// Mobile friendly
+
 import React from "react";
 import authorImg from "././../../images/author-blog.jpg";
 const NavItems = () => (

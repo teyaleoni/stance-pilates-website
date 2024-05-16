@@ -158,19 +158,6 @@ const IndexPage = () => {
             <p>
               These special packages are limited to one purchase per person.
             </p>
-            <PricingCtaHeightProvider>
-              <div className="grid-row-4" style={{ gap: "1rem" }}>
-                <PricingCard
-                  heading={"BUY ONE GIFT ONE"}
-                  price={100}
-                  endDate="5/31/24"
-                  cta="Happy Mother's Day!"
-                  noSavingsBadge
-                >
-                  BUY ONE GIFT ONE! Give the gift of a pirvate pilates session to you and a loved one to celebrate Mother's Day!
-                </PricingCard>
-              </div>
-            </PricingCtaHeightProvider>
           </div>
           <div style={{ display: "grid", gap: "1rem" }}>
             <h3 style={{ color: "var(--color-blue-steel)" }}>
@@ -259,7 +246,7 @@ const IndexPage = () => {
 
             <Faq question="What is Pilates?">
               <p>
-                Pilates is a form of exercise that focuses on building core
+                Pilates is a method that focuses on building core
                 strength, improving flexibility, and promoting mind-body
                 awareness through controlled movements and beneficial breath
                 work.
