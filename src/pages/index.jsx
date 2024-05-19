@@ -47,18 +47,18 @@ const IndexPage = () => {
       <Fixer>
         <header className="wide">
           <div>
-            <p class="logo">STANCE PILATES</p>
+            <p className="logo">STANCE PILATES</p>
           </div>
           <nav>
             <NavItems />
           </nav>
-          <div class="logo-mirror-space">
-            <p class="logo">STANCE PILATES</p>
+          <div className="logo-mirror-space">
+            <p className="logo">STANCE PILATES</p>
           </div>
         </header>
         <header className="narrow">
           <div>
-            <p class="logo">STANCE PILATES</p>
+            <p className="logo">STANCE PILATES</p>
           </div>
           <button
             type="button"
@@ -83,7 +83,7 @@ const IndexPage = () => {
       </nav>
 
       <main>
-        <section id="home" class="grid-row">
+        <section id="home" className="grid-row">
           <div>
             <img src={logoHeader} alt="" width="30%" />
             <h1>
@@ -106,11 +106,11 @@ const IndexPage = () => {
           </div>
         </section>
 
-        <section id="about" class="grid-row">
-          <div class="about-picture">
+        <section id="about" className="grid-row">
+          <div className="about-picture">
             <img src={aboutImg} alt="me" width="100%" />
           </div>
-          <div class="about-container-text">
+          <div className="about-container-text">
             <h2>About your instructor</h2>
             <p>Hi, I'm Teya!</p>
             <p>
@@ -416,7 +416,7 @@ const IndexPage = () => {
               text.
             </p>
             <div>
-              <a class="button" href="mailto:info@stancepilates.com">
+              <a className="button" href="mailto:info@stancepilates.com">
                 info@stancepilates.com
               </a>
 
@@ -427,7 +427,7 @@ const IndexPage = () => {
                 (Inside of Q Wellness)
               </a>
             </div>
-            <div class="social">
+            <div className="social">
               <p>Let's keep in touch on Instagram!</p>
               <a
                 className="instagram-link"
@@ -439,7 +439,7 @@ const IndexPage = () => {
                 @stance.pilates
               </a>
             </div>
-            <div class="copyright">© {presentYear} Stance Pilates</div>
+            <div className="copyright">© {presentYear} Stance Pilates</div>
           </div>
         </section>
       </main>
