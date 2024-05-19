@@ -8,23 +8,11 @@
 import React from "react";
 import authorImg from "././../../images/author-blog.jpg";
 import "../../styles/global.css";
-
-const NavItems = () => (
-  <>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#faq">FAQ</a>
-    <a href="#testimonials">Testimonials</a>
-    <a href="#contact">Contact</a>
-    {/* <a href="#contact">Blog</a> */}
-  </>
-);
+import Page from "../../components/Page";
 
 export default function WhyPilatesIsWorthIt() {
   return (
-    <div>
-      <NavItems />
+    <Page navHrefPrefix="/">
       <div className="blog-page-container">
         <div className="blog-post">
           <div className="blog-title">
@@ -178,6 +166,6 @@ export default function WhyPilatesIsWorthIt() {
           </a>
         </div>
       </div>
-    </div>
+    </Page>
   );
 }

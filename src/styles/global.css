@@ -174,9 +174,9 @@ p {
 }
 
 .copyright {
-  margin-top: 4rem;
+  padding: 2rem 0;
   text-align: center;
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 
 .button {
