@@ -332,44 +332,6 @@ p {
   max-width: 90%;
 }
 
-.author-container {
-  display: flex;
-  /* justify-content: space-between; */
-  margin-top: 2rem;
-}
-
-.author-details {
-  display: flex;
-}
-
-.author-photo {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-}
-
-.author-info {
-  margin-left: 1rem;
-}
-
-.author-name {
-  margin: 0;
-  font-size: 1rem;
-}
-
-.author-publish {
-  margin: 0;
-  font-size: .8rem;
-}
-
-.follow-button {
-  margin: 0.5rem 0 0 2rem;
-}
-
-.follow-button a {
-  color: #4c68d7;
-}
-
 .other-links-container {
   margin-top: 0.5rem;
 }

@@ -1,0 +1,38 @@
+
+.container {
+  display: flex;
+  /* justify-content: space-between; */
+  margin-top: 2rem;
+}
+
+.details {
+  display: flex;
+}
+
+.photo {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.info {
+  margin-left: 1rem;
+}
+
+.name {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.publish {
+  margin: 0;
+  font-size: .8rem;
+}
+
+.follow {
+  margin: 0.5rem 0 0 2rem;
+}
+
+.follow a {
+  color: #4c68d7;
+}

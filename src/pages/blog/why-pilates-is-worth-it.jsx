@@ -6,9 +6,9 @@
 // Mobile friendly
 
 import React from "react";
-import authorImg from "././../../images/author-blog-64.jpg";
-import "../../styles/global.css";
+import Author from "../../components/Author";
 import Page from "../../components/Page";
+import "../../styles/global.css";
 
 export default function WhyPilatesIsWorthIt() {
   return (
@@ -25,24 +25,7 @@ export default function WhyPilatesIsWorthIt() {
               to dive deeper into your practice, let's break down why private
               sessions are beneficial for you.
             </h3>
-            <div className="author-container">
-              <div className="author-details">
-                <img src={authorImg} className="author-photo" alt="" />
-                <div className="author-info">
-                  <p className="author-name">Written by Teya Lorts</p>
-                  <p className="author-publish">Published May 14, 2024</p>
-                </div>
-              </div>
-              <div className="follow-button">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://www.instagram.com/stance.pilates/"
-                >
-                  Follow
-                </a>
-              </div>
-            </div>
+            <Author />
           </div>
           <div className="blog-container">
             <div className="blog-paragraph-section">
