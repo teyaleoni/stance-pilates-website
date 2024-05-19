@@ -6,7 +6,7 @@
 // Mobile friendly
 
 import React from "react";
-import authorImg from "././../../images/author-blog.jpg";
+import authorImg from "././../../images/author-blog-64.jpg";
 import "../../styles/global.css";
 import Page from "../../components/Page";
 
