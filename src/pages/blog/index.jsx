@@ -1,9 +1,9 @@
 import * as React from "react";
-export default () => {
+
+export default function BlogIndex() {
   return (
     <div>
-      linda
       <a href="./why-pilates-is-worth-it">why-pilates-is-worth-it</a>
     </div>
   );
-};
+}

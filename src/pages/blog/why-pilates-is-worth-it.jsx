@@ -18,7 +18,7 @@ const NavItems = () => (
     {/* <a href="#contact">Blog</a> */}
   </>
 );
-export default () => {
+export default function WhyPilatesIsWorthIt() {
   return (
     <div>
       <NavItems />
@@ -45,6 +45,7 @@ export default () => {
               <div class="follow-button">
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   href="https://www.instagram.com/stance.pilates/"
                 >
                   Follow
@@ -169,11 +170,11 @@ export default () => {
         </div>
         <div class="other-links-container">
           <h3>Related content</h3>
-          <a target="_blank" class="blog-link">
+          <a href=".." target="_blank" rel="noreferrer" class="blog-link">
             Is Pilates Suitable for Beginners? A Comprehensive Guide
           </a>
         </div>
       </div>
     </div>
   );
-};
+}

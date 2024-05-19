@@ -7,8 +7,8 @@ import PricingCard, {
 } from "../components/PricingCard";
 import aboutImg from "../images/lunge-cropped.jpg";
 import headerImg from "../images/sitting-1024.jpg";
-import "../styles/global.css";
 import logoHeader from "../images/stance-logo.svg";
+import "../styles/global.css";
 
 const presentYear = new Date().getFullYear();
 
@@ -36,7 +36,14 @@ const IndexPage = () => {
   const [navOpen, setNavOpen] = React.useState(false);
 
   return (
-    <div id="page" onClick={() => setNavOpen(false)}>
+    <div
+      id="page"
+      role="none"
+      onClick={() => setNavOpen(false)}
+      onKeyDown={(e) => {
+        if (e.key === "Escape") setNavOpen(false);
+      }}
+    >
       <Fixer>
         <header className="wide">
           <div>
@@ -425,6 +432,7 @@ const IndexPage = () => {
               <a
                 className="instagram-link"
                 target="_blank"
+                rel="noreferrer"
                 href="https://www.instagram.com/stance.pilates/"
               >
                 <InstagramIcon />
