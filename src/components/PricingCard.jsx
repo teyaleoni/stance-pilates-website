@@ -65,7 +65,7 @@ export default function PricingCard({
       <a href="#contact" className="button">
         <div
           style={{
-            minHeight: outerMinHeight,
+            minHeight: finite(outerMinHeight),
             display: "grid",
             alignItems: "center",
             textAlign: "center",
@@ -123,4 +123,8 @@ export function PricingCtaHeightProvider({ children }) {
       {children}
     </PricingCtaHeightContext.Provider>
   );
+}
+
+function finite(n) {
+  return Number.isFinite(n) ? n : undefined;
 }
