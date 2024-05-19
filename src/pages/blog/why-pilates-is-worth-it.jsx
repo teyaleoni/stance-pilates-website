@@ -7,6 +7,8 @@
 
 import React from "react";
 import authorImg from "././../../images/author-blog.jpg";
+import "../../styles/global.css";
+
 const NavItems = () => (
   <>
     <a href="#home">Home</a>
@@ -18,6 +20,7 @@ const NavItems = () => (
     {/* <a href="#contact">Blog</a> */}
   </>
 );
+
 export default function WhyPilatesIsWorthIt() {
   return (
     <div>
