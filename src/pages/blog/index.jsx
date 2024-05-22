@@ -8,7 +8,9 @@ import Author from "../../components/Author";
 import Page from "../../components/Page";
 import "../../styles/global.css";
 
-export default function WhyPilatesIsWorthIt() {
+export const Head = () => <title>Stance Pilates Blog</title>;
+
+export default function BlogIndex() {
   return (
     <Page navHrefPrefix="/">
       <div className="blog-page-container">
