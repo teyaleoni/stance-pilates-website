@@ -14,8 +14,8 @@ export default function WhyPilatesIsWorthIt() {
   return (
     <Page navHrefPrefix="/">
       <div className="blog-page-container">
-        <div className="blog-post">
-          <div className="blog-title">
+        <article className="blog-post">
+          <div className="blog-heading">
             <h1>
               Unlock Your Pilates Potential: Why Private Lessons Are Your Key to
               Success
@@ -28,7 +28,7 @@ export default function WhyPilatesIsWorthIt() {
             <Author />
           </div>
           <div className="blog-container">
-            <div className="blog-paragraph-section">
+            <div>
               <h3>Introduction</h3>
               <p>
                 Pilates is more than just a workout; it's a journey of
@@ -41,7 +41,7 @@ export default function WhyPilatesIsWorthIt() {
                 you've been searching for.
               </p>
             </div>
-            <div className="blog-paragraph-sections">
+            <div>
               <h3>Personalized Attention</h3>
               <p>
                 One of the most significant advantages of private Pilates
@@ -61,7 +61,7 @@ export default function WhyPilatesIsWorthIt() {
                 to your specific needs, goals, and abilities.
               </p>
             </div>
-            <div className="blog-paragraph-sections">
+            <div>
               <h3>Creating a Safe Space</h3>
               <p>
                 Private Pilates sessions should be a safe and encouraging
@@ -72,7 +72,7 @@ export default function WhyPilatesIsWorthIt() {
                 own pace and celebrating your achievements along the journey.
               </p>
             </div>
-            <div className="blog-paragraph-sections">
+            <div>
               <h3>Tailored Workouts</h3>
               <p>
                 Private Pilates lessons allow for tailored workouts designed
@@ -84,7 +84,7 @@ export default function WhyPilatesIsWorthIt() {
                 at your own pace and focus on areas that need extra attention.
               </p>
             </div>
-            <div className="blog-paragraph-sections">
+            <div>
               <h3>Technique Mastery</h3>
               <p>
                 In Pilates, proper technique is essential for maximizing the
@@ -96,7 +96,7 @@ export default function WhyPilatesIsWorthIt() {
                 minimizing the risk of injury.
               </p>
             </div>
-            <div className="blog-paragraph-sections">
+            <div>
               <h3>Faster Progress</h3>
               <p>
                 With the focused attention and tailored instruction provided in
@@ -108,7 +108,7 @@ export default function WhyPilatesIsWorthIt() {
                 your achievements along the way.
               </p>
             </div>
-            <div className="blog-paragraph-sections">
+            <div>
               <h3>Confidence Building</h3>
               <p>
                 Beyond physical benefits, private Pilates lessons can also boost
@@ -120,7 +120,7 @@ export default function WhyPilatesIsWorthIt() {
                 extends far beyond the Pilates studio.
               </p>
             </div>
-            <div className="blog-paragraph-sections">
+            <div>
               <h3>Conclusion</h3>
               <p>
                 If you're ready to take your Pilates practice to the next level,
@@ -141,10 +141,10 @@ export default function WhyPilatesIsWorthIt() {
               </p>
             </div>
           </div>
-        </div>
+        </article>
         <div className="other-links-container">
           <h3>Related content</h3>
-          <a href=".." target="_blank" rel="noreferrer" className="blog-link">
+          <a href=".." className="blog-link">
             Is Pilates Suitable for Beginners? A Comprehensive Guide
           </a>
         </div>
