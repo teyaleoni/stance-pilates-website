@@ -1,0 +1,11 @@
+.root {
+  display: grid;
+  gap: 5px;
+  width: 20px;
+}
+
+.root > * {
+  background: var(--color-dark);
+  height: 3px;
+  border-radius: 2px;
+}

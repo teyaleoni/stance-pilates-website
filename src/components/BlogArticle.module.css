@@ -1,0 +1,40 @@
+.root {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+@media (min-width: 64rem) {
+  .root {
+    grid-template-columns: 1fr min-content;
+  }
+}
+
+.article {
+  display: grid;
+  gap: 2rem;
+  max-width: 48rem;
+}
+
+.heading {
+  display: grid;
+  gap: 2rem;
+}
+
+.content {
+  display: grid;
+  gap: 1rem;
+}
+
+.otherLinks {
+  margin-top: 0.5rem;
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+}
+
+.otherLinks h3 {
+  width: max-content;
+}

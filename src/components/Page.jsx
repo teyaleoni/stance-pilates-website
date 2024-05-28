@@ -1,6 +1,8 @@
 import * as React from "react";
-import Fixer from "../components/Fixer";
 import "../styles/global.css";
+import Fixer from "./Fixer";
+import MenuIcon from "./MenuIcon";
+import * as classes from "./Page.module.css";
 
 const NavItems = ({ hrefPrefix = "" }) => (
   <>
@@ -14,20 +16,12 @@ const NavItems = ({ hrefPrefix = "" }) => (
   </>
 );
 
-const MenuIcon = () => (
-  <div className="MenuIcon">
-    <div />
-    <div />
-    <div />
-  </div>
-);
-
 export default function Page({ children, navHrefPrefix }) {
   const [navOpen, setNavOpen] = React.useState(false);
 
   return (
     <div
-      id="page"
+      className={classes.root}
       role="none"
       onClick={() => setNavOpen(false)}
       onKeyDown={(e) => {
