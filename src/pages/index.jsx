@@ -134,7 +134,7 @@ const IndexPage = () => (
             <PricingCard
               bundleSize={10}
               price={850}
-              expiry="3 months"
+              expiry="4 months"
               cta="Start Your Transformation"
             >
               Commit to wellness with 10 dynamic Pilates sessions. Flexibility
