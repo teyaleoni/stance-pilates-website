@@ -1,0 +1,23 @@
+:root {
+  --inset: 1rem;
+}
+
+.toTop {
+  position: fixed;
+  bottom: var(--inset);
+  right: var(--inset);
+  transition: opacity 0.3s;
+  font-size: 1.5rem;
+  opacity: 1;
+}
+
+.inactive {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (min-width: 48rem) {
+  :root {
+    --inset: 2rem;
+  }
+}

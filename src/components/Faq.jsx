@@ -22,7 +22,7 @@ export default function Faq({ question, children }) {
     <div className={classes.root}>
       <button
         type="button"
-        className={`reset ${classes.heading}`}
+        className={classes.heading}
         onClick={(e) => {
           e.preventDefault();
           setOpen((prior) => !prior);

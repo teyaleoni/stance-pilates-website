@@ -5,8 +5,9 @@
 
 import React from "react";
 import Author from "./Author";
-import Page from "./Page";
 import * as classes from "./BlogArticle.module.css";
+import Page from "./Page";
+import ScrollToTopButton from "./ScrollToTopButton";
 
 export const Head = () => <title>Stance Pilates Blog</title>;
 
@@ -29,6 +30,7 @@ export default function BlogArticle({ title, subtitle, date, children }) {
           </a>
         </div>
       </div>
+      <ScrollToTopButton />
     </Page>
   );
 }

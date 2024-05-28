@@ -46,7 +46,6 @@ export default function Page({ children, navHrefPrefix }) {
           </div>
           <button
             type="button"
-            className="reset"
             style={{
               position: "absolute",
               padding: "1rem",
@@ -67,7 +66,7 @@ export default function Page({ children, navHrefPrefix }) {
         <NavItems hrefPrefix={navHrefPrefix} />
       </nav>
 
-      <main>
+      <main id="scroll">
         {children}
 
         <div className="copyright">© {presentYear} Stance Pilates</div>
