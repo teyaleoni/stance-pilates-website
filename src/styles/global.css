@@ -291,46 +291,6 @@ p {
   box-shadow: 0 1rem 2rem rgb(0 0 0 / 0.07);
 }
 
-.blog-page-container {
-  display: grid;
-  grid-template-columns: auto;
-  justify-items: center;
-  gap: 2rem;
-  margin: 2rem;
-}
-
-@media (min-width: 64rem) {
-  .blog-page-container {
-    grid-template-columns: 1fr min-content;
-  }
-}
-
-.blog-post {
-  display: grid;
-  gap: 2rem;
-  max-width: 48rem;
-}
-
-.blog-heading {
-  display: grid;
-  gap: 2rem;
-}
-
-.blog-container {
-  display: grid;
-  gap: 1rem;
-}
-
-.other-links-container {
-  margin-top: 0.5rem;
-  display: grid;
-  gap: 1rem;
-  align-content: start;
-}
-
-.other-links-container h3 {
-  width: max-content;
-}
 .blog-post-list-title {
   margin-bottom: 1rem;
 }

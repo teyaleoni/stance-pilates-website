@@ -4,7 +4,6 @@
 // Mobile friendly
 
 import React from "react";
-import Author from "../../components/Author";
 import Page from "../../components/Page";
 import "../../styles/global.css";
 
