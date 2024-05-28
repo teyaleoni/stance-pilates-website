@@ -83,13 +83,13 @@ const IndexPage = () => (
     <section id="pricing" style={{ display: "grid", gap: "2rem" }}>
       <h2>Pricing</h2>
       <div style={{ display: "grid", gap: "1rem" }}>
-        <h3 style={{ color: "var(--color-blue-steel)" }}>Opening specials</h3>
-        <p>These special packages are limited to one purchase per person.</p>
+        <h3 style={{ color: "var(--color-blue-steel)" }}>Introduction special</h3>
+        <p>This package is limited to one purchase per person.</p>
         <PricingCtaHeightProvider>
           <div className="grid-row-4" style={{ gap: "1rem" }}>
             <PricingCard
               bundleSize={3}
-              price={199}
+              price={200}
               expiry="1 month"
               cta="Let's Go"
               noSavingsBadge
@@ -97,16 +97,6 @@ const IndexPage = () => (
               Begin your path to strength, flexibility, and well-being as you
               discover the transformative benefits of Pilates. Let's start your
               fitness adventure together!
-            </PricingCard>
-            <PricingCard
-              bundleSize={5}
-              price={349}
-              expiry="2 months"
-              cta="I'm In"
-              noSavingsBadge
-            >
-              Dive deeper into strength, flexibility, and wellness. Elevate your
-              fitness experience with Pilates!
             </PricingCard>
           </div>
         </PricingCtaHeightProvider>
