@@ -83,13 +83,13 @@ const IndexPage = () => (
     <section id="pricing" style={{ display: "grid", gap: "2rem" }}>
       <h2>Pricing</h2>
       <div style={{ display: "grid", gap: "1rem" }}>
-        <h3 style={{ color: "var(--color-blue-steel)" }}>Introduction special</h3>
+        <h3 style={{ color: "var(--color-blue-steel)" }}>Introduction package</h3>
         <p>This package is limited to one purchase per person.</p>
         <PricingCtaHeightProvider>
           <div className="grid-row-4" style={{ gap: "1rem" }}>
             <PricingCard
               bundleSize={3}
-              price={200}
+              price={199}
               expiry="1 month"
               cta="Let's Go"
               noSavingsBadge
