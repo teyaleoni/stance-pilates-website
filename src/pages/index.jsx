@@ -84,7 +84,7 @@ const IndexPage = () => (
       <h2>Pricing</h2>
       <div style={{ display: "grid", gap: "1rem" }}>
         <h3 style={{ color: "var(--color-blue-steel)" }}>
-          Introduction package
+          New client special
         </h3>
         <p>This package is limited to one purchase per person.</p>
         <PricingCtaHeightProvider>
