@@ -1,4 +1,5 @@
 import * as React from "react";
+import { BOOKING_URL } from '../constants';
 
 export const PricingCtaHeightContext = React.createContext();
 
@@ -62,7 +63,7 @@ export default function PricingCard({
           </div>
         </div>
       </div>
-      <a href="#contact" className="button">
+      <a href={BOOKING_URL} className="button">
         <div
           style={{
             minHeight: finite(outerMinHeight),

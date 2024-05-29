@@ -83,7 +83,9 @@ const IndexPage = () => (
     <section id="pricing" style={{ display: "grid", gap: "2rem" }}>
       <h2>Pricing</h2>
       <div style={{ display: "grid", gap: "1rem" }}>
-        <h3 style={{ color: "var(--color-blue-steel)" }}>Introduction package</h3>
+        <h3 style={{ color: "var(--color-blue-steel)" }}>
+          Introduction package
+        </h3>
         <p>This package is limited to one purchase per person.</p>
         <PricingCtaHeightProvider>
           <div className="grid-row-4" style={{ gap: "1rem" }}>
@@ -313,10 +315,7 @@ const IndexPage = () => (
         ></div>
         <h3>Teya Lorts</h3>
 
-        <p>
-          To schedule a session or ask any questions, please email, call, or
-          text.
-        </p>
+        <p>Questions? Please email, call, or text.</p>
         <div>
           <a className="button" href="mailto:info@stancepilates.com">
             info@stancepilates.com
