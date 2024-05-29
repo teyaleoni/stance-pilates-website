@@ -42,7 +42,7 @@ export default function PricingCard({
           {heading ||
             (bundleSize === 1
               ? "Single Session"
-              : `${bundleSize}-Class Bundle`)}
+              : `${bundleSize}-Session Bundle`)}
           <br />${price}
         </h3>
         {savings > 0 && !noSavingsBadge && (
