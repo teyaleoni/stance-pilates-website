@@ -1,4 +1,5 @@
 import React from "react";
+import { INSTAGRAM_URL } from "../constants";
 import authorImg from "../images/author-blog-64.jpg";
 import * as classes from "./Author.module.css";
 
@@ -13,11 +14,7 @@ export default function Author({ date }) {
         </div>
       </div>
       <div className={classes.follow}>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://www.instagram.com/stance.pilates/"
-        >
+        <a target="_blank" rel="noreferrer" href={INSTAGRAM_URL}>
           Follow
         </a>
       </div>

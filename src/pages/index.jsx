@@ -5,6 +5,13 @@ import Page from "../components/Page";
 import PricingCard, {
   PricingCtaHeightProvider,
 } from "../components/PricingCard";
+import {
+  EMAIL_ADDRESS,
+  GOOGLE_MAPS_URL,
+  INSTAGRAM_HANDLE,
+  INSTAGRAM_URL,
+  PHONE_NUMBER,
+} from "../constants";
 import aboutImg from "../images/lunge-cropped.jpg";
 import headerImg from "../images/sitting-1024.jpg";
 import logoHeader from "../images/stance-logo.svg";
@@ -83,9 +90,7 @@ const IndexPage = () => (
     <section id="pricing" style={{ display: "grid", gap: "2rem" }}>
       <h2>Pricing</h2>
       <div style={{ display: "grid", gap: "1rem" }}>
-        <h3 style={{ color: "var(--color-blue-steel)" }}>
-          New client special
-        </h3>
+        <h3 style={{ color: "var(--color-blue-steel)" }}>New client special</h3>
         <p>This package is limited to one purchase per person.</p>
         <PricingCtaHeightProvider>
           <div className="grid-row-4" style={{ gap: "1rem" }}>
@@ -317,12 +322,12 @@ const IndexPage = () => (
 
         <p>Questions? Please email, call, or text.</p>
         <div>
-          <a className="button" href="mailto:info@stancepilates.com">
-            info@stancepilates.com
+          <a className="button" href={`mailto:${EMAIL_ADDRESS}`}>
+            {EMAIL_ADDRESS}
           </a>
 
-          <p>702-608-2065</p>
-          <a href="https://maps.app.goo.gl/ZywfJdjJqj5wrvNs8">
+          <p>{PHONE_NUMBER}</p>
+          <a href={GOOGLE_MAPS_URL}>
             5980 S Durango Dr #113-114 <br />
             Las Vegas, NV 89113 <br />
             (Inside of Q Wellness)
@@ -334,10 +339,9 @@ const IndexPage = () => (
             className="instagram-link"
             target="_blank"
             rel="noreferrer"
-            href="https://www.instagram.com/stance.pilates/"
+            href={INSTAGRAM_URL}
           >
-            <InstagramIcon />
-            @stance.pilates
+            <InstagramIcon /> @{INSTAGRAM_HANDLE}
           </a>
         </div>
       </div>
