@@ -169,7 +169,8 @@ const IndexPage = () => (
           <p>
             EVERYONE! Pilates can be modified to suit any fitness level or
             physical ability, and provides numerous physiological and mental
-            health benefits.
+            health benefits. As of right now I am only taking clients of age
+            18+.
           </p>
         </Faq>
 
