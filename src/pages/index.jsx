@@ -87,7 +87,7 @@ const IndexPage = () => (
         <p style={{ textAlign: "end" }}>- Joseph Pilates</p>
       </div>
     </section>
-    <section id="pricing" style={{ display: "grid", gap: "2rem" }}>
+    {/* <section id="pricing" style={{ display: "grid", gap: "2rem" }}>
       <h2>Pricing</h2>
       <div style={{ display: "grid", gap: "1rem" }}>
         <h3 style={{ color: "var(--color-blue-steel)" }}>New client special</h3>
@@ -152,7 +152,7 @@ const IndexPage = () => (
           </div>
         </PricingCtaHeightProvider>
       </div>
-    </section>
+    </section> */}
     <section id="faq">
       <div className="nottoowide" style={{ display: "grid", gap: "2rem" }}>
         <h2>FAQ</h2>
