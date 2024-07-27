@@ -244,8 +244,8 @@ const IndexPage = () => (
 
         <Faq question="Where are you located?">
           <p>
-            Inside of Q Wellness & Family Chiropractic located at 5980 S Durango
-            Dr, Las Vegas, NV 89113
+            Inside of Collective Studios located at 6050 S Fort Apache 
+            Rd #200B, Las Vegas, NV 89148
           </p>
         </Faq>
       </div>
@@ -329,9 +329,9 @@ const IndexPage = () => (
 
           <p>{PHONE_NUMBER}</p>
           <a href={GOOGLE_MAPS_URL}>
-            5980 S Durango Dr #113-114 <br />
-            Las Vegas, NV 89113 <br />
-            (Inside of Q Wellness)
+            6050 S Fort Apache Rd #200B <br />
+            Las Vegas, NV 89148 <br />
+            (Inside of Collective Studios)
           </a>
         </div>
         <div className="social">
