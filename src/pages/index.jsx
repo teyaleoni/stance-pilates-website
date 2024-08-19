@@ -41,6 +41,7 @@ const IndexPage = () => (
       </div>
       <a
         className="button cta"
+        target={'_blank'}
         href={`https://calendly.com/stancepilates/stance-pilates-intro-call`}
       >
         BOOK A CALL
