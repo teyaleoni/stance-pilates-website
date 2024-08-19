@@ -187,6 +187,15 @@ p {
   opacity: 0.8;
 }
 
+.cta {
+  padding: 0.75rem 4rem;
+}
+@media (min-width: 48rem) {
+  .cta {
+    justify-self: center;
+  }
+}
+
 .savings-badge {
   font-family: Jost;
   background-color: var(--color-blue-steel);
@@ -293,4 +302,10 @@ p {
 
 .blog-post-list-title {
   margin-bottom: 1rem;
+}
+
+.intro-call {
+  color: blue;
+  font-weight: bolder;
+  text-decoration: underline;
 }

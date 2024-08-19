@@ -39,8 +39,14 @@ const IndexPage = () => (
           tailored to your unique needs and well-being journey.
         </p>
       </div>
+      <a
+        className="button cta"
+        href={`https://calendly.com/stancepilates/stance-pilates-intro-call`}
+      >
+        BOOK A CALL
+      </a>
     </section>
-   
+
     <section id="about" className="grid-row">
       <div className="about-picture">
         <img src={aboutImg} alt="me" width="100%" />
@@ -298,7 +304,17 @@ const IndexPage = () => (
 
         <Faq question="How do I book a session?">
           <p>
-            Please contact me at info@stancepilates.com or text/call 702-608-2065. Looking forward to hearing from you!
+            Book a{" "}
+            <a
+              class="intro-call"
+              href="https://calendly.com/stancepilates/stance-pilates-intro-call"
+              target='_blank'
+            >
+              {" "}
+              Free Intro Call
+            </a>{" "}
+            or contact me at info@stancepilates.com or text/call 702-608-2065.
+            Looking forward to hearing from you!
           </p>
         </Faq>
 
@@ -312,8 +328,8 @@ const IndexPage = () => (
 
         <Faq question="Where are you located?">
           <p>
-            Inside of Collective Studios located at 6050 S Fort Apache 
-            Rd #200B, Las Vegas, NV 89148
+            Inside of Collective Studios located at 6050 S Fort Apache Rd #200B,
+            Las Vegas, NV 89148
           </p>
         </Faq>
       </div>
