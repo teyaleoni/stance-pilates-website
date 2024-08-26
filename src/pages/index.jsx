@@ -299,6 +299,7 @@ const IndexPage = () => (
 
         <Faq question="How do I book a session?">
           <p>
+            Feeling unsure and would like more information?
             Book a{" "}
             <a
               class="intro-call"
@@ -307,9 +308,9 @@ const IndexPage = () => (
             >
               {" "}
               Free Intro Call
-            </a>{" "}
-            or contact me at info@stancepilates.com or text/call 702-608-2065.
-            Looking forward to hearing from you!
+            </a>
+            . <br />Ready to book? Contact me at info@stancepilates.com or text/call 702-608-2065.
+            <br />Looking forward to hearing from you!
           </p>
         </Faq>
 
