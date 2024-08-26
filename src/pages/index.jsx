@@ -23,7 +23,7 @@ const IndexPage = () => (
       <div>
         <img src={logoHeader} alt="" width="30%" />
         <h1>
-          Creating a stronger, healthier you through the power or Pilates.
+          Creating a stronger, healthier you through the power of Pilates.
         </h1>
       </div>
       <img src={headerImg} alt="" width="100%" />
