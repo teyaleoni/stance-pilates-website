@@ -284,19 +284,13 @@ const IndexPage = () => (
             workout but also minimizes the risk of injuries associated with
             incorrect form.
           </p>
-          <p>
-            Choosing private Pilates sessions is an investment in your
-            well-being. It provides the opportunity to receive personalized
-            guidance, correct any imbalances, and progress towards your goals
-            with confidence and safety.
-          </p>
         </Faq>
 
         <Faq question="What should I expect in a session?">
           <p>
             Embark on a personalized Pilates journey with me in a private
             session tailored to YOU. We'll use apparatuses like the reformer,
-            mat, and cadillac. I'll support you every step of the way, ensuring
+            mat, wunda chair, and cadillac. I'll support you every step of the way, ensuring
             proper form and technique. It will be a comprehensive workout
             targeting various muscle groups, leading to a stronger and more
             balanced version of yourself.
