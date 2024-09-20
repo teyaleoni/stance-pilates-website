@@ -41,7 +41,7 @@ const IndexPage = () => (
       </div>
       <a
         className="button cta"
-        target={'_blank'}
+        target={"_blank"}
         href={`https://calendly.com/stancepilates/stance-pilates-intro-call`}
       >
         BOOK A CALL
@@ -236,10 +236,12 @@ const IndexPage = () => (
 
         <Faq question="Who is Pilates for?">
           <p>
-            EVERYONE! Pilates can be modified to suit any fitness level or
-            physical ability, and provides numerous physiological and mental
-            health benefits. As of right now I am only taking clients of age
-            18+.
+            Pilates is for EVERYONE! It can be tailored to fit any fitness level
+            or physical ability and offers a wide range of physical and mental
+            health benefits. However, if you have any medical conditions or
+            medication limitations, it’s always a good idea to consult your
+            doctor before starting a new exercise program. Currently, I am
+            accepting clients 18 years and older.
           </p>
         </Faq>
 
@@ -290,27 +292,29 @@ const IndexPage = () => (
           <p>
             Embark on a personalized Pilates journey with me in a private
             session tailored to YOU. We'll use apparatuses like the reformer,
-            mat, wunda chair, and cadillac. I'll support you every step of the way, ensuring
-            proper form and technique. It will be a comprehensive workout
-            targeting various muscle groups, leading to a stronger and more
-            balanced version of yourself.
+            mat, wunda chair, and cadillac. I'll support you every step of the
+            way, ensuring proper form and technique. It will be a comprehensive
+            workout targeting various muscle groups, leading to a stronger and
+            more balanced version of yourself.
           </p>
         </Faq>
 
         <Faq question="How do I book a session?">
           <p>
-            Feeling unsure and would like more information?
-            Book a{" "}
+            Feeling unsure and would like more information? Book a{" "}
             <a
               class="intro-call"
               href="https://calendly.com/stancepilates/stance-pilates-intro-call"
-              target='_blank'
+              target="_blank"
             >
               {" "}
               Free Intro Call
             </a>
-            . <br />Ready to book? Contact me at info@stancepilates.com or text/call 702-608-2065.
-            <br />Looking forward to hearing from you!
+            . <br />
+            Ready to book? Contact me at info@stancepilates.com or text/call
+            702-608-2065.
+            <br />
+            Looking forward to hearing from you!
           </p>
         </Faq>
 
