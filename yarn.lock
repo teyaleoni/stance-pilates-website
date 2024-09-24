@@ -6916,6 +6916,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-plugin-google-tagmanager@npm:^5.13.1":
+  version: 5.13.1
+  resolution: "gatsby-plugin-google-tagmanager@npm:5.13.1"
+  dependencies:
+    "@babel/runtime": "npm:^7.20.13"
+    web-vitals: "npm:^1.1.2"
+  peerDependencies:
+    gatsby: ^5.0.0-next
+    react: ^18.0.0 || ^0.0.0
+    react-dom: ^18.0.0 || ^0.0.0
+  checksum: 10c0/f375ab868ff5c8acd32024b852bee6f3dc3a0b0849a9d67dad78efdfa55be12a60b7613aa49f51a796a41877ace36b3e6a92eae3295073fd12326857da36d78d
+  languageName: node
+  linkType: hard
+
 "gatsby-plugin-manifest@npm:^5.13.1":
   version: 5.13.1
   resolution: "gatsby-plugin-manifest@npm:5.13.1"
@@ -7030,6 +7044,7 @@ __metadata:
   dependencies:
     gatsby: "npm:^5.13.5"
     gatsby-omni-font-loader: "npm:^2.0.2"
+    gatsby-plugin-google-tagmanager: "npm:^5.13.1"
     gatsby-plugin-manifest: "npm:^5.13.1"
     react: "npm:^18.3.1"
     react-dom: "npm:^18.3.1"
@@ -12904,6 +12919,13 @@ __metadata:
   version: 1.2.2
   resolution: "weak-lru-cache@npm:1.2.2"
   checksum: 10c0/744847bd5b96ca86db1cb40d0aea7e92c02bbdb05f501181bf9c581e82fa2afbda32a327ffbe75749302b8492ab449f1c657ca02410d725f5d412d1e6c607d72
+  languageName: node
+  linkType: hard
+
+"web-vitals@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "web-vitals@npm:1.1.2"
+  checksum: 10c0/9521ea2e8ca2e4446ba8e3d5430b0c9a9a07e0d6f468a90dc5fab2bab524fb1a699f3874ea392c9e35a63dcf3651b40130d58ebd78e53a406cb9622049bf1403
   languageName: node
   linkType: hard
 
