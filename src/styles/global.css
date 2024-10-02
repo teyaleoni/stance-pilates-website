@@ -167,12 +167,6 @@ p {
   gap: 0.5rem;
 }
 
-.copyright {
-  padding: 2rem 0;
-  text-align: center;
-  font-size: 0.8em;
-}
-
 .button {
   background-color: var(--color-blue-steel);
   color: white;
@@ -308,4 +302,12 @@ p {
   color: blue;
   font-weight: bolder;
   text-decoration: underline;
+}
+
+.privacy-policy ol > li {
+  margin: 1rem 0;
+}
+.privacy-policy ol > li::marker,
+.privacy-policy ol > li > div:first-child {
+  font-size: 1.25em;
 }

@@ -12,7 +12,12 @@ const NavItems = ({ hrefPrefix = "" }) => (
     <a href={`${hrefPrefix}#faq`}>FAQ</a>
     <a href={`${hrefPrefix}#testimonials`}>Testimonials</a>
     <a href={`${hrefPrefix}#contact`}>Contact</a>
-    <a target={'_blank'}href={`https://calendly.com/stancepilates/stance-pilates-intro-call`}>Book a Call</a>
+    <a
+      target={"_blank"}
+      href={`https://calendly.com/stancepilates/stance-pilates-intro-call`}
+    >
+      Book a Call
+    </a>
     {/* <a href={`${hrefPrefix}#contact`}>Blog</a> */}
   </>
 );
@@ -70,7 +75,21 @@ export default function Page({ children, navHrefPrefix }) {
       <main id="scroll">
         {children}
 
-        <div className="copyright">© {presentYear} Stance Pilates</div>
+        <div
+          style={{
+            display: "flex",
+            gap: "2rem",
+            alignItems: "center",
+            justifyContent: "center",
+            padding: "2rem",
+            fontSize: '0.9em',
+          }}
+        >
+          <div className="copyright">© {presentYear} Stance Pilates</div>
+          <div>
+            <a href="/privacy-policy">Privacy Policy</a>
+          </div>
+        </div>
       </main>
     </div>
   );
