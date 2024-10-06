@@ -304,10 +304,27 @@ p {
   text-decoration: underline;
 }
 
-.privacy-policy ol > li {
-  margin: 1rem 0;
+.policy > * > li {
+  margin: 1em 0;
 }
-.privacy-policy ol > li::marker,
-.privacy-policy ol > li > div:first-child {
-  font-size: 1.25em;
+.policy > * > li li {
+  margin: 0.25em 0;
+}
+
+.ol-nested-numbering > ol {
+  padding-inline-start: 0;
+}
+.ol-nested-numbering > ol ol {
+  padding-inline-start: 2em;
+}
+.ol-nested-numbering ol {
+  counter-reset: item;
+}
+.ol-nested-numbering ol > li {
+  display: block;
+}
+.ol-nested-numbering ol > li:before {
+  content: counters(item, ".");
+  counter-increment: item;
+  margin-right: 1em;
 }

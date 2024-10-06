@@ -4,7 +4,7 @@ import Page from "../components/Page";
 export default function PrivacyPolicy() {
   return (
     <Page navHrefPrefix="/">
-      <section className="privacy-policy">
+      <section className="policy privacy-policy">
         <h1>Privacy Policy</h1>
         <div>Last Updated: September 2024</div>
 

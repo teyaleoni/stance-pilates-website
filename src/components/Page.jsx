@@ -89,6 +89,9 @@ export default function Page({ children, navHrefPrefix }) {
           <div>
             <a href="/privacy-policy">Privacy Policy</a>
           </div>
+          <div>
+            <a href="/terms-and-conditions">Terms and Conditions</a>
+          </div>
         </div>
       </main>
     </div>
