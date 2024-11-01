@@ -8,15 +8,15 @@ const NavItems = ({ hrefPrefix = "" }) => (
   <>
     <a href={`${hrefPrefix}#home`}>Home</a>
     <a href={`${hrefPrefix}#about`}>About</a>
-    {/* <a href={`${hrefPrefix}#pricing`}>Pricing</a> */}
+    <a href={`${hrefPrefix}#pricing`}>Pricing</a>
     <a href={`${hrefPrefix}#faq`}>FAQ</a>
     <a href={`${hrefPrefix}#testimonials`}>Testimonials</a>
     <a href={`${hrefPrefix}#contact`}>Contact</a>
     <a
       target={"_blank"}
-      href={`https://calendly.com/stancepilates/stance-pilates-intro-call`}
+      href={`https://stancepilates.janeapp.com/`}
     >
-      Book a Call
+      Book a Session
     </a>
     {/* <a href={`${hrefPrefix}#contact`}>Blog</a> */}
   </>

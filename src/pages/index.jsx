@@ -42,9 +42,9 @@ const IndexPage = () => (
       <a
         className="button cta"
         target={"_blank"}
-        href={`https://calendly.com/stancepilates/stance-pilates-intro-call`}
+        href={`https://stancepilates.janeapp.com/`}
       >
-        BOOK A CALL
+        BOOK A SESSION
       </a>
     </section>
 
@@ -156,7 +156,7 @@ const IndexPage = () => (
         <p style={{ textAlign: "end" }}>- Joseph Pilates</p>
       </div>
     </section>
-    {/* <section id="pricing" style={{ display: "grid", gap: "2rem" }}>
+    <section id="pricing" style={{ display: "grid", gap: "2rem" }}>
       <h2>Pricing</h2>
       <div style={{ display: "grid", gap: "1rem" }}>
         <h3 style={{ color: "var(--color-blue-steel)" }}>New client special</h3>
@@ -211,7 +211,7 @@ const IndexPage = () => (
             </PricingCard>
             <PricingCard
               bundleSize={20}
-              price={1750}
+              price={1600}
               expiry="6 months"
               cta="Transform Your Lifestyle"
             >
@@ -221,7 +221,7 @@ const IndexPage = () => (
           </div>
         </PricingCtaHeightProvider>
       </div>
-    </section> */}
+    </section>
     <section id="faq">
       <div className="nottoowide" style={{ display: "grid", gap: "2rem" }}>
         <h2>FAQ</h2>
@@ -299,7 +299,13 @@ const IndexPage = () => (
           </p>
         </Faq>
 
-        <Faq question="How do I book a session?">
+        <Faq question="Can I share a package with another person?">
+          <p>
+            Packages are for individual use only and can't be shared between people.
+          </p>
+        </Faq>
+
+        {/* <Faq question="How do I book a session?">
           <p>
             Feeling unsure and would like more information? Book a{" "}
             <a
@@ -316,7 +322,7 @@ const IndexPage = () => (
             <br />
             Looking forward to hearing from you!
           </p>
-        </Faq>
+        </Faq> */}
 
         <Faq question="Do you sell Pilates gift certificates?">
           <p>

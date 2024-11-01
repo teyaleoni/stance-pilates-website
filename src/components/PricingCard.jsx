@@ -24,6 +24,7 @@ export default function PricingCard({
       className="card elevated grow"
       style={{
         display: "grid",
+        backgroundColor: "white",
         gap: "1rem",
         alignContent: "space-between",
         position: "relative",
