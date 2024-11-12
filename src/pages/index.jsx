@@ -158,10 +158,10 @@ const IndexPage = () => (
     </section>
     <section id="pricing" style={{ display: "grid", gap: "2rem" }}>
       <h2>Pricing</h2>
-      <div style={{ display: "grid", gap: "1rem" }}>
-        <h3 style={{ color: "var(--color-blue-steel)" }}>New client special</h3>
-        <p>This package is limited to one purchase per person.</p>
-        <PricingCtaHeightProvider>
+      <PricingCtaHeightProvider>
+        <div style={{ display: "grid", gap: "1rem" }}>
+
+          <h3 style={{ color: "var(--color-blue-steel)" }}>New client special</h3>
           <div className="grid-row-4" style={{ gap: "1rem" }}>
             <PricingCard
               bundleSize={3}
@@ -172,11 +172,37 @@ const IndexPage = () => (
             >
               Begin your path to strength, flexibility, and well-being as you
               discover the transformative benefits of Pilates. Let's start your
-              fitness adventure together!
+              fitness adventure together!<br />
+              <br />
+
+              **This package is limited to one purchase per person.
             </PricingCard>
           </div>
-        </PricingCtaHeightProvider>
-      </div>
+          <h3 style={{ color: "var(--color-blue-steel)" }}>🎄Holiday special🎄</h3>
+          {/* <p>4 privates sessions + free pair of Parallel Grip Socks!</p> */}
+          <div className="grid-row-4" style={{ gap: "1rem" }}>
+            <PricingCard
+              bundleSize={4}
+              price={299}
+              expiry="6 Weeks"
+              cta="Let's Start!"
+              noSavingsBadge
+            >
+              4 privates sessions + free pair of Parallel Grip Socks! (Save $100+)
+              <br />
+              <br />
+              This bundle is perfect for keeping movement in the mix this holiday season. 
+              <br />
+              <br />
+              All 4 sessions must be used within 6 weeks of purchase. 
+              <br/>
+              <br />
+              OFFER ENDS 12/15.
+            </PricingCard>
+          </div>
+
+        </div>
+      </PricingCtaHeightProvider>
 
       <div style={{ display: "grid", gap: "1rem" }}>
         <h3 style={{ color: "var(--color-blue-steel)" }}>Regular pricing</h3>
