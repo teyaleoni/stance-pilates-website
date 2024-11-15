@@ -15,10 +15,17 @@ import {
 import aboutImg from "../images/lunge-cropped.jpg";
 import headerImg from "../images/sitting-1024.jpg";
 import logoHeader from "../images/stance-logo.svg";
+import holidayBanner from "../images/holiday-banner.png";
+
 import "../styles/global.css";
 
 const IndexPage = () => (
   <Page>
+    {/* holiday banner */}
+    <div>
+      <img src={holidayBanner} alt="" width="100%" ></img>
+    </div>
+    {/* holiday banner end */}
     <section id="home" className="grid-row">
       <div>
         <img src={logoHeader} alt="" width="30%" />
@@ -191,11 +198,11 @@ const IndexPage = () => (
               4 privates sessions + free pair of Parallel Grip Socks! (Save $100+)
               <br />
               <br />
-              This bundle is perfect for keeping movement in the mix this holiday season. 
+              This bundle is perfect for keeping movement in the mix this holiday season.
               <br />
               <br />
-              All 4 sessions must be used within 6 weeks of purchase. 
-              <br/>
+              All 4 sessions must be used within 6 weeks of purchase.
+              <br />
               <br />
               OFFER ENDS 12/15.
             </PricingCard>
