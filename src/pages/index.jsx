@@ -258,6 +258,31 @@ const IndexPage = () => (
     <section id="faq">
       <div className="nottoowide" style={{ display: "grid", gap: "2rem" }}>
         <h2>FAQ</h2>
+        <Faq question="How do I book a session?">
+          <p>
+            Ready to book a session?
+            <br />
+            You can book online
+            <a
+              class="intro-call"
+              href="https://stancepilates.janeapp.com/"
+              target="_blank"
+            >
+              {" "}
+              here
+            </a> or contact me at info@stancepilates.com or text/call
+            702-608-2065.
+            <br />
+            Looking forward to hearing from you!
+          </p>
+        </Faq>
+
+        <Faq question="Where are you located?">
+          <p>
+            Inside of Collective Studios located at 6050 S Fort Apache Rd #200B,
+            Las Vegas, NV 89148
+          </p>
+        </Faq>
 
         <Faq question="What is Pilates?">
           <p>
@@ -323,12 +348,7 @@ const IndexPage = () => (
 
         <Faq question="What should I expect in a session?">
           <p>
-            Embark on a personalized Pilates journey with me in a private
-            session tailored to YOU. We'll use apparatuses like the reformer,
-            mat, wunda chair, and cadillac. I'll support you every step of the
-            way, ensuring proper form and technique. It will be a comprehensive
-            workout targeting various muscle groups, leading to a stronger and
-            more balanced version of yourself.
+            Each session is a 1-hour personalized Pilates journey tailored just for YOU. We'll work together using apparatuses like the reformer, mat, wunda chair, and cadillac to ensure proper form and technique. Depending on how you're feeling that day, I’ll adapt the workout to meet your needs, so you leave feeling better than when you arrived. Socks are not required, but if you prefer, I do sell grip socks at the studio. Expect a comprehensive workout targeting various muscle groups to help you become a stronger, more balanced version of yourself!
           </p>
         </Faq>
 
@@ -338,25 +358,6 @@ const IndexPage = () => (
           </p>
         </Faq>
 
-        {/* <Faq question="How do I book a session?">
-          <p>
-            Feeling unsure and would like more information? Book a{" "}
-            <a
-              class="intro-call"
-              href="https://calendly.com/stancepilates/stance-pilates-intro-call"
-              target="_blank"
-            >
-              {" "}
-              Free Intro Call
-            </a>
-            . <br />
-            Ready to book? Contact me at info@stancepilates.com or text/call
-            702-608-2065.
-            <br />
-            Looking forward to hearing from you!
-          </p>
-        </Faq> */}
-
         <Faq question="Do you sell Pilates gift certificates?">
           <p>
             Absolutely! We're all about spreading the Pilates love with our
@@ -365,10 +366,9 @@ const IndexPage = () => (
           </p>
         </Faq>
 
-        <Faq question="Where are you located?">
+        <Faq question="I would like more information!">
           <p>
-            Inside of Collective Studios located at 6050 S Fort Apache Rd #200B,
-            Las Vegas, NV 89148
+            Need some more answers? No problem! Please give text/call at 702-608-2065. You can also send me an email at info@stancepilates.com.
           </p>
         </Faq>
       </div>
