@@ -272,8 +272,6 @@ const IndexPage = () => (
               here
             </a> or contact me at info@stancepilates.com or text/call
             702-608-2065.
-            <br />
-            Looking forward to hearing from you!
           </p>
         </Faq>
 
