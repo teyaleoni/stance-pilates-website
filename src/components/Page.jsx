@@ -13,7 +13,7 @@ const NavItems = ({ hrefPrefix = "" }) => (
     <a href={`${hrefPrefix}#testimonials`}>Testimonials</a>
     <a href={`${hrefPrefix}#contact`}>Contact</a>
     <a target={"_blank"} href={`https://stancepilates.janeapp.com/`}>
-      Book a Session
+      Book
     </a>
     {/* <a href={`${hrefPrefix}#contact`}>Blog</a> */}
   </>
