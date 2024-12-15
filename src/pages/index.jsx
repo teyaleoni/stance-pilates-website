@@ -15,7 +15,6 @@ import {
 import aboutImg from "../images/lunge-cropped.jpg";
 import headerImg from "../images/sitting-1024.jpg";
 import logoHeader from "../images/stance-logo.svg";
-import holidayBanner from "../images/holiday-banner.png";
 
 import "../styles/global.css";
 
