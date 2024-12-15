@@ -51,6 +51,11 @@ nav > a {
   padding: 0.5rem;
 }
 
+.linky {
+  color: var(--color-blue-steel);
+  text-decoration: underline;
+}
+
 .logo {
   font-family: "Jost";
   margin: 0.5rem 0;

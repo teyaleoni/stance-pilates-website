@@ -346,8 +346,15 @@ const IndexPage = () => (
         <Faq question="Do you sell Pilates gift certificates?">
           <p>
             Absolutely! We're all about spreading the Pilates love with our
-            Stance Pilates gift certificates. Feel free to contact us to
-            purchase one today!
+            Stance Pilates gift certificates.{" "}
+            <a
+              className="linky"
+              target="_blank"
+              rel="noreferrer"
+              href="https://stancepilates.janeapp.com/online_gift_cards/new"
+            >
+              Purchase one here
+            </a>
           </p>
         </Faq>
 
