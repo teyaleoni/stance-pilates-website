@@ -69,8 +69,8 @@ const IndexPage = () => (
           better, and live better.
         </p>
         <p>
-          Using the BASI Block System and a variety of Pilates
-          apparatus—including the reformer, wunda chair, and Cadillac—I create
+          Using the BASI Block System and a variety of Pilates apparatuses —
+          including the reformer, wunda chair, and cadillac — I create
           personalized programs that work your entire body. This approach
           ensures every session is balanced and tailored to your needs,
           addressing not just isolated discomfort but promoting overall
@@ -81,9 +81,9 @@ const IndexPage = () => (
         <p>
           With experience working with a wide range of clients—including desk
           workers, nurses, cocktail waitresses, performers, mothers, and
-          teachers—I understand how life’s demands can take a toll on your body.
-          My goal is to help you integrate movement into your routine so you can
-          thrive in both work and life.
+          teachers — I understand how life’s demands can take a toll on your
+          body. My goal is to help you integrate movement into your routine so
+          you can thrive in both work and life.
         </p>
         <p>
           Pilates transformed my life by enhancing my health, confidence, and
