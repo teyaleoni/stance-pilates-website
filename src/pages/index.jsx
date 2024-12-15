@@ -186,32 +186,6 @@ const IndexPage = () => (
               **This package is limited to one purchase per person.
             </PricingCard>
           </div>
-          <h3 style={{ color: "var(--color-blue-steel)" }}>
-            🎄Holiday special🎄
-          </h3>
-          {/* <p>4 privates sessions + free pair of Parallel Grip Socks!</p> */}
-          <div className="grid-row-4" style={{ gap: "1rem" }}>
-            <PricingCard
-              bundleSize={4}
-              price={299}
-              expiry="6 Weeks"
-              cta="Let's Start!"
-              noSavingsBadge
-            >
-              4 privates sessions + free pair of Parallel Grip Socks! (Save
-              $100+)
-              <br />
-              <br />
-              This bundle is perfect for keeping movement in the mix this
-              holiday season.
-              <br />
-              <br />
-              All 4 sessions must be used within 6 weeks of purchase.
-              <br />
-              <br />
-              OFFER ENDS 12/15.
-            </PricingCard>
-          </div>
         </div>
       </PricingCtaHeightProvider>
 
