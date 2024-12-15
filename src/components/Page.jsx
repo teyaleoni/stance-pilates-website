@@ -12,10 +12,7 @@ const NavItems = ({ hrefPrefix = "" }) => (
     <a href={`${hrefPrefix}#faq`}>FAQ</a>
     <a href={`${hrefPrefix}#testimonials`}>Testimonials</a>
     <a href={`${hrefPrefix}#contact`}>Contact</a>
-    <a
-      target={"_blank"}
-      href={`https://stancepilates.janeapp.com/`}
-    >
+    <a target={"_blank"} href={`https://stancepilates.janeapp.com/`}>
       Book a Session
     </a>
     {/* <a href={`${hrefPrefix}#contact`}>Blog</a> */}
@@ -82,7 +79,7 @@ export default function Page({ children, navHrefPrefix }) {
             alignItems: "center",
             justifyContent: "center",
             padding: "2rem",
-            fontSize: '0.9em',
+            fontSize: "0.9em",
           }}
         >
           <div className="copyright">© {presentYear} Stance Pilates</div>

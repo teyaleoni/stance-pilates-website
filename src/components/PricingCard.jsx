@@ -1,5 +1,5 @@
 import * as React from "react";
-import { BOOKING_URL } from '../constants';
+import { BOOKING_URL } from "../constants";
 
 export const PricingCtaHeightContext = React.createContext();
 
@@ -111,7 +111,7 @@ export function PricingCtaHeightProvider({ children }) {
   // }, [heights]);
   const maxHeight = React.useMemo(
     () => Math.max(...Object.values(heights)),
-    [heights]
+    [heights],
   );
 
   return (

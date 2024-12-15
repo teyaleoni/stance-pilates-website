@@ -30,7 +30,8 @@ const IndexPage = () => (
       <div>
         <img src={logoHeader} alt="" width="30%" />
         <h1>
-        Empowering you to move freely, feel stronger, and live vibrantly through the power of Pilates.
+          Empowering you to move freely, feel stronger, and live vibrantly
+          through the power of Pilates.
         </h1>
       </div>
       <img src={headerImg} alt="" width="100%" />
@@ -39,7 +40,10 @@ const IndexPage = () => (
       <div className="nottoowide">
         <h2>Private Pilates Sessions in southwest Las Vegas</h2>
         <p>
-        Our mission is to help you build strength, relieve pain, and move freely through sustainable, personalized Pilates training. We empower you to create a vibrant, active life with resilience and mobility, tailored to your body and your goals.
+          Our mission is to help you build strength, relieve pain, and move
+          freely through sustainable, personalized Pilates training. We empower
+          you to create a vibrant, active life with resilience and mobility,
+          tailored to your body and your goals.
         </p>
       </div>
       <a
@@ -59,16 +63,34 @@ const IndexPage = () => (
         <h2>About your instructor</h2>
         <p>Hi, I'm Teya!</p>
         <p>
-          I help busy individuals overcome the physical challenges of their daily lives to feel stronger, more mobile, and more confident in their bodies. Whether you’re spending long hours at a desk, on your feet, or juggling a hectic schedule, Pilates can help you move better, feel better, and live better.
+          I help busy individuals overcome the physical challenges of their
+          daily lives to feel stronger, more mobile, and more confident in their
+          bodies. Whether you’re spending long hours at a desk, on your feet, or
+          juggling a hectic schedule, Pilates can help you move better, feel
+          better, and live better.
         </p>
         <p>
-        Using the BASI Block System and a variety of Pilates apparatus—including the reformer, wunda chair, and Cadillac—I create personalized programs that work your entire body. This approach ensures every session is balanced and tailored to your needs, addressing not just isolated discomfort but promoting overall strength, mobility, and well-being. Whether you’re looking to relieve discomfort, prevent injuries, or stay active, I’m here to guide you every step of the way.
+          Using the BASI Block System and a variety of Pilates
+          apparatus—including the reformer, wunda chair, and Cadillac—I create
+          personalized programs that work your entire body. This approach
+          ensures every session is balanced and tailored to your needs,
+          addressing not just isolated discomfort but promoting overall
+          strength, mobility, and well-being. Whether you’re looking to relieve
+          discomfort, prevent injuries, or stay active, I’m here to guide you
+          every step of the way.
         </p>
         <p>
-        With experience working with a wide range of clients—including desk workers, nurses, cocktail waitresses, performers, mothers, and teachers—I understand how life’s demands can take a toll on your body. My goal is to help you integrate movement into your routine so you can thrive in both work and life.
+          With experience working with a wide range of clients—including desk
+          workers, nurses, cocktail waitresses, performers, mothers, and
+          teachers—I understand how life’s demands can take a toll on your body.
+          My goal is to help you integrate movement into your routine so you can
+          thrive in both work and life.
         </p>
         <p>
-        Pilates transformed my life by enhancing my health, confidence, and quality of life, and I’m passionate about sharing that with others. If you’re ready to invest in your health and rediscover the joy of movement, let’s get started. Because your future self deserves it.
+          Pilates transformed my life by enhancing my health, confidence, and
+          quality of life, and I’m passionate about sharing that with others. If
+          you’re ready to invest in your health and rediscover the joy of
+          movement, let’s get started. Because your future self deserves it.
         </p>
       </div>
     </section>
@@ -136,7 +158,8 @@ const IndexPage = () => (
     <section id="quote">
       <div className="nottoowide">
         <h3 style={{ fontStyle: "italic" }}>
-          "We retire too early and we die too young. Our prime of life should be in the 70’s and old age should not come until we are almost 100."
+          "We retire too early and we die too young. Our prime of life should be
+          in the 70’s and old age should not come until we are almost 100."
         </h3>
         <p style={{ textAlign: "end" }}>- Joseph Pilates</p>
       </div>
@@ -145,8 +168,9 @@ const IndexPage = () => (
       <h2>Pricing</h2>
       <PricingCtaHeightProvider>
         <div style={{ display: "grid", gap: "1rem" }}>
-
-          <h3 style={{ color: "var(--color-blue-steel)" }}>New client special</h3>
+          <h3 style={{ color: "var(--color-blue-steel)" }}>
+            New client special
+          </h3>
           <div className="grid-row-4" style={{ gap: "1rem" }}>
             <PricingCard
               bundleSize={3}
@@ -157,13 +181,15 @@ const IndexPage = () => (
             >
               Begin your path to strength, flexibility, and well-being as you
               discover the transformative benefits of Pilates. Let's start your
-              fitness adventure together!<br />
+              fitness adventure together!
               <br />
-
+              <br />
               **This package is limited to one purchase per person.
             </PricingCard>
           </div>
-          <h3 style={{ color: "var(--color-blue-steel)" }}>🎄Holiday special🎄</h3>
+          <h3 style={{ color: "var(--color-blue-steel)" }}>
+            🎄Holiday special🎄
+          </h3>
           {/* <p>4 privates sessions + free pair of Parallel Grip Socks!</p> */}
           <div className="grid-row-4" style={{ gap: "1rem" }}>
             <PricingCard
@@ -173,10 +199,12 @@ const IndexPage = () => (
               cta="Let's Start!"
               noSavingsBadge
             >
-              4 privates sessions + free pair of Parallel Grip Socks! (Save $100+)
+              4 privates sessions + free pair of Parallel Grip Socks! (Save
+              $100+)
               <br />
               <br />
-              This bundle is perfect for keeping movement in the mix this holiday season.
+              This bundle is perfect for keeping movement in the mix this
+              holiday season.
               <br />
               <br />
               All 4 sessions must be used within 6 weeks of purchase.
@@ -185,7 +213,6 @@ const IndexPage = () => (
               OFFER ENDS 12/15.
             </PricingCard>
           </div>
-
         </div>
       </PricingCtaHeightProvider>
 
@@ -248,8 +275,8 @@ const IndexPage = () => (
             >
               {" "}
               here
-            </a> or contact me at info@stancepilates.com or text/call
-            702-608-2065.
+            </a>{" "}
+            or contact me at info@stancepilates.com or text/call 702-608-2065.
           </p>
         </Faq>
 
@@ -324,13 +351,22 @@ const IndexPage = () => (
 
         <Faq question="What should I expect in a session?">
           <p>
-            Each session is a 1-hour personalized Pilates journey tailored just for YOU. We'll work together using apparatuses like the reformer, mat, wunda chair, and cadillac to ensure proper form and technique. Depending on how you're feeling that day, I’ll adapt the workout to meet your needs, so you leave feeling better than when you arrived. Socks are not required, but if you prefer, I do sell grip socks at the studio. Expect a comprehensive workout targeting various muscle groups to help you become a stronger, more balanced version of yourself!
+            Each session is a 1-hour personalized Pilates journey tailored just
+            for YOU. We'll work together using apparatuses like the reformer,
+            mat, wunda chair, and cadillac to ensure proper form and technique.
+            Depending on how you're feeling that day, I’ll adapt the workout to
+            meet your needs, so you leave feeling better than when you arrived.
+            Socks are not required, but if you prefer, I do sell grip socks at
+            the studio. Expect a comprehensive workout targeting various muscle
+            groups to help you become a stronger, more balanced version of
+            yourself!
           </p>
         </Faq>
 
         <Faq question="Can I share a package with another person?">
           <p>
-            Packages are for individual use only and can't be shared between people.
+            Packages are for individual use only and can't be shared between
+            people.
           </p>
         </Faq>
 
@@ -344,7 +380,9 @@ const IndexPage = () => (
 
         <Faq question="I would like more information!">
           <p>
-            Need some more answers? No problem! Please give text/call at 702-608-2065. You can also send me an email at info@stancepilates.com.
+            Need some more answers? No problem! Please give text/call at
+            702-608-2065. You can also send me an email at
+            info@stancepilates.com.
           </p>
         </Faq>
       </div>

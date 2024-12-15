@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from "react";
 
 export default function Fixer({ children, at }) {
   const [height, setHeight] = useState(0);
@@ -21,11 +21,11 @@ export default function Fixer({ children, at }) {
       <div
         style={{
           zIndex: 10,
-          position: 'fixed',
+          position: "fixed",
           left: 0,
           right: 0,
-          top: at === 'top' ? 0 : undefined,
-          bottom: at === 'bottom' ? 0 : undefined,
+          top: at === "top" ? 0 : undefined,
+          bottom: at === "bottom" ? 0 : undefined,
         }}
         ref={contentWrapperRef}
       >
