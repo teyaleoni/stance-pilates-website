@@ -1,3 +1,8 @@
+// TODO:
+// Website wants:
+// - add instagram in nav bar
+// - add google reviews
+// - add location with google map in footer
 import * as React from "react";
 import InstagramIcon from "../InstagramIcon";
 import Faq from "../components/Faq";
@@ -15,6 +20,7 @@ import {
 import aboutImg from "../images/lunge-cropped.jpg";
 import headerImg from "../images/sitting-1024.jpg";
 import logoHeader from "../images/stance-logo.svg";
+import studioImage from "../images/studio-horizontal.jpg";
 
 import "../styles/global.css";
 
@@ -93,6 +99,37 @@ const IndexPage = () => (
         </p>
       </div>
     </section>
+    <section id="studio" className="grid-row">
+      <div>
+        <h2>The Studio</h2>
+        <p>
+          At Stance Pilates, we believe that quality matters, and that starts
+          with the tools we use to help you move better. Our studio is equipped
+          with top-of-the-line BASI Systems Pilates equipment, renowned for its
+          precision, durability, and innovation.
+        </p>
+        <p>
+          This state-of-the-art equipment was carefully chosen because it truly
+          makes a difference in your Pilates experience, ensuring both comfort
+          and optimal results. Our equipment is also designed to accommodate all
+          body types and sizes, providing a safe and effective workout for
+          everyone.
+        </p>
+        <p>
+          Our studio features a reformer and cadillac combo, wunda chair, and a
+          variety of Pilates props designed to support and challenge your
+          movement. By incorporating different apparatuses, we keep your
+          workouts engaging, versatile.
+        </p>
+        <p>
+          Discover the difference the best equipment makes in a supportive and
+          personalized setting.
+        </p>
+      </div>
+      <div className="about-picture">
+        <img src={studioImage} alt="me" width="100%" />
+      </div>
+    </section>
     <section id="testimonials">
       <h1>What my clients are saying...</h1>
       <div className="grid-row-lg">
@@ -154,6 +191,7 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
+
     <section id="quote">
       <div className="nottoowide">
         <h3 style={{ fontStyle: "italic" }}>

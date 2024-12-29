@@ -3,19 +3,30 @@ import "../styles/global.css";
 import Fixer from "./Fixer";
 import MenuIcon from "./MenuIcon";
 import * as classes from "./Page.module.css";
+import { INSTAGRAM_HANDLE, INSTAGRAM_URL } from "../constants";
+import InstagramIcon from "../InstagramIcon";
 
 const NavItems = ({ hrefPrefix = "" }) => (
   <>
     <a href={`${hrefPrefix}#home`}>Home</a>
     <a href={`${hrefPrefix}#about`}>About</a>
+    <a href={`${hrefPrefix}#studio`}>Studio</a>
+    <a href={`${hrefPrefix}#testimonials`}>Testimonials</a>
     <a href={`${hrefPrefix}#pricing`}>Pricing</a>
     <a href={`${hrefPrefix}#faq`}>FAQ</a>
-    <a href={`${hrefPrefix}#testimonials`}>Testimonials</a>
     <a href={`${hrefPrefix}#contact`}>Contact</a>
     <a target={"_blank"} href={`https://stancepilates.janeapp.com/`}>
       Book
     </a>
     {/* <a href={`${hrefPrefix}#contact`}>Blog</a> */}
+    <a
+      className="instagram-link"
+      target="_blank"
+      rel="noreferrer"
+      href={INSTAGRAM_URL}
+    >
+      <InstagramIcon />
+    </a>
   </>
 );
 
