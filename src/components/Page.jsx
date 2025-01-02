@@ -10,11 +10,12 @@ const NavItems = ({ hrefPrefix = "" }) => (
   <>
     <a href={`${hrefPrefix}#home`}>Home</a>
     <a href={`${hrefPrefix}#about`}>About</a>
-    <a href={`${hrefPrefix}#studio`}>Studio</a>
+    {/* <a href={`${hrefPrefix}#studio`}>Studio</a> */}
     <a href={`${hrefPrefix}#testimonials`}>Testimonials</a>
     <a href={`${hrefPrefix}#pricing`}>Pricing</a>
     <a href={`${hrefPrefix}#faq`}>FAQ</a>
     <a href={`${hrefPrefix}#contact`}>Contact</a>
+    <a href={`${hrefPrefix}events`}>Events</a>
     <a target={"_blank"} href={`https://stancepilates.janeapp.com/`}>
       Book
     </a>
@@ -45,7 +46,9 @@ export default function Page({ children, navHrefPrefix }) {
       <Fixer>
         <header className="wide">
           <div>
-            <p className="logo">STANCE PILATES</p>
+            <a href="/">
+              <p className="logo">STANCE PILATES</p>
+            </a>
           </div>
           <nav>
             <NavItems hrefPrefix={navHrefPrefix} />
@@ -56,7 +59,9 @@ export default function Page({ children, navHrefPrefix }) {
         </header>
         <header className="narrow">
           <div>
-            <p className="logo">STANCE PILATES</p>
+            <a href="/">
+              <p className="logo">STANCE PILATES</p>
+            </a>
           </div>
           <button
             type="button"

@@ -21,6 +21,7 @@ import aboutImg from "../images/lunge-cropped.jpg";
 import headerImg from "../images/sitting-1024.jpg";
 import logoHeader from "../images/stance-logo.svg";
 import studioImage from "../images/studio-horizontal.jpg";
+import workshopImage from "../images/workshops.jpg";
 
 import "../styles/global.css";
 
@@ -405,6 +406,33 @@ const IndexPage = () => (
         </Faq>
       </div>
     </section>
+    {/* EVENTS*/}
+    <section id="events" className="grid-row">
+      <div>
+        <h2>Events</h2>
+        <p>
+          Discover exciting opportunities to connect, learn, and grow with our
+          upcoming events. We regularly host Pilates events designed to bring
+          our community together while exploring topics that enhance wellness
+          and movement.
+        </p>
+        <h3>Pelvic Floor and Pilates Workshop</h3>
+        <p>
+          Date: January 12th
+          <br />
+          Time: 11AM - 12:30PM
+          <br />
+          Location: Millennium Dance Complex Las Vegas
+        </p>
+        <a className="button" href="/events">
+          More Event Info
+        </a>
+      </div>
+      <div className="about-picture">
+        <img src={workshopImage} alt="me" width="100%" />
+      </div>
+    </section>
+    {/* CONTACT */}
     <section id="contact">
       <div>
         <h2>Contact</h2>

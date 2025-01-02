@@ -333,3 +333,8 @@ p {
   counter-increment: item;
   margin-right: 1em;
 }
+
+.content-block {
+  display: grid;
+  gap: 1rem;
+}
