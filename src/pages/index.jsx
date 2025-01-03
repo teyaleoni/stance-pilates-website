@@ -397,6 +397,10 @@ const IndexPage = () => (
           </p>
         </Faq>
 
+        <Faq question="Do you offer online private sessions?">
+          <p>Yes, I do offer online private sessions! If you are interested please contact info@stancepilates.com.</p>
+        </Faq>
+
         <Faq question="I would like more information!">
           <p>
             Need some more answers? No problem! Please give text/call at
