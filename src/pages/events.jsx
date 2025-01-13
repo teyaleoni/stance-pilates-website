@@ -2,12 +2,43 @@ import React from "react";
 import Page from "../components/Page";
 import pelvicFloorImage from "../images/pelvic-floor-workshop.png";
 import parallelEventImage from "../images/parallel-event.png";
+import tbaImage from "../images/tba.png";
 
 export default function events() {
   return (
     <Page navHrefPrefix="/">
       <section className="content-block">
         <h1>Upcoming Events</h1>
+        <p>
+          We love bringing people together! Whether it’s a fun mat class, an
+          inspiring workshop, or a chance to connect with others, our events are
+          all about building community through Pilates. Come join us—you’ll
+          move, learn, and leave feeling stronger and more connected!
+        </p>
+        <div className="grid-row">
+          <img src={tbaImage} alt="me" width="100%" />
+          <div>
+            <h1>Community Mat Class</h1>
+            <p>
+              Date: February 2025 (Specific date TBA)
+              <br />
+              Time: TBA
+              <br />
+              Location: TBA
+              <br />
+              Mats are provided
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="content-block">
+        <h2>Previous Events</h2>
+        <p>
+          We’ve shared some amazing moments with our community! From energizing
+          mat classes to insightful workshops, our past events have been all
+          about connection, growth, and movement. Take a look at what we’ve been
+          up to—we’d love to see you at the next one!
+        </p>
         <div className="grid-row">
           <img src={pelvicFloorImage} alt="me" width="100%" />
           <div className="about-picture">
@@ -32,13 +63,6 @@ export default function events() {
               <br />
               <br />
             </p>
-            <a
-              className="button"
-              href="https://stancepilates.janeapp.com/locations/millennium-dance-complex-las-vegas/book#/staff_member/1/treatment/2"
-              target="_blank"
-            >
-              Sign Up Here
-            </a>
             <p>
               <br /> Check out Dr. Catrina's{" "}
               <a
@@ -52,9 +76,6 @@ export default function events() {
             </p>
           </div>
         </div>
-      </section>
-      <section className="content-block">
-        <h2>Previous Events</h2>
         <div className="grid-row">
           <img src={parallelEventImage} alt="me" width="100%" />
           <div>

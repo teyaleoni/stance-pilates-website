@@ -431,13 +431,13 @@ const IndexPage = () => (
           our community together while exploring topics that enhance wellness
           and movement.
         </p>
-        <h3>Pelvic Floor and Pilates Workshop</h3>
+        <h3>February Community Mat CLass</h3>
         <p>
-          Date: January 12th
+          Date: February 2025 TBA
           <br />
-          Time: 11AM - 12:30PM
+          Time: TBA
           <br />
-          Location: Millennium Dance Complex Las Vegas
+          Location: TBA
         </p>
         <a className="button" href="/events">
           More Event Info
