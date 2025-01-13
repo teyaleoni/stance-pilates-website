@@ -368,6 +368,8 @@ const IndexPage = () => (
             mat, wunda chair, and cadillac to ensure proper form and technique.
             Depending on how you're feeling that day, I’ll adapt the workout to
             meet your needs, so you leave feeling better than when you arrived.
+            <br />
+            <br />
             Socks are not required, but if you prefer, I do sell grip socks at
             the studio. Expect a comprehensive workout targeting various muscle
             groups to help you become a stronger, more balanced version of
@@ -431,7 +433,7 @@ const IndexPage = () => (
           our community together while exploring topics that enhance wellness
           and movement.
         </p>
-        <h3>February Community Mat CLass</h3>
+        <h3>Community Pilates Mat Class</h3>
         <p>
           Date: February 2025 TBA
           <br />

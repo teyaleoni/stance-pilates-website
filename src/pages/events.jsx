@@ -18,7 +18,7 @@ export default function events() {
         <div className="grid-row">
           <img src={tbaImage} alt="me" width="100%" />
           <div>
-            <h1>Community Mat Class</h1>
+            <h1>Community Pilates Mat Class</h1>
             <p>
               Date: February 2025 (Specific date TBA)
               <br />
@@ -26,7 +26,7 @@ export default function events() {
               <br />
               Location: TBA
               <br />
-              Mats are provided
+              Mats will be provided!
             </p>
           </div>
         </div>
