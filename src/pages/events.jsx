@@ -20,13 +20,13 @@ export default function events() {
           <div>
             <h1>Community Pilates Mat Class</h1>
             <p>
-              Date: February 2025 (Specific date TBA)
+              Date: Sunday, February 9th 2025
               <br />
-              Time: TBA
+              Time: 11:00AM
               <br />
-              Location: TBA
+              Location: Uncommons
               <br />
-              Mats will be provided!
+              Mats WILL BE provided!
             </p>
           </div>
         </div>
@@ -49,27 +49,23 @@ export default function events() {
               Time: 11AM - 12:30PM
               <br />
               Location: Millennium Dance Complex Las Vegas
-              <br />
-              Bring your own mat please
             </p>
             <p>
-              Join us for a 90-minute workshop with Dr. Catrina Fabian, PT, DPT
+              This was a 90-minute workshop with Dr. Catrina Fabian, PT, DPT
               (Pelvic Health Specialist), and Pilates & Dance Instructor Teya
-              Lorts. Open to all, this workshop offers valuable insights and
+              Lorts. Open to all, this workshop offered valuable insights and
               practical tools. <br />
-              Discover foundational movements for pelvic floor and core health,
-              then enjoy a guided mat Pilates class to integrate what you’ve
+              We discovered foundational movements for pelvic floor and core health,
+              then enjoyed a guided mat Pilates class to integrate what we
               learned!
-              <br />
-              <br />
             </p>
             <p>
-              <br /> Check out Dr. Catrina's{" "}
+              <br /> Check out our recap on{" "}
               <a
                 className="linky"
                 target="_blank"
                 rel="noreferrer"
-                href="https://www.instagram.com/powerinthepelvis/"
+                href="https://www.instagram.com/reel/DEyTLYbyMQA/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
               >
                 instagram
               </a>

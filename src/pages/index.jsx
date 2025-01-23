@@ -35,10 +35,7 @@ const IndexPage = () => (
     <section id="home" className="grid-row">
       <div>
         <img src={logoHeader} alt="" width="30%" />
-        <h1>
-          Empowering you to live vibrantly
-          through the power of Pilates.
-        </h1>
+        <h1>Empowering you to live vibrantly through the power of Pilates.</h1>
       </div>
       <img src={headerImg} alt="" width="100%" />
     </section>
@@ -69,9 +66,10 @@ const IndexPage = () => (
         <h2>About your instructor</h2>
         <p>Hi, I'm Teya!</p>
         <p>
-          I help busy individuals overcome the physical challenges of their
-          daily lives to feel stronger, more mobile, and more confident in their
-          bodies. Whether you’re spending long hours at a desk, on your feet, or
+          I am a certified BASI comprehensive pilates instructor. I help busy
+          individuals overcome the physical challenges of their daily lives to
+          feel stronger, more mobile, and more confident in their bodies.
+          Whether you’re spending long hours at a desk, on your feet, or
           juggling a hectic schedule, Pilates can help you move better, feel
           better, and live better.
         </p>
@@ -247,6 +245,8 @@ const IndexPage = () => (
               expiry="3 months"
               cta="Get Started"
             >
+              $90/hr <br />
+              <br />
               Kickstart your fitness journey with 5 tailored Pilates sessions.
               Perfect for beginners or those with busy schedules.
             </PricingCard>
@@ -256,6 +256,8 @@ const IndexPage = () => (
               expiry="4 months"
               cta="Start Your Transformation"
             >
+              $85/hr <br />
+              <br />
               Commit to wellness with 10 dynamic Pilates sessions. Flexibility
               for your lifestyle.
             </PricingCard>
@@ -265,6 +267,8 @@ const IndexPage = () => (
               expiry="6 months"
               cta="Transform Your Lifestyle"
             >
+              $80/hr <br />
+              <br />
               Experience the full benefits with 20 transformative Pilates
               sessions. Ideal for long-term goals.
             </PricingCard>
@@ -311,10 +315,13 @@ const IndexPage = () => (
           <p>
             Pilates is for EVERYONE! It can be tailored to fit any fitness level
             or physical ability and offers a wide range of physical and mental
-            health benefits. However, if you have any medical conditions or
+            health benefits. <br />
+            <br />
+            However, if you have any medical conditions, are pregnant, or
             medication limitations, it’s always a good idea to consult your
-            doctor before starting a new exercise program. Currently, I am
-            accepting clients 18 years and older.
+            doctor before starting a new exercise program. <br />
+            <br />
+            Currently, I am only accepting clients 18 years and older.
           </p>
         </Faq>
 
@@ -323,57 +330,46 @@ const IndexPage = () => (
             Consider Pilates for the long-term benefits it offers. Picture
             yourself 20 years from now &ndash; being active with your loved
             ones, effortlessly enjoying your favorite activities, or maintaining
-            a high quality of life. Pilates is not just a workout; it's an
-            investment in injury prevention, building strength, and overall
-            functional fitness. It's a sustainable approach that adapts to
-            various fitness levels and ages. It can even aid in faster recovery
-            from injuries. Your future self relies on the work you put in today,
-            ensuring a strong, agile, and resilient body for years to come. Use
-            Pilates as a preventive measure &ndash; because it's not just about
-            today's workout; it's about securing a healthier and more active
-            future.
+            a high quality of life.{" "}
+          </p>
+          <p>
+            Pilates is not just a workout; it's an investment in injury
+            prevention, building strength, and overall functional fitness. It's
+            a sustainable approach that adapts to various fitness levels and
+            ages. It can even aid in faster recovery from injuries.{" "}
+          </p>
+          <p>
+            Your future self relies on the work you put in today, ensuring a
+            strong, agile, and resilient body for years to come. Use Pilates as
+            a preventive measure &ndash; because it's not just about today's
+            workout; it's about securing a healthier and more active future.
           </p>
         </Faq>
 
         <Faq question="Why should I take private Pilates sessions?">
           <p>
-            Opting for private Pilates sessions offers a tailored and focused
-            approach that goes beyond the group class experience. In a full
-            Pilates class, individual nuances are often overlooked. Mastering
-            the correct technique becomes crucial; practicing with improper form
-            not only hinders progress, but also poses a risk of injury.
-          </p>
-          <p>
-            In a private session, there are no distractions- my undivided
-            attention is solely on you. This allows for a personalized
-            assessment of your strengths, weaknesses, and movement patterns.
-            With this focused attention, we can meticulously work on building
-            the proper technique tailored to your body.
-          </p>
-          <p>
-            By honing in on the correct technique, you pave the way for reaching
-            your fitness goals more efficiently. Private Pilates sessions offer
-            a space where every movement is analyzed, adjusted, and perfected,
-            ensuring that each exercise is performed with precision. This
-            attention to detail not only maximizes the effectiveness of the
-            workout but also minimizes the risk of injuries associated with
-            incorrect form.
+            Private sessions offer a personalized experience that
+            focuses entirely on your needs. Unlike group classes, these sessions
+            assess your strengths, weaknesses, and movement patterns. With my
+            full attention, we’ll refine your technique to make every exercise
+            effective and safe, helping you achieve your goals while reducing
+            the risk of injury.
           </p>
         </Faq>
 
         <Faq question="What should I expect in a session?">
           <p>
-            Each session is a 1-hour personalized Pilates journey tailored just
-            for YOU. We'll work together using apparatuses like the reformer,
-            mat, wunda chair, and cadillac to ensure proper form and technique.
+            Each session is a 1-hour. We'll work together using apparatuses like
+            the reformer, mat, wunda chair, and cadillac to ensure proper form
+            and technique.{" "}
+          </p>
+          <p>
             Depending on how you're feeling that day, I’ll adapt the workout to
             meet your needs, so you leave feeling better than when you arrived.
-            <br />
-            <br />
+          </p>
+          <p>
             Socks are not required, but if you prefer, I do sell grip socks at
-            the studio. Expect a comprehensive workout targeting various muscle
-            groups to help you become a stronger, more balanced version of
-            yourself!
+            the studio.
           </p>
         </Faq>
 
@@ -435,11 +431,11 @@ const IndexPage = () => (
         </p>
         <h3>Community Pilates Mat Class</h3>
         <p>
-          Date: February 2025 TBA
+          Date: Sunday, February 9th 2025
           <br />
-          Time: TBA
+          Time: 11:00AM
           <br />
-          Location: TBA
+          Location: Uncommons
         </p>
         <a className="button" href="/events">
           More Event Info
