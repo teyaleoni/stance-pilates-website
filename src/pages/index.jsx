@@ -436,7 +436,7 @@ const IndexPage = () => (
           <br />
           ⏰ 11:00AM
           <br />
-          📍 The Assembly by Kiln at Uncommons | Rozita Lee Ave Las Vegas, NV
+          📍 The Assembly by Kiln at Uncommons | 8460 Rozita Lee Ave Las Vegas, NV
           89113
           <br />
           🧘‍♀️ Mats will be provided
