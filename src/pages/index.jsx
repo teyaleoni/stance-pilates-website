@@ -348,10 +348,10 @@ const IndexPage = () => (
 
         <Faq question="Why should I take private Pilates sessions?">
           <p>
-            Private sessions offer a personalized experience that
-            focuses entirely on your needs. Unlike group classes, these sessions
-            assess your strengths, weaknesses, and movement patterns. With my
-            full attention, we’ll refine your technique to make every exercise
+            Private sessions offer a personalized experience that focuses
+            entirely on your needs. Unlike group classes, these sessions assess
+            your strengths, weaknesses, and movement patterns. With my full
+            attention, we’ll refine your technique to make every exercise
             effective and safe, helping you achieve your goals while reducing
             the risk of injury.
           </p>
@@ -429,13 +429,17 @@ const IndexPage = () => (
           our community together while exploring topics that enhance wellness
           and movement.
         </p>
+        <h2>Our next event:</h2>
         <h3>Community Pilates Mat Class</h3>
         <p>
-          Date: Sunday, February 9th 2025
+          📅 Sunday, February 9th 2025
           <br />
-          Time: 11:00AM
+          ⏰ 11:00AM
           <br />
-          Location: Uncommons
+          📍 The Assembly by Kiln at Uncommons | Rozita Lee Ave Las Vegas, NV
+          89113
+          <br />
+          🧘‍♀️ Mats will be provided
         </p>
         <a className="button" href="/events">
           More Event Info

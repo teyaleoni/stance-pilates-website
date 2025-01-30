@@ -2,6 +2,7 @@ import React from "react";
 import Page from "../components/Page";
 import pelvicFloorImage from "../images/pelvic-floor-workshop.png";
 import parallelEventImage from "../images/parallel-event.png";
+import uncommonsImage from "../images/uncommons-event.png";
 import tbaImage from "../images/tba.png";
 
 export default function events() {
@@ -16,17 +17,41 @@ export default function events() {
           move, learn, and leave feeling stronger and more connected!
         </p>
         <div className="grid-row">
-          <img src={tbaImage} alt="me" width="100%" />
+          <img src={uncommonsImage} alt="me" width="100%" />
           <div>
             <h1>Community Pilates Mat Class</h1>
             <p>
-              Date: Sunday, February 9th 2025
+              📅 Sunday, February 9th 2025
               <br />
-              Time: 11:00AM
+              ⏰ 11:00AM
               <br />
-              Location: Uncommons
+              📍 The Assembly by Kiln at Uncommons | Rozita Lee Ave Las Vegas,
+              NV 89113
               <br />
-              Mats WILL BE provided!
+              🧘‍♀️ Mats will be provided
+            </p>
+            <p>FREE Community Pilates Class!</p>
+            <p>
+              Stance Pilates is partnering with other local Las Vegas businesses
+              to bring the community together through movement! ❤️
+            </p>
+            <p>
+              Come out and join us for a beginner-friendly mat Pilates class.
+              <br />
+              After class, enjoy a free refreshment from @brewteabar and a chain
+              ring from @luxexlinxpermanentjewelry
+            </p>
+            <p>SPOTS ARE LIMITED!</p>
+            <p>
+              Sign up{" "}
+              <a
+                className="linky"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.eventbrite.com/e/free-mat-pilates-class-featuring-luxe-linx-brew-tea-bar-uncommons-tickets-1221426873659?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl"
+              >
+                here!
+              </a>
             </p>
           </div>
         </div>
@@ -55,9 +80,9 @@ export default function events() {
               (Pelvic Health Specialist), and Pilates & Dance Instructor Teya
               Lorts. Open to all, this workshop offered valuable insights and
               practical tools. <br />
-              We discovered foundational movements for pelvic floor and core health,
-              then enjoyed a guided mat Pilates class to integrate what we
-              learned!
+              We discovered foundational movements for pelvic floor and core
+              health, then enjoyed a guided mat Pilates class to integrate what
+              we learned!
             </p>
             <p>
               <br /> Check out our recap on{" "}
