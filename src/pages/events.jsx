@@ -83,6 +83,8 @@ export default function events() {
             </p>
           </div>
         </div>
+      </section>
+      <section>
         <div id="fd-form-679d92fe97bfd787c5a1da9c"></div>
         <script
           dangerouslySetInnerHTML={{
