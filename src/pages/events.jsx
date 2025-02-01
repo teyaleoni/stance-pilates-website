@@ -4,6 +4,7 @@ import pelvicFloorImage from "../images/pelvic-floor-workshop.png";
 import parallelEventImage from "../images/parallel-event.png";
 import uncommonsImage from "../images/uncommons-event.png";
 import tbaImage from "../images/tba.png";
+import FlodeskForm from "../components/FlodeskForm";
 
 export default function events() {
   return (
@@ -57,17 +58,7 @@ export default function events() {
         </div>
       </section>
       <section>
-        <div id="fd-form-679d92fe97bfd787c5a1da9c"></div>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.fd('form', {
-                formId: '679d92fe97bfd787c5a1da9c',
-                containerEl: '#fd-form-679d92fe97bfd787c5a1da9c'
-              });
-            `,
-          }}
-        />
+        <FlodeskForm />
       </section>
       <section className="content-block">
         <h2>Previous Events</h2>

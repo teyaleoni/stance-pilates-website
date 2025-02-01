@@ -6,6 +6,7 @@
 import * as React from "react";
 import InstagramIcon from "../InstagramIcon";
 import Faq from "../components/Faq";
+import FlodeskForm from "../components/FlodeskForm";
 import Page from "../components/Page";
 import PricingCard, {
   PricingCtaHeightProvider,
@@ -436,8 +437,8 @@ const IndexPage = () => (
           <br />
           ⏰ 11:00AM
           <br />
-          📍 The Assembly by Kiln at Uncommons | 8460 Rozita Lee Ave Las Vegas, NV
-          89113
+          📍 The Assembly by Kiln at Uncommons | 8460 Rozita Lee Ave Las Vegas,
+          NV 89113
           <br />
           🧘‍♀️ Mats will be provided
         </p>
@@ -448,6 +449,9 @@ const IndexPage = () => (
       <div className="about-picture">
         <img src={workshopImage} alt="me" width="100%" />
       </div>
+    </section>
+    <section>
+      <FlodeskForm />
     </section>
     {/* CONTACT */}
     <section id="contact">
