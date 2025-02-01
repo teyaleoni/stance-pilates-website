@@ -20,7 +20,7 @@ export default function events() {
         <div className="grid-row">
           <img src={uncommonsImage} alt="me" width="100%" />
           <div>
-            <h1>Community Pilates Mat Class</h1>
+            <h1>Community Pilates Mat Class ❗️SOLD OUT❗️</h1>
             <p>
               📅 Sunday, February 9th 2025
               <br />
