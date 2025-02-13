@@ -18,9 +18,28 @@ export default function events() {
           move, learn, and leave feeling stronger and more connected!
         </p>
         <div className="grid-row">
+          <img src={tbaImage} alt="me" width="100%" />
+          <div>
+            <h1>Stay tuned for our March event!</h1>
+            <p>Sign up for our newsletter below so you don't miss out.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <FlodeskForm />
+      </section>
+      <section className="content-block">
+        <h2>Previous Events</h2>
+        <p>
+          We’ve shared some amazing moments with our community! From energizing
+          mat classes to insightful workshops, our past events have been all
+          about connection, growth, and movement. Take a look at what we’ve been
+          up to—we’d love to see you at the next one!
+        </p>
+        <div className="grid-row">
           <img src={uncommonsImage} alt="me" width="100%" />
           <div>
-            <h1>Community Pilates Mat Class ❗️SOLD OUT❗️</h1>
+            <h1>Community Pilates Mat Class</h1>
             <p>
               📅 Sunday, February 9th 2025
               <br />
@@ -42,32 +61,19 @@ export default function events() {
               After class, enjoy a free refreshment from @brewteabar and a chain
               ring from @luxexlinxpermanentjewelry
             </p>
-            <p>SPOTS ARE LIMITED!</p>
             <p>
-              Sign up{" "}
+              <br /> Check out our recap on{" "}
               <a
                 className="linky"
                 target="_blank"
                 rel="noreferrer"
-                href="https://www.eventbrite.com/e/free-mat-pilates-class-featuring-luxe-linx-brew-tea-bar-uncommons-tickets-1221426873659?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl"
+                href="https://www.instagram.com/reel/DF89eVWSQqt/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
               >
-                here!
+                instagram
               </a>
             </p>
           </div>
         </div>
-      </section>
-      <section>
-        <FlodeskForm />
-      </section>
-      <section className="content-block">
-        <h2>Previous Events</h2>
-        <p>
-          We’ve shared some amazing moments with our community! From energizing
-          mat classes to insightful workshops, our past events have been all
-          about connection, growth, and movement. Take a look at what we’ve been
-          up to—we’d love to see you at the next one!
-        </p>
         <div className="grid-row">
           <img src={pelvicFloorImage} alt="me" width="100%" />
           <div className="about-picture">
