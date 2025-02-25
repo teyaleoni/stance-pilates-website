@@ -4,6 +4,7 @@ import pelvicFloorImage from "../images/pelvic-floor-workshop.png";
 import parallelEventImage from "../images/parallel-event.png";
 import uncommonsImage from "../images/uncommons-event.png";
 import tbaImage from "../images/tba.png";
+import blueChipImage from "../images/blue-chip-event.png";
 import FlodeskForm from "../components/FlodeskForm";
 
 export default function events() {
@@ -18,10 +19,38 @@ export default function events() {
           move, learn, and leave feeling stronger and more connected!
         </p>
         <div className="grid-row">
-          <img src={tbaImage} alt="me" width="100%" />
+          <img src={blueChipImage} alt="me" width="100%" />
           <div>
-            <h1>Stay tuned for our March event!</h1>
-            <p>Sign up for our newsletter below so you don't miss out.</p>
+            <h1>Free March Mat Class</h1>
+            <p>
+              📅 Sunday, March 9th 2025
+              <br />
+              ⏰ 9:30AM
+              <br />
+              📍 Blue Chip Conditioning Pilates Studio
+            </p>
+            <p>Join us for Blue Chip Conditioning's Wellness Weekend!</p>
+            <p>
+              Come to @thewellnessweekend event and take class with
+              @stance.pilates in partnership with @parallelgripsocks! You won’t
+              want to miss it!
+            </p>
+            <p>
+              Also don’t miss the Wellness Weekend Mix & Mingle on Saturday 3/8
+              from 3-6pm for your chance to win prizes from all the
+              participating partners! See you there!
+            </p>
+            <p>
+              Register{" "}
+              <a
+                className="linky"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.vagaro.com/bluechipconditioning/classes?fbclid=PAZXh0bgNhZW0CMTEAAaY_5ropx74bfDPQNGa3wJJgNng8cW9mLchjFQ8zrP38SrzSKWdhtPvWd5Y_aem_OlQ96PMU79EBb3WRFyvdhA"
+              >
+                here
+              </a>
+            </p>
           </div>
         </div>
       </section>

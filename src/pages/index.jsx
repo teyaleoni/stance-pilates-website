@@ -23,6 +23,7 @@ import headerImg from "../images/sitting-1024.jpg";
 import logoHeader from "../images/stance-logo.svg";
 import studioImage from "../images/studio-horizontal.jpg";
 import workshopImage from "../images/workshops.jpg";
+import teachingImage from "../images/teya-teaching.jpg";
 
 import "../styles/global.css";
 
@@ -431,23 +432,25 @@ const IndexPage = () => (
           and movement.
         </p>
         <h2>Our next event:</h2>
-        <h3>Community Pilates Mat Class</h3>
+        <h3>Free March Mat Class</h3>
         <p>
-          📅 Sunday, February 9th 2025
+          📅 Sunday, March 9th 2025
           <br />
-          ⏰ 11:00AM
+          ⏰ 9:30AM
           <br />
-          📍 The Assembly by Kiln at Uncommons | 8460 Rozita Lee Ave Las Vegas,
-          NV 89113
-          <br />
-          🧘‍♀️ Mats will be provided
+          📍 Blue Chip Conditioning Pilates Studio
+          {/* <br />
+          🧘‍♀️ Mats will be provided */}
         </p>
+        <br />
         <a className="button" href="/events">
-          More Event Info
+          Click here for more info
         </a>
+        
       </div>
       <div className="about-picture">
         <img src={workshopImage} alt="me" width="100%" />
+        <img src={teachingImage} alt="me" width="100%" />
       </div>
     </section>
     <section>
