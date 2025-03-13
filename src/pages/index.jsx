@@ -111,8 +111,7 @@ const IndexPage = () => (
         </p>
         <p>
           This state-of-the-art equipment was carefully chosen because it truly
-          makes a difference in your Pilates experience, ensuring both comfort
-          and optimal results. Our equipment is also designed to accommodate all
+          makes a difference in your Pilates experience. Our equipment is also designed to accommodate all
           body types and sizes, providing a safe and effective workout for
           everyone.
         </p>
@@ -120,7 +119,7 @@ const IndexPage = () => (
           Our studio features a reformer and cadillac combo, wunda chair, and a
           variety of Pilates props designed to support and challenge your
           movement. By incorporating different apparatuses, we keep your
-          workouts engaging, versatile.
+          workouts engaging and versatile.
         </p>
         <p>
           Discover the difference the best equipment makes in a supportive and
@@ -404,13 +403,13 @@ const IndexPage = () => (
           </p>
         </Faq>
 
-        <Faq question="Do you offer studio rentals?">
+        {/* <Faq question="Do you offer studio rentals?">
           <p>
             Looking to rent out space to teach your own clients? The studio
             rental fee is $30/hr and teaching insurance is required. If you are
             interested please contact info@stancepilates.com.
           </p>
-        </Faq>
+        </Faq> */}
 
         <Faq question="I would like more information!">
           <p>
