@@ -19,6 +19,32 @@ export default function events() {
           move, learn, and leave feeling stronger and more connected!
         </p>
         <div className="grid-row">
+          <img src={tbaImage} alt="me" width="100%" />
+          <div>
+            <h1>Check back for our upcoming events!</h1>
+            {/* <p>
+              📅 Sunday, March 9th 2025
+              <br />
+              ⏰ 9:30AM
+              <br />
+              📍 Blue Chip Conditioning Pilates Studio
+            </p>
+            <p>Join us for Blue Chip Conditioning's Wellness Weekend!</p> */}
+          </div>
+        </div>
+      </section>
+      <section>
+        <FlodeskForm />
+      </section>
+      <section className="content-block">
+        <h2>Previous Events</h2>
+        <p>
+          We’ve shared some amazing moments with our community! From energizing
+          mat classes to insightful workshops, our past events have been all
+          about connection, growth, and movement. Take a look at what we’ve been
+          up to—we’d love to see you at the next one!
+        </p>
+        <div className="grid-row">
           <img src={blueChipImage} alt="me" width="100%" />
           <div>
             <h1>Free March Mat Class</h1>
@@ -40,31 +66,8 @@ export default function events() {
               from 3-6pm for your chance to win prizes from all the
               participating partners! See you there!
             </p>
-            <p>
-              Register{" "}
-              <a
-                className="linky"
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.vagaro.com/bluechipconditioning/classes?fbclid=PAZXh0bgNhZW0CMTEAAaY_5ropx74bfDPQNGa3wJJgNng8cW9mLchjFQ8zrP38SrzSKWdhtPvWd5Y_aem_OlQ96PMU79EBb3WRFyvdhA"
-              >
-                here
-              </a>
-            </p>
           </div>
         </div>
-      </section>
-      <section>
-        <FlodeskForm />
-      </section>
-      <section className="content-block">
-        <h2>Previous Events</h2>
-        <p>
-          We’ve shared some amazing moments with our community! From energizing
-          mat classes to insightful workshops, our past events have been all
-          about connection, growth, and movement. Take a look at what we’ve been
-          up to—we’d love to see you at the next one!
-        </p>
         <div className="grid-row">
           <img src={uncommonsImage} alt="me" width="100%" />
           <div>

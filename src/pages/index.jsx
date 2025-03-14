@@ -430,20 +430,9 @@ const IndexPage = () => (
           our community together while exploring topics that enhance wellness
           and movement.
         </p>
-        <h2>Our next event:</h2>
-        <h3>Free March Mat Class</h3>
-        <p>
-          📅 Sunday, March 9th 2025
-          <br />
-          ⏰ 9:30AM
-          <br />
-          📍 Blue Chip Conditioning Pilates Studio
-          {/* <br />
-          🧘‍♀️ Mats will be provided */}
-        </p>
         <br />
         <a className="button" href="/events">
-          Click here for more info
+          More Event Info
         </a>
         
       </div>
