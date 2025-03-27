@@ -29,11 +29,15 @@ import "../styles/global.css";
 
 const IndexPage = () => (
   <Page>
-    {/* holiday banner */}
-    {/* <div>
-      <img src={holidayBanner} alt="" width="100%" ></img>
-    </div> */}
-    {/* holiday banner end */}
+    <div>
+      <h2 style={{ 
+        color: "red",
+        textAlign: 'center',
+        margin: '1rem 1rem 0 1rem' 
+        }}>
+        <a href="/studio-update">Important Studio Update<br/>Click to Read!</a>
+      </h2>
+    </div>
     <section id="home" className="grid-row">
       <div>
         <img src={logoHeader} alt="" width="30%" />
@@ -111,9 +115,9 @@ const IndexPage = () => (
         </p>
         <p>
           This state-of-the-art equipment was carefully chosen because it truly
-          makes a difference in your Pilates experience. Our equipment is also designed to accommodate all
-          body types and sizes, providing a safe and effective workout for
-          everyone.
+          makes a difference in your Pilates experience. Our equipment is also
+          designed to accommodate all body types and sizes, providing a safe and
+          effective workout for everyone.
         </p>
         <p>
           Our studio features a reformer and cadillac combo, wunda chair, and a
@@ -434,7 +438,6 @@ const IndexPage = () => (
         <a className="button" href="/events">
           More Event Info
         </a>
-        
       </div>
       <div className="about-picture">
         <img src={workshopImage} alt="me" width="100%" />
