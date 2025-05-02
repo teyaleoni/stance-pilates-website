@@ -23,9 +23,9 @@ const NavItems = ({ hrefPrefix = "" }) => (
     <a target={"_blank"} href={`https://parallelsocks.com/`}>
       Shop
     </a>
-    <a href="/studio-update" style={{ color: "red" }}>
+    {/* <a href="/studio-update" style={{ color: "red" }}>
       Studio Updates
-    </a>
+    </a> */}
     <a
       className="instagram-link"
       target="_blank"

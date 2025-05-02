@@ -29,7 +29,7 @@ import "../styles/global.css";
 
 const IndexPage = () => (
   <Page>
-    <div>
+    {/* <div>
       <h2 style={{ 
         color: "red",
         textAlign: 'center',
@@ -37,7 +37,7 @@ const IndexPage = () => (
         }}>
         <a href="/studio-update">Important Studio Update<br/>Click to Read!</a>
       </h2>
-    </div>
+    </div> */}
     <section id="home" className="grid-row">
       <div>
         <img src={logoHeader} alt="" width="30%" />
@@ -72,35 +72,28 @@ const IndexPage = () => (
         <h2>About your instructor</h2>
         <p>Hi, I'm Teya!</p>
         <p>
-          I am a certified BASI comprehensive pilates instructor. I help busy
-          individuals overcome the physical challenges of their daily lives to
-          feel stronger, more mobile, and more confident in their bodies.
-          Whether you’re spending long hours at a desk, on your feet, or
-          juggling a hectic schedule, Pilates can help you move better, feel
-          better, and live better.
+          I’m a certified BASI comprehensive Pilates instructor helping busy
+          people build strength, improve mobility, and feel confident in their
+          bodies. Whether you’re at a desk all day, on your feet, or juggling a
+          hectic schedule, Pilates can help you move and feel better.
         </p>
         <p>
-          Using the BASI Block System and a variety of Pilates apparatuses —
-          including the reformer, wunda chair, and cadillac — I create
-          personalized programs that work your entire body. This approach
-          ensures every session is balanced and tailored to your needs,
-          addressing not just isolated discomfort but promoting overall
-          strength, mobility, and well-being. Whether you’re looking to relieve
-          discomfort, prevent injuries, or stay active, I’m here to guide you
-          every step of the way.
+          Using the BASI Block System and equipment like the reformer, wunda
+          chair, and cadillac, I design personalized, full-body programs that
+          balance strength, mobility, and well-being. Every session is tailored
+          to your needs—whether you want to relieve pain, prevent injury, or
+          stay active.
         </p>
         <p>
-          With experience working with a wide range of clients—including desk
-          workers, nurses, cocktail waitresses, performers, mothers, and
-          teachers — I understand how life’s demands can take a toll on your
-          body. My goal is to help you integrate movement into your routine so
-          you can thrive in both work and life.
+          I’ve worked with a wide range of clients, from desk workers and nurses
+          to performers and parents, and I know how daily life can wear you
+          down. My goal is to help you build movement into your routine so you
+          can thrive.
         </p>
         <p>
-          Pilates transformed my life by enhancing my health, confidence, and
-          quality of life, and I’m passionate about sharing that with others. If
-          you’re ready to invest in your health and rediscover the joy of
-          movement, let’s get started. Because your future self deserves it.
+          Pilates transformed my own health and confidence, and I’m passionate
+          about helping others experience the same. If you’re ready to invest in
+          your well-being and rediscover the joy of movement, let’s get started.
         </p>
       </div>
     </section>
@@ -108,25 +101,18 @@ const IndexPage = () => (
       <div>
         <h2>The Studio</h2>
         <p>
-          At Stance Pilates, we believe that quality matters, and that starts
-          with the tools we use to help you move better. Our studio is equipped
-          with top-of-the-line BASI Systems Pilates equipment, renowned for its
-          precision, durability, and innovation.
+          At Stance Pilates, we believe quality starts with the right tools. Our
+          studio features top-of-the-line BASI Systems equipment, chosen for its
+          precision, durability, and ability to accommodate all body types
+          safely and effectively.
         </p>
         <p>
-          This state-of-the-art equipment was carefully chosen because it truly
-          makes a difference in your Pilates experience. Our equipment is also
-          designed to accommodate all body types and sizes, providing a safe and
-          effective workout for everyone.
+          We offer a reformer and cadillac combo, wunda chair, and a variety of
+          props to keep your sessions engaging, versatile, and tailored to your
+          needs.
         </p>
         <p>
-          Our studio features a reformer and cadillac combo, wunda chair, and a
-          variety of Pilates props designed to support and challenge your
-          movement. By incorporating different apparatuses, we keep your
-          workouts engaging and versatile.
-        </p>
-        <p>
-          Discover the difference the best equipment makes in a supportive and
+          Experience the difference expert equipment makes in a supportive,
           personalized setting.
         </p>
       </div>
@@ -303,8 +289,8 @@ const IndexPage = () => (
 
         <Faq question="Where are you located?">
           <p>
-            Inside of Collective Studios located at 6050 S Fort Apache Rd #200B,
-            Las Vegas, NV 89148
+            6675 S Tenaya Way #200 Las Vegas, NV 89113 <br />
+            (Inside of Bottega Exchange)
           </p>
         </Faq>
 
@@ -400,12 +386,12 @@ const IndexPage = () => (
           </p>
         </Faq>
 
-        <Faq question="Do you offer online private sessions?">
+        {/* <Faq question="Do you offer online private sessions?">
           <p>
             Yes, I do offer online private sessions! If you are interested
             please contact info@stancepilates.com.
           </p>
-        </Faq>
+        </Faq> */}
 
         {/* <Faq question="Do you offer studio rentals?">
           <p>
@@ -465,10 +451,10 @@ const IndexPage = () => (
           </a>
 
           <p>{PHONE_NUMBER}</p>
-          <a href={GOOGLE_MAPS_URL}>
-            6050 S Fort Apache Rd #200B <br />
-            Las Vegas, NV 89148 <br />
-            (Inside of Collective Studios)
+          <a href={GOOGLE_MAPS_URL} target="_blank">
+            6675 S Tenaya Way #200 <br />
+            Las Vegas, NV 89113 <br />
+            (Inside of Bottega Exchange)
           </a>
         </div>
         <div className="social">
