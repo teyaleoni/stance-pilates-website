@@ -21,7 +21,7 @@ import {
 import aboutImg from "../images/lunge-cropped.jpg";
 import headerImg from "../images/sitting-1024.jpg";
 import logoHeader from "../images/stance-logo.svg";
-import studioImage from "../images/studio-horizontal.jpg";
+import studioImage from "../images/studio-current.jpg";
 import workshopImage from "../images/workshops.jpg";
 import teachingImage from "../images/teya-teaching.jpg";
 
