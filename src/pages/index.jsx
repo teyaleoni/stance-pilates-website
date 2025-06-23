@@ -194,27 +194,7 @@ const IndexPage = () => (
     <section id="pricing" style={{ display: "grid", gap: "2rem" }}>
       <h2>Pricing</h2>
 
-      <PricingCtaHeightProvider>
-        <div style={{ display: "grid", gap: "1rem" }}>
-          <h3 style={{ color: "var(--color-blue-steel)" }}>
-            Grand reopening special
-          </h3>
-          <div className="grid-row-4" style={{ gap: "1rem" }}>
-            <PricingCard
-              bundleSize={1}
-              price={70}
-              expiry="1 month"
-              cta="Let's Go"
-              noSavingsBadge
-            >
-              We moved to a new location - come check it out! This special is for new and returning clients, for a limited time only.
-              <br />
-              <br />
-              **This package is limited to one purchase per person.
-            </PricingCard>
-          </div>
-        </div>
-      </PricingCtaHeightProvider>
+      
 
       <PricingCtaHeightProvider>
         <div style={{ display: "grid", gap: "1rem" }}>
