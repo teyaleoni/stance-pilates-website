@@ -204,7 +204,7 @@ const IndexPage = () => (
           <div className="grid-row-4" style={{ gap: "1rem" }}>
             <PricingCard
               bundleSize={3}
-              price={199}
+              price={249}
               expiry="1 month"
               cta="Let's Go"
               noSavingsBadge
@@ -239,8 +239,6 @@ const IndexPage = () => (
               expiry="3 months"
               cta="Get Started"
             >
-              $90/hr <br />
-              <br />
               Kickstart your fitness journey with 5 tailored Pilates sessions.
               Perfect for beginners or those with busy schedules.
             </PricingCard>
@@ -250,21 +248,8 @@ const IndexPage = () => (
               expiry="4 months"
               cta="Start Your Transformation"
             >
-              $85/hr <br />
-              <br />
               Commit to wellness with 10 dynamic Pilates sessions. Flexibility
               for your lifestyle.
-            </PricingCard>
-            <PricingCard
-              bundleSize={20}
-              price={1600}
-              expiry="6 months"
-              cta="Transform Your Lifestyle"
-            >
-              $80/hr <br />
-              <br />
-              Experience the full benefits with 20 transformative Pilates
-              sessions. Ideal for long-term goals.
             </PricingCard>
           </div>
         </PricingCtaHeightProvider>
