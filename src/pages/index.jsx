@@ -374,20 +374,20 @@ const IndexPage = () => (
           </p>
         </Faq>
 
-        {/* <Faq question="Do you offer online private sessions?">
+        <Faq question="Do you offer online private sessions?">
           <p>
             Yes, I do offer online private sessions! If you are interested
             please contact info@stancepilates.com.
           </p>
-        </Faq> */}
+        </Faq>
 
-        {/* <Faq question="Do you offer studio rentals?">
+        <Faq question="Do you offer studio rentals?">
           <p>
-            Looking to rent out space to teach your own clients? The studio
+            Looking to rent out space to teach your own clients? Are you a student teacher that needs hours? The studio
             rental fee is $30/hr and teaching insurance is required. If you are
-            interested please contact info@stancepilates.com.
+            interested please contact info@stancepilates.com!
           </p>
-        </Faq> */}
+        </Faq>
 
         <Faq question="I would like more information!">
           <p>
