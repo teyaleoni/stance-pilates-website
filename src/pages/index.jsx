@@ -194,8 +194,6 @@ const IndexPage = () => (
     <section id="pricing" style={{ display: "grid", gap: "2rem" }}>
       <h2>Pricing</h2>
 
-      
-
       <PricingCtaHeightProvider>
         <div style={{ display: "grid", gap: "1rem" }}>
           <h3 style={{ color: "var(--color-blue-steel)" }}>
@@ -258,10 +256,14 @@ const IndexPage = () => (
     <section id="faq">
       <div className="nottoowide" style={{ display: "grid", gap: "2rem" }}>
         <h2>FAQ</h2>
+        <Faq question="Can I have a consultation before I book my first session?">
+          <p>
+            Yes! Please feel free to contact me at info@stancepilates.com or
+            text/call 702-608-2065 to schedule a free 30 min consultation.
+          </p>
+        </Faq>
         <Faq question="How do I book a session?">
           <p>
-            Ready to book a session?
-            <br />
             You can book online
             <a
               class="intro-call"
@@ -278,7 +280,7 @@ const IndexPage = () => (
         <Faq question="Where are you located?">
           <p>
             6675 S Tenaya Way #200 Las Vegas, NV 89113 <br />
-            (Inside of Bottega Exchange)
+            Inside of Bottega Exchange, office #20.
           </p>
         </Faq>
 
@@ -383,9 +385,10 @@ const IndexPage = () => (
 
         <Faq question="Do you offer studio rentals?">
           <p>
-            Looking to rent out space to teach your own clients? Are you a student teacher that needs hours? The studio
-            rental fee is $30/hr and teaching insurance is required. If you are
-            interested please contact info@stancepilates.com!
+            Looking to rent out space to teach your own clients? Are you a
+            student teacher that needs hours? The studio rental fee is $30/hr
+            and teaching insurance is required. If you are interested please
+            contact info@stancepilates.com!
           </p>
         </Faq>
 
