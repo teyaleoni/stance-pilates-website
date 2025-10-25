@@ -201,15 +201,15 @@ const IndexPage = () => (
           </h3>
           <div className="grid-row-4" style={{ gap: "1rem" }}>
             <PricingCard
-              bundleSize={3}
-              price={249}
+              bundleSize={4}
+              price={299}
               expiry="1 month"
               cta="Let's Go"
               noSavingsBadge
             >
               Begin your path to strength, flexibility, and well-being as you
               discover the transformative benefits of Pilates. Let's start your
-              fitness adventure together!
+              fitness adventure together.
               <br />
               <br />
               **This package is limited to one purchase per person.
