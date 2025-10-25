@@ -404,17 +404,26 @@ const IndexPage = () => (
     {/* EVENTS*/}
     <section id="events" className="grid-row">
       <div>
-        <h2>Events</h2>
-        <p>
-          Discover exciting opportunities to connect, learn, and grow with our
-          upcoming events. We regularly host Pilates events designed to bring
-          our community together while exploring topics that enhance wellness
-          and movement.
-        </p>
-        <br />
+        <h1>Events</h1>
+        <br/>
+        <div>
+          <h3>Community Events</h3>
+          <p>
+            Discover exciting opportunities to connect, learn, and grow with our
+            upcoming events. We regularly host Pilates events designed to bring
+            our community together while exploring topics that enhance wellness
+            and movement.
+          </p>
+        </div>
+        <div>
+          <h3>Looking for a Pilates Instructor for Your Next Event?</h3>
+          <p>Click the button below for more info!</p>
+        </div>
+        <br/>
         <a className="button" href="/events">
           More Event Info
         </a>
+        
       </div>
       <div className="about-picture">
         <img src={workshopImage} alt="me" width="100%" />

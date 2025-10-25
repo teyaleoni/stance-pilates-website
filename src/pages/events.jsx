@@ -11,7 +11,15 @@ export default function events() {
   return (
     <Page navHrefPrefix="/">
       <section className="content-block">
-        <h1>Upcoming Events</h1>
+        <h1>Pilates for Events, Parties & Corporate Wellness</h1>
+        <p>
+          Bring mindful movement to your celebration or workplace. I offer
+          tailored private Pilates sessions for groups of all sizes. Ideal for
+          bridal parties, corporate wellness, and exclusive events.
+          <br/>
+          Email info@stancepilates.com for more info
+        </p>
+        <h1>Upcoming Community Events</h1>
         <p>
           We love bringing people together! Whether it’s a fun mat class, an
           inspiring workshop, or a chance to connect with others, our events are
