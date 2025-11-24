@@ -40,19 +40,18 @@ const IndexPage = () => (
     </div> */}
     <section id="home" className="grid-row">
       <div>
-        <img src={logoHeader} alt="" width="30%" />
-        <h1>Empowering you to live vibrantly through the power of Pilates.</h1>
+        <h1>Built for a Life in Motion</h1>
       </div>
       <img src={headerImg} alt="" width="100%" />
     </section>
     <section id="greeting">
       <div className="nottoowide">
-        <h2>Private Pilates Sessions in southwest Las Vegas</h2>
-        <p>
-          Our mission is to help you build strength, relieve pain, and move
-          freely through sustainable, personalized Pilates training. We empower
-          you to create a vibrant, active life with resilience and mobility,
-          tailored to your body and your goals.
+        <p style={{ textTransform: "uppercase" }}>
+          Private Pilates Sessions in Southwest Las Vegas
+        </p>
+        <p style={{ fontFamily: "Lato", fontSize: "1.25rem" }}>
+          Empowering a resilient and active life through a personalized, mindful
+          practice.
         </p>
       </div>
       <a
@@ -72,48 +71,41 @@ const IndexPage = () => (
         <h2>About your instructor</h2>
         <p>Hi, I'm Teya!</p>
         <p>
-          I’m a certified BASI comprehensive Pilates instructor helping busy
-          people build strength, improve mobility, and feel confident in their
-          bodies. Whether you’re at a desk all day, on your feet, or juggling a
-          hectic schedule, Pilates can help you move and feel better.
+          I believe that true strength isn't about bulk or force—it’s about
+          control.
         </p>
         <p>
-          Using the BASI Block System and equipment like the reformer, wunda
-          chair, and cadillac, I design personalized, full-body programs that
-          balance strength, mobility, and well-being. Every session is tailored
-          to your needs—whether you want to relieve pain, prevent injury, or
-          stay active.
+          I founded Stance Pilates to move away from the "no pain, no gain"
+          mentality and return to the essence of the method: precision, grace,
+          and balance.
         </p>
         <p>
-          I’ve worked with a wide range of clients, from desk workers and nurses
-          to performers and parents, and I know how daily life can wear you
-          down. My goal is to help you build movement into your routine so you
-          can thrive.
+          As a certified BASI comprehensive instructor, my approach is distinct
+          from traditional fitness. Instead of mindless repetition, I guide you
+          through a personalized practice where you are an active participant,
+          not just an observer.
         </p>
         <p>
-          Pilates transformed my own health and confidence, and I’m passionate
-          about helping others experience the same. If you’re ready to invest in
-          your well-being and rediscover the joy of movement, let’s get started.
+          We work to correct physical imbalances and develop a "strong center"
+          that acts as a support system for everything you do. Whether you are
+          an athlete or working at a desk, I am here to help you move with
+          freedom and ease.
+        </p>
+        <p>
+          Pilates transformed my life by teaching me to move with intention. I
+          created Stance to share that same clarity and resilience with you.
         </p>
       </div>
     </section>
     <section id="studio" className="grid-row">
       <div>
         <h2>The Studio</h2>
+        <p>A space built for focused movement.</p>
         <p>
-          At Stance Pilates, we believe quality starts with the right tools. Our
-          studio features top-of-the-line BASI Systems equipment, chosen for its
-          precision, durability, and ability to accommodate all body types
-          safely and effectively.
-        </p>
-        <p>
-          We offer a reformer and cadillac combo, wunda chair, and a variety of
-          props to keep your sessions engaging, versatile, and tailored to your
-          needs.
-        </p>
-        <p>
-          Experience the difference expert equipment makes in a supportive,
-          personalized setting.
+          We utilize BASI Systems equipment—the gold standard for durability and
+          feel. Whether on the Reformer, Cadillac, or Wunda Chair, our setup
+          ensures that every movement is supported, aligned, and purposeful.
+          Experience the difference of a studio designed for true control.
         </p>
       </div>
       <div className="about-picture">
@@ -126,57 +118,24 @@ const IndexPage = () => (
         <div>
           <h2>Annabelle B.</h2>
           <p>
-            Teya has truly been a game-changer in my life. I came to her with
-            persistent knee and back injuries that had haunted me for over a
-            decade. Despite seeking help from doctors and massages, nothing
-            provided lasting relief until I began consistently attending Teya's
-            Pilates sessions. Teya's approach is nothing short of remarkable.
-            She exudes patience, understanding the unique challenges each
-            individual faces. What sets her apart is her ability to create a
-            judgment-free environment, ensuring I never felt discouraged when
-            struggling to grasp certain exercises. This encouragement played a
-            pivotal role in building my confidence and commitment to the
-            practice. The impact on my physical well-being has been astonishing.
-            I now live pain-free, something I hadn't thought possible after
-            years of discomfort. The strength and flexibility I've gained
-            through Pilates have not only alleviated my injuries but have also
-            empowered me to navigate my daily activities and work without the
-            burden of constant pain. If you want to change your life for the
-            better, go to Teya.
+            "I came to Teya with persistent back injuries that had haunted me
+            for a decade. Her approach is nothing short of remarkable—I now live
+            pain-free, something I hadn't thought possible."
           </p>
         </div>
         <div>
           <h2>Maryloie E.</h2>
           <p>
-            Teya is a huge contribution to my pregnancy journey. Going to her
-            twice a week set me up for success during delivery. After seeing her
-            every session my body felt stronger and help alleviate pain and
-            strengthened my body to carry my beautiful baby. She listened to my
-            concerns and pain points and tailored each session to what my body
-            needed. Teya is passionate about her craft and cares deeply about
-            her clients. She is collaborative and caring. I look forward to each
-            session with her.
+            "Teya tailored each session to what my body needed. After every
+            session, my body felt stronger... she set me up for success."
           </p>
         </div>
         <div>
           <h2>Chelsea W.</h2>
           <p>
-            Training will Teya is a treat! I suffer from a lot of muscle
-            imbalances due to past injuries. Teya helped me strengthen and
-            stretch those areas that so desperately needed it. She explains
-            which muscles we are targeting in each exercise. She also will fix
-            your form like no other (something you'll never get in a group
-            pilates class). Taking pilates lessons will Teya has been amazing
-            for my body!
-          </p>
-        </div>
-        <div>
-          <h2>Skyler B.</h2>
-          <p>
-            While training with Teya, she was able to explain why the workouts
-            were beneficial for my needs. I appreciated her patience and that
-            each workout was modified/tailored to help me get in the best
-            workout for my level. She is an excellent pilates instructor!
+            "Teya will fix your form like no other—something you’ll never get in
+            a group Pilates class. She helped me strengthen and stretch areas
+            that desperately needed it."
           </p>
         </div>
       </div>
@@ -204,15 +163,14 @@ const IndexPage = () => (
               bundleSize={4}
               price={299}
               expiry="1 month"
-              cta="Let's Go"
+              cta="PURCHASE"
               noSavingsBadge
             >
-              Begin your path to strength, flexibility, and well-being as you
-              discover the transformative benefits of Pilates. Let's start your
-              fitness adventure together.
+              The essential starting point. Establish your foundation, learn the
+              apparatus, and align your body with the Stance method.
               <br />
               <br />
-              **This package is limited to one purchase per person.
+              **One-time purchase per client.
             </PricingCard>
           </div>
         </div>
@@ -226,28 +184,28 @@ const IndexPage = () => (
               bundleSize={1}
               price={100}
               expiry="1 month"
-              cta="Start Your Pilates Experience"
+              cta="PURCHASE"
             >
-              Try a single Pilates session for $100. Perfect for those wanting
-              to experience the Stance Pilates approach.
+              A focused, standalone session. Ideal for an initial assessment or
+              a specific tune-up.
             </PricingCard>
             <PricingCard
               bundleSize={5}
               price={450}
               expiry="3 months"
-              cta="Get Started"
+              cta="PURCHASE"
             >
-              Kickstart your fitness journey with 5 tailored Pilates sessions.
-              Perfect for beginners or those with busy schedules.
+              Build momentum. Establish a consistent routine to see improvements
+              in strength and control.
             </PricingCard>
             <PricingCard
               bundleSize={10}
               price={850}
               expiry="4 months"
-              cta="Start Your Transformation"
+              cta="PURCHASE"
             >
-              Commit to wellness with 10 dynamic Pilates sessions. Flexibility
-              for your lifestyle.
+              Deepen your practice. Our best value for clients committed to
+              lasting resilience and precision.
             </PricingCard>
           </div>
         </PricingCtaHeightProvider>
@@ -256,115 +214,54 @@ const IndexPage = () => (
     <section id="faq">
       <div className="nottoowide" style={{ display: "grid", gap: "2rem" }}>
         <h2>FAQ</h2>
-        <Faq question="Can I have a consultation before I book my first session?">
+        <Faq question="What can I expect from my first session?">
           <p>
-            Yes! Please feel free to contact me at info@stancepilates.com or
-            text/call 702-608-2065 to schedule a free 30 min consultation.
-          </p>
-        </Faq>
-        <Faq question="How do I book a session?">
-          <p>
-            You can book online
-            <a
-              class="intro-call"
-              href="https://stancepilates.janeapp.com/"
-              target="_blank"
-            >
-              {" "}
-              here
-            </a>{" "}
-            or contact me at info@stancepilates.com or text/call 702-608-2065.
+            We begin with an assessment of your movement patterns and goals.
+            Unlike a group class where you might get lost in the crowd, this
+            session is designed to make you an active participant in your own
+            body. You will move through a personalized sequence on the
+            apparatus, focusing on control and precision. You should leave
+            feeling refreshed, invigorated, and energized rather than exhausted.
           </p>
         </Faq>
 
-        <Faq question="Where are you located?">
+        <Faq question="Why choose private training over a group class?">
           <p>
-            6675 S Tenaya Way #200 Las Vegas, NV 89113 <br />
-            Inside of Bottega Exchange, office #20.
+            Pilates is a discipline of detail. In a private session, we can
+            correct physical imbalances and ensure you are engaging the correct
+            muscles without strain. This 1-on-1 focus allows us to address your
+            specific needs—whether rehab or athletic conditioning—ensuring you
+            build resilience safely.
           </p>
         </Faq>
 
-        <Faq question="What is Pilates?">
+        <Faq question="Do I need an initial consultation before booking?">
           <p>
-            Pilates is a method that focuses on building core strength,
-            improving flexibility, and promoting mind-body awareness through
-            controlled movements and beneficial breath work.
-          </p>
-        </Faq>
-
-        <Faq question="Who is Pilates for?">
-          <p>
-            Pilates is for EVERYONE! It can be tailored to fit any fitness level
-            or physical ability and offers a wide range of physical and mental
-            health benefits. <br />
-            <br />
-            However, if you have any medical conditions, are pregnant, or
-            medication limitations, it’s always a good idea to consult your
-            doctor before starting a new exercise program. <br />
-            <br />
-            Currently, I am only accepting clients 18 years and older.
-          </p>
-        </Faq>
-
-        <Faq question="Why should I do Pilates?">
-          <p>
-            Consider Pilates for the long-term benefits it offers. Picture
-            yourself 20 years from now &ndash; being active with your loved
-            ones, effortlessly enjoying your favorite activities, or maintaining
-            a high quality of life.{" "}
-          </p>
-          <p>
-            Pilates is not just a workout; it's an investment in injury
-            prevention, building strength, and overall functional fitness. It's
-            a sustainable approach that adapts to various fitness levels and
-            ages. It can even aid in faster recovery from injuries.{" "}
-          </p>
-          <p>
-            Your future self relies on the work you put in today, ensuring a
-            strong, agile, and resilient body for years to come. Use Pilates as
-            a preventive measure &ndash; because it's not just about today's
-            workout; it's about securing a healthier and more active future.
-          </p>
-        </Faq>
-
-        <Faq question="Why should I take private Pilates sessions?">
-          <p>
-            Private sessions offer a personalized experience that focuses
-            entirely on your needs. Unlike group classes, these sessions assess
-            your strengths, weaknesses, and movement patterns. With my full
-            attention, we’ll refine your technique to make every exercise
-            effective and safe, helping you achieve your goals while reducing
-            the risk of injury.
-          </p>
-        </Faq>
-
-        <Faq question="What should I expect in a session?">
-          <p>
-            Each session is a 1-hour. We'll work together using apparatuses like
-            the reformer, mat, wunda chair, and cadillac to ensure proper form
-            and technique.{" "}
-          </p>
-          <p>
-            Depending on how you're feeling that day, I’ll adapt the workout to
-            meet your needs, so you leave feeling better than when you arrived.
-          </p>
-          <p>
-            Socks are not required, but if you prefer, I do sell grip socks at
-            the studio.
+            Your first session is your consultation. We use the first
+            appointment to assess your posture, alignment, and range of motion
+            while moving. This allows us to build a program that supports your
+            life in motion immediately.
           </p>
         </Faq>
 
         <Faq question="Can I share a package with another person?">
           <p>
-            Packages are for individual use only and can't be shared between
-            people.
+            No. Our session series are designed for your individual progression
+            and mastery. To ensure the highest level of personalization and
+            focus, packages are non-transferable and cannot be shared.
           </p>
         </Faq>
 
+        <Faq question="What should I wear?">
+          <p>
+            Wear comfortable, form-fitting clothing that allows you to move with
+            freedom and ease. Grip socks are not required.
+          </p>
+        </Faq>
         <Faq question="Do you sell Pilates gift certificates?">
           <p>
-            Absolutely! We're all about spreading the Pilates love with our
-            Stance Pilates gift certificates.{" "}
+            Yes. Giving the gift of movement is a wonderful way to support a
+            friend or loved one.
             <a
               className="linky"
               target="_blank"
@@ -375,55 +272,23 @@ const IndexPage = () => (
             </a>
           </p>
         </Faq>
-
-        <Faq question="Do you offer online private sessions?">
-          <p>
-            Yes, I do offer online private sessions! If you are interested
-            please contact info@stancepilates.com.
-          </p>
-        </Faq>
-
-        <Faq question="Do you offer studio rentals?">
-          <p>
-            Looking to rent out space to teach your own clients? Are you a
-            student teacher that needs hours? The studio rental fee is $30/hr
-            and teaching insurance is required. If you are interested please
-            contact info@stancepilates.com!
-          </p>
-        </Faq>
-
-        <Faq question="I would like more information!">
-          <p>
-            Need some more answers? No problem! Please give text/call at
-            702-608-2065. You can also send me an email at
-            info@stancepilates.com.
-          </p>
-        </Faq>
       </div>
     </section>
     {/* EVENTS*/}
     <section id="events" className="grid-row">
       <div>
-        <h1>Events</h1>
-        <br/>
+        <h1>Movement in Community</h1>
         <div>
-          <h3>Community Events</h3>
           <p>
-            Discover exciting opportunities to connect, learn, and grow with our
-            upcoming events. We regularly host Pilates events designed to bring
-            our community together while exploring topics that enhance wellness
-            and movement.
+            We believe movement is better shared. Join our specialized workshops
+            to refine your technique, or book Stance for your own private event.
+            From the studio to your location, let’s move together.
           </p>
         </div>
-        <div>
-          <h3>Looking for a Pilates Instructor for Your Next Event?</h3>
-          <p>Click the button below for more info!</p>
-        </div>
-        <br/>
+        <br />
         <a className="button" href="/events">
-          More Event Info
+          SEE UPCOMING DATES
         </a>
-        
       </div>
       <div className="about-picture">
         <img src={workshopImage} alt="me" width="100%" />
@@ -436,29 +301,27 @@ const IndexPage = () => (
     {/* CONTACT */}
     <section id="contact">
       <div>
-        <h2>Contact</h2>
+        <h2>STANCE PILATES</h2>
         <div
           style={{
             marginTop: "1rem",
           }}
         ></div>
-        <h3>Teya Lorts</h3>
-
-        <p>Questions? Please email, call, or text.</p>
         <div>
-          <a className="button" href={`mailto:${EMAIL_ADDRESS}`}>
-            {EMAIL_ADDRESS}
-          </a>
+          <p>
+            <a href={GOOGLE_MAPS_URL} target="_blank">
+              6675 S Tenaya Way #200 <br />
+              Las Vegas, NV 89113 <br />
+            </a>
+          </p>
 
+          <p>
+            {" "}
+            <a href={`mailto:${EMAIL_ADDRESS}`}>{EMAIL_ADDRESS}</a>
+          </p>
           <p>{PHONE_NUMBER}</p>
-          <a href={GOOGLE_MAPS_URL} target="_blank">
-            6675 S Tenaya Way #200 <br />
-            Las Vegas, NV 89113 <br />
-            (Inside of Bottega Exchange)
-          </a>
         </div>
         <div className="social">
-          <p>Let's keep in touch on Instagram!</p>
           <a
             className="instagram-link"
             target="_blank"

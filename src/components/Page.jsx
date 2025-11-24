@@ -20,9 +20,9 @@ const NavItems = ({ hrefPrefix = "" }) => (
     <a href={`${hrefPrefix}#contact`}>Contact</a>
     <a href={`${hrefPrefix}events`}>Events</a>
     {/* <a href={`${hrefPrefix}#contact`}>Blog</a> */}
-    <a target={"_blank"} href={`https://parallelsocks.com/`}>
+    {/* <a target={"_blank"} href={`https://parallelsocks.com/`}>
       Shop
-    </a>
+    </a> */}
     {/* <a href="/studio-update" style={{ color: "red" }}>
       Studio Updates
     </a> */}
