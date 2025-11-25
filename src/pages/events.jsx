@@ -28,13 +28,13 @@ export default function events() {
         <div className="grid-row">
           {/* <img src={tbaImage} alt="me" width="100%" /> */}
           <div>
-            <h4>**There are currently no workshops scheduled.**</h4>
+            <h4>No upcoming dates currently scheduled.</h4>
           </div>
         </div>
       </section>
-      {/* <section>
-        <FlodeskForm />
-      </section> */}
+      <section>
+        <FlodeskForm formName='event'/>
+      </section>
       <section className="content-block">
         <h1>Past Highlights</h1>
         <div className="grid-row">

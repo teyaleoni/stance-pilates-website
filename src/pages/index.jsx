@@ -20,7 +20,7 @@ import {
 } from "../constants";
 import aboutImg from "../images/lunge-cropped.jpg";
 import headerImg from "../images/sitting-1024.jpg";
-import logoHeader from "../images/stance-logo.svg";
+import logoFooter from "../images/stance-logo.svg";
 import studioImage from "../images/studio-current.jpg";
 import workshopImage from "../images/workshops.jpg";
 import teachingImage from "../images/teya-teaching.jpg";
@@ -143,7 +143,13 @@ const IndexPage = () => (
 
     <section id="quote">
       <div className="nottoowide">
-        <h3 style={{ fontStyle: "italic" }}>
+        <h3
+          style={{
+            fontStyle: "italic",
+            fontSize: "1.75rem",
+            lineHeight: "1.4em",
+          }}
+        >
           "We retire too early and we die too young. Our prime of life should be
           in the 70’s and old age should not come until we are almost 100."
         </h3>
@@ -155,7 +161,7 @@ const IndexPage = () => (
 
       <PricingCtaHeightProvider>
         <div style={{ display: "grid", gap: "1rem" }}>
-          <h3 style={{ color: "var(--color-blue-steel)" }}>
+          <h3 style={{ color: "var(--color-terracotta)" }}>
             New client special
           </h3>
           <div className="grid-row-4" style={{ gap: "1rem" }}>
@@ -177,7 +183,7 @@ const IndexPage = () => (
       </PricingCtaHeightProvider>
 
       <div style={{ display: "grid", gap: "1rem" }}>
-        <h3 style={{ color: "var(--color-blue-steel)" }}>Regular pricing</h3>
+        <h3 style={{ color: "var(--color-terracotta)" }}>Regular pricing</h3>
         <PricingCtaHeightProvider>
           <div className="grid-row-4" style={{ gap: "1rem" }}>
             <PricingCard
@@ -296,12 +302,18 @@ const IndexPage = () => (
       </div>
     </section>
     <section>
-      <FlodeskForm />
+      <FlodeskForm formName="home" />
     </section>
     {/* CONTACT */}
     <section id="contact">
       <div>
-        <h2>STANCE PILATES</h2>
+        <div>
+          <img
+            src={logoFooter}
+            alt=""
+            style={{ maxHeight: "4vh" }}
+          />
+        </div>
         <div
           style={{
             marginTop: "1rem",

@@ -2,6 +2,7 @@
   --color-dark: rgb(31, 29, 26);
   --color-blue-steel: #7e8a9b;
   --color-offwhite: rgb(241, 238, 234);
+  --color-terracotta: #B56547;
   --side-space: 2rem;
   --expand-duration: 0.2s;
 }
@@ -174,7 +175,7 @@ p {
 }
 
 .button {
-  background-color: var(--color-blue-steel);
+  background-color: var(--color-terracotta);
   color: white;
   font-family: Jost;
   border: none;
@@ -198,7 +199,7 @@ p {
 
 .savings-badge {
   font-family: Jost;
-  background-color: var(--color-blue-steel);
+  background-color: var(--color-terracotta);
   color: white;
   position: absolute;
   z-index: 1;
