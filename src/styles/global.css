@@ -44,7 +44,19 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+}
+
+.spaced {
   gap: 1rem;
+}
+
+.spaced-responsive {
+  gap: 0;
+}
+@media (min-width:64rem) {
+  .spaced-responsive {
+    gap: 1rem;
+  }
 }
 
 nav > a {
@@ -71,6 +83,7 @@ nav > a {
 
 header.wide {
   display: none;
+  gap: 1rem;
 }
 @media (min-width: 48rem) {
   header.wide {

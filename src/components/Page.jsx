@@ -6,6 +6,7 @@ import * as classes from "./Page.module.css";
 import { INSTAGRAM_HANDLE, INSTAGRAM_URL } from "../constants";
 import InstagramIcon from "../InstagramIcon";
 import logo from "../images/stance-logo.svg";
+import { cx } from "../utility/classNames";
 
 const NavItems = ({ hrefPrefix = "" }) => (
   <>
@@ -30,6 +31,14 @@ const NavItems = ({ hrefPrefix = "" }) => (
   </>
 );
 
+const LogoLink = ({ minWidth }) => (
+  <div style={{ display: "grid", paddingTop: 4, alignItems: "center" }}>
+    <a href="/" style={{ display: "contents" }}>
+      <img src={logo} alt="" width="100%" style={{ minWidth }} />
+    </a>
+  </div>
+);
+
 export default function Page({ children, navHrefPrefix }) {
   const [navOpen, setNavOpen] = React.useState(false);
 
@@ -44,33 +53,21 @@ export default function Page({ children, navHrefPrefix }) {
     >
       <Fixer>
         <header className="wide">
-          <div
-            style={{
-              marginTop: ".5rem",
-            }}
-          >
-            <a href="/">
-              <img src={logo} alt="" width="75%" />
-            </a>
-          </div>
-          <nav>
+          <LogoLink minWidth={100} />
+          <nav className="spaced-responsive">
             <NavItems hrefPrefix={navHrefPrefix} />
           </nav>
           <div className="logo-mirror-space">
             <img src={logo} alt="" width="100%" />
           </div>
         </header>
-        <header className="narrow">
-          <div>
-            <a href="/">
-              <img src={logo} alt="" width="100%" />
-            </a>
-          </div>
+        <header className="narrow" style={{ height: 40, paddingRight: 40 }}>
+          <LogoLink />
           <button
             type="button"
             style={{
               position: "absolute",
-              padding: "1rem",
+              padding: 10,
               right: 0,
             }}
             onClick={(e) => {
@@ -84,7 +81,10 @@ export default function Page({ children, navHrefPrefix }) {
         </header>
       </Fixer>
 
-      <nav id="nav-drawer" className={navOpen ? "open" : "closed"}>
+      <nav
+        id="nav-drawer"
+        className={cx("spaced", navOpen ? "open" : "closed")}
+      >
         <NavItems hrefPrefix={navHrefPrefix} />
       </nav>
 
