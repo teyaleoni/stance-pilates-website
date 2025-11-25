@@ -291,7 +291,7 @@ const IndexPage = () => (
         </a>
       </div>
       <div className="about-picture">
-        <img src={workshopImage} alt="me" width="100%" />
+        {/* <img src={workshopImage} alt="me" width="100%" /> */}
         <img src={teachingImage} alt="me" width="100%" />
       </div>
     </section>
