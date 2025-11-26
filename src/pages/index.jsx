@@ -176,7 +176,7 @@ const IndexPage = () => (
               noSavingsBadge
             >
               The essential starting point. Establish your foundation, learn the
-              apparatus, and align your body with the Stance method.
+              apparatus, and align your body with the Pilates method.
               <br />
               <br />
               **One-time purchase per client.
