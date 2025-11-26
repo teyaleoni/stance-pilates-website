@@ -353,7 +353,13 @@ const IndexPage = () => (
 
 export default IndexPage;
 
-export const Head = () => <title>Stance Pilates</title>;
+export const Head = () => (
+  <>
+    <title>Stance Pilates | Private Studio Southwest Las Vegas</title>
+    meta
+    <meta name="description" content="Exclusive 1-on-1 training in Southwest Las Vegas (89113). Personalized sessions using the Pilates Reformer and Cadillac for strength, back pain relief, and control." />
+  </>
+);
 
 // <!-- Google tag (gtag.js) -->
 // <script async src="https://www.googletagmanager.com/gtag/js?id=G-NB4VFNEXCY"></script>
