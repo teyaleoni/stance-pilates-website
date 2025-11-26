@@ -82,13 +82,15 @@ const IndexPage = () => (
         <p>
           As a certified BASI comprehensive instructor, my approach is distinct
           from traditional fitness. Instead of mindless repetition, I guide you
-          through a personalized practice where you are an active participant,
-          not just an observer.
+          through a personalized practice that offers the focused attention of
+          private personal training, where you are an active participant, not
+          just an observer.
         </p>
         <p>
-          We work to correct physical imbalances and develop a "strong center"
-          that acts as a support system for everything you do. Whether you are
-          an athlete or working at a desk, I am here to help you move with
+          We work to correct physical imbalances, alleviate back pain, and
+          develop a "strong center" that acts as a support system for everything
+          you do. Whether you are seeking athletic conditioning, injury
+          recovery, or relief from desk work, I am here to help you move with
           freedom and ease.
         </p>
         <p>
@@ -103,9 +105,10 @@ const IndexPage = () => (
         <p>A space built for focused movement.</p>
         <p>
           We utilize BASI Systems equipment—the gold standard for durability and
-          feel. Whether on the Reformer, Cadillac, or Wunda Chair, our setup
-          ensures that every movement is supported, aligned, and purposeful.
-          Experience the difference of a studio designed for true control.
+          feel. Whether on the Pilates Reformer, Cadillac, or Wunda Chair, our
+          setup ensures that every movement is supported, aligned, and
+          purposeful. Experience the difference of a studio designed for true
+          control.
         </p>
       </div>
       <div className="about-picture">
@@ -308,11 +311,7 @@ const IndexPage = () => (
     <section id="contact">
       <div>
         <div>
-          <img
-            src={logoFooter}
-            alt=""
-            style={{ maxHeight: "4vh" }}
-          />
+          <img src={logoFooter} alt="" style={{ maxHeight: "4vh" }} />
         </div>
         <div
           style={{
@@ -326,7 +325,6 @@ const IndexPage = () => (
               Las Vegas, NV 89113 <br />
             </a>
           </p>
-
           <p>
             {" "}
             <a href={`mailto:${EMAIL_ADDRESS}`}>{EMAIL_ADDRESS}</a>
@@ -343,6 +341,11 @@ const IndexPage = () => (
             <InstagramIcon /> @{INSTAGRAM_HANDLE}
           </a>
         </div>
+        <p style={{ fontSize: ".8rem" }}>
+          Proudly serving Southwest Las Vegas, <br />
+          South Summerlin, Rhodes Ranch, Mountain's Edge,
+          <br /> and Spring Valley (89113)
+        </p>
       </div>
     </section>
   </Page>
