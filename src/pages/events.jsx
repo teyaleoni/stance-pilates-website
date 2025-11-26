@@ -11,16 +11,8 @@ export default function events() {
   return (
     <Page navHrefPrefix="/">
       <section className="content-block">
-        <h1>Stance On Location</h1>
-        <p>
-          Bring the method to you. Whether for a corporate wellness retreat, a
-          bridal gathering, or a private event, we offer tailored Pilates
-          sessions designed to build connection and resilience.
-          <br />
-          Inquire for Rates & Availability: info@stancepilates.com
-        </p>
         <h1>Workshops & Community</h1>
-        <p>
+        <p style={{ maxWidth: "48rem" }}>
           Go beyond the weekly session. Join us for specialized in-studio
           workshops designed to deepen your practice, refine your technique, and
           explore the principles of movement in a community setting.
@@ -33,7 +25,7 @@ export default function events() {
         </div>
       </section>
       <section>
-        <FlodeskForm formName='event'/>
+        <FlodeskForm formName="event" />
       </section>
       <section className="content-block">
         <h1>Past Highlights</h1>
@@ -98,6 +90,15 @@ export default function events() {
             </div>
           </div>
         </div>
+      </section>
+      <section>
+        <h1>Stance On Location</h1>
+        <p style={{ maxWidth: "44rem" }}>
+          Bring the method to you. Whether for a corporate wellness retreat, a
+          bridal gathering, or a private event, we offer tailored Pilates
+          sessions designed to build connection and resilience.
+        </p>
+        <p>Inquire for Rates & Availability: info@stancepilates.com</p>
       </section>
     </Page>
   );

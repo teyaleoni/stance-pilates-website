@@ -41,17 +41,25 @@ const IndexPage = () => (
     <section id="home" className="grid-row">
       <div>
         <h1>Built for a Life in Motion</h1>
+        <p style={{ fontSize: "1.3rem" }}>Be a participant, not an observer.</p>
+        <p>
+          We move beyond generic fitness to focus on precision and deep
+          connection. Whether you are recovering from the daily grind or
+          training for elite performance, we build a structural foundation that
+          restores your natural freedom of movement.
+        </p>
       </div>
       <img src={headerImg} alt="" width="100%" />
     </section>
     <section id="greeting">
       <div className="nottoowide">
+        <h1>Precision. Control. Freedom.</h1>
         <p style={{ textTransform: "uppercase" }}>
           Private Pilates Sessions in Southwest Las Vegas
         </p>
         <p style={{ fontFamily: "Lato", fontSize: "1.25rem" }}>
-          Empowering a resilient and active life through a personalized, mindful
-          practice.
+          Dedicated to the art of control. We build the structural foundation
+          for a life in motion.
         </p>
       </div>
       <a
@@ -59,7 +67,7 @@ const IndexPage = () => (
         target={"_blank"}
         href={`https://stancepilates.janeapp.com/`}
       >
-        BOOK A SESSION
+        START YOUR PRACTICE
       </a>
     </section>
 
@@ -68,47 +76,138 @@ const IndexPage = () => (
         <img src={aboutImg} alt="me" width="100%" />
       </div>
       <div className="about-container-text">
-        <h2>About your instructor</h2>
-        <p>Hi, I'm Teya!</p>
+        <h2>Why Stance is Different.</h2>
+        <p>Hi, I'm Teya.</p>
         <p>
-          I believe that true strength isn't about bulk or force—it’s about
-          control.
+          My approach to Pilates wasn't born from a desire to be fit; it was
+          born from a need to regain control.
         </p>
         <p>
-          I founded Stance Pilates to move away from the "no pain, no gain"
-          mentality and return to the essence of the method: precision, grace,
-          and balance.
+          Ten years ago, my professional dance career ended with a diagnosis of
+          Paroxysmal Dyskinesia—a movement disorder that left me feeling like a
+          stranger in my own body.
+        </p>
+        <p style={{ fontWeight: "700" }}>
+          But I didn't just choose this path; I needed it. I learned the hard
+          way that movement is medicine—but only if the dosage is correct.
         </p>
         <p>
-          As a certified BASI comprehensive instructor, my approach is distinct
-          from traditional fitness. Instead of mindless repetition, I guide you
-          through a personalized practice that offers the focused attention of
-          private personal training, where you are an active participant, not
-          just an observer.
+          When I first found Pilates, I thought I had found the answer—until I
+          hit a wall. I was straining my neck in a group class, and when I asked
+          for help, I was dismissed. I realized then that generic instruction
+          wasn't just ineffective for me; it was dangerous.
+        </p>
+        <p>I became a teacher to be the guide I never had.</p>
+        <p>
+          To manage my condition, I had to become an expert in my own mechanics.
+          I learned that safety lies in the details. That experience gave me a
+          keen eye for the micro-misalignments that often go unnoticed in group
+          settings. I use that focus to ensure you are always supported, never
+          dismissed, and moving with true intention in every private session.
         </p>
         <p>
-          We work to correct physical imbalances, alleviate back pain, and
-          develop a "strong center" that acts as a support system for everything
-          you do. Whether you are seeking athletic conditioning, injury
-          recovery, or relief from desk work, I am here to help you move with
-          freedom and ease.
+          Whether you are reclaiming your body from an injury or fine-tuning for
+          elite performance, I am here to help you build a foundation that
+          lasts.
         </p>
-        <p>
-          Pilates transformed my life by teaching me to move with intention. I
-          created Stance to share that same clarity and resilience with you.
-        </p>
+      </div>
+    </section>
+    <section>
+      <div>
+        <div style={{ marginBottom: "1rem" }}>
+          <h1>Who is Stance For?</h1>
+        </div>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(16rem, 1fr))",
+            gap: "2rem",
+          }}
+        >
+          <div className="stance-job-card elevated bg-white">
+            <h3>01. The High-Performance Professional</h3>
+            <p className="stance-card">
+              <b>You are:</b> A software engineer, a nurse, or an executive
+              making decisions all day.
+            </p>
+            <p className="stance-card">
+              <b>The Struggle:</b> You are active, but your job fights back. The
+              mental load of your day leaves you disconnected from your physical
+              self, "reverting" your progress and leaving you stiff.
+            </p>
+            <p className="stance-card">
+              <b>The Stance Solution:</b> We provide the maintenance your body
+              requires and the guidance your mind craves. We take the wheel on
+              programming so you can stop managing the world and start tuning
+              into yourself. You walk in carrying the weight of decision
+              fatigue, and you walk out grounded, connected, and clear.
+            </p>
+            <p className="stance-card-i">
+              <i>
+                "I love the luxury of being guided. For one hour, I don't have
+                to plan—I just have to be present."
+              </i>
+            </p>
+          </div>
+          <div className="stance-job-card elevated bg-white">
+            <h3>02. The Elite & The Active</h3>
+            <p className="stance-card">
+              <b>You are:</b> A Pro Athlete, a 100-mile-a-week cyclist, or a
+              gym-goer chasing a PR.
+            </p>
+            <p className="stance-card">
+              <b>The Struggle:</b> You don't need "more cardio." You need the
+              missing link in your strength. You might be an Olympic lifter who
+              has never felt their deep core, or a pro player looking for
+              low-impact movement on a recovery day.
+            </p>
+            <p className="stance-card">
+              <b>The Stance Solution:</b> We don't replace your training; we
+              bulletproof it. By cueing the deep muscles you’ve never felt
+              before, we help you lift heavier, ride longer, and stay in the
+              game without the wear and tear.
+            </p>
+            <p className="stance-card-i">
+              <i>
+                "Your core engagement helped me lift more weight at the gym."
+              </i>
+            </p>
+          </div>
+          <div className="stance-job-card elevated bg-white">
+            <h3>03. The Structural & Specific</h3>
+            <p className="stance-card">
+              <b>You are:</b> Someone who needs a safe harbor. Maybe you have
+              Scoliosis, Sciatica, or a body that rejects generic workouts.{" "}
+            </p>
+            <p className="stance-card">
+              <b>The Struggle:</b> You want to move, but most fitness classes
+              hurt. You are looking for a studio that understands anatomy and
+              has the specific equipment to support your unique spine.{" "}
+            </p>
+            <p className="stance-card">
+              {" "}
+              <b>The Stance Solution: </b>
+              Precision is our love language. We design a practice that agrees
+              with your body, using the apparatus to support you where you are
+              weak and challenge you where you are strong.
+            </p>
+            <p className="stance-card-i">
+              <i>"Pilates is the only workout that agrees with my body."</i>
+            </p>
+          </div>
+        </div>
       </div>
     </section>
     <section id="studio" className="grid-row">
       <div>
-        <h2>The Studio</h2>
-        <p>A space built for focused movement.</p>
+        <h2 style={{marginBottom:"1rem"}}>The Studio</h2>
+        <h3>A space built for focused movement.</h3>
         <p>
           We utilize BASI Systems equipment—the gold standard for durability and
           feel. Whether on the Pilates Reformer, Cadillac, or Wunda Chair, our
           setup ensures that every movement is supported, aligned, and
-          purposeful. Experience the difference of a studio designed for true
-          control.
+          purposeful. Experience the difference of a private studio designed for
+          true control.
         </p>
       </div>
       <div className="about-picture">
@@ -160,7 +259,15 @@ const IndexPage = () => (
       </div>
     </section>
     <section id="pricing" style={{ display: "grid", gap: "2rem" }}>
-      <h2>Pricing</h2>
+      <div style={{ maxWidth: "37rem" }}>
+        <h2>Invest in Your Practice.</h2>
+        <p>
+          More than just a workout. Stance is a partnership. We provide a
+          private, focused space where you can leave the outside world at the
+          door. We handle the plan and the precision, so you can quiet your mind
+          and reconnect with your body.
+        </p>
+      </div>
 
       <PricingCtaHeightProvider>
         <div style={{ display: "grid", gap: "1rem" }}>
@@ -175,8 +282,9 @@ const IndexPage = () => (
               cta="PURCHASE"
               noSavingsBadge
             >
-              The essential starting point. Establish your foundation, learn the
-              apparatus, and align your body with the Pilates method.
+              The essential starting point. We use these sessions to assess your
+              unique mechanics, establish your foundation, and align your body
+              for a safe, effective practice.
               <br />
               <br />
               **One-time purchase per client.
@@ -228,9 +336,10 @@ const IndexPage = () => (
             We begin with an assessment of your movement patterns and goals.
             Unlike a group class where you might get lost in the crowd, this
             session is designed to make you an active participant in your own
-            body. You will move through a personalized sequence on the
-            apparatus, focusing on control and precision. You should leave
-            feeling refreshed, invigorated, and energized rather than exhausted.
+            body. You will move through a personalized sequence on the Pilates
+            Reformer and apparatus, focusing on control and precision. You
+            should leave feeling refreshed, lighter, and more capable than when
+            you walked in.
           </p>
         </Faq>
 
@@ -238,9 +347,10 @@ const IndexPage = () => (
           <p>
             Pilates is a discipline of detail. In a private session, we can
             correct physical imbalances and ensure you are engaging the correct
-            muscles without strain. This 1-on-1 focus allows us to address your
-            specific needs—whether rehab or athletic conditioning—ensuring you
-            build resilience safely.
+            muscles without strain. This 1-on-1 focus allows us to address
+            specific needs—whether back pain relief, posture correction, injury
+            rehabilitation, or sport-specific conditioning—ensuring you build
+            resilience safely.
           </p>
         </Faq>
 
@@ -270,14 +380,14 @@ const IndexPage = () => (
         <Faq question="Do you sell Pilates gift certificates?">
           <p>
             Yes. Giving the gift of movement is a wonderful way to support a
-            friend or loved one.
+            friend or loved one. <br/>
             <a
               className="linky"
               target="_blank"
               rel="noreferrer"
               href="https://stancepilates.janeapp.com/online_gift_cards/new"
             >
-              Purchase one here
+               Purchase one here
             </a>
           </p>
         </Faq>
@@ -286,17 +396,19 @@ const IndexPage = () => (
     {/* EVENTS*/}
     <section id="events" className="grid-row">
       <div>
-        <h1>Movement in Community</h1>
+        <h1>Workshops & Community</h1>
         <div>
           <p>
-            We believe movement is better shared. Join our specialized workshops
-            to refine your technique, or book Stance for your own private event.
-            From the studio to your location, let’s move together.
+            We believe that freedom of movement belongs to everyone. That is why
+            we take Stance beyond the studio walls. Whether we are hosting our
+            own community gatherings at local venues or bringing the practice
+            directly to your location for corporate and private events, we meet
+            you where you are so we can move as one.
           </p>
         </div>
         <br />
         <a className="button" href="/events">
-          SEE UPCOMING DATES
+          VIEW EVENTS & INQUIRIES
         </a>
       </div>
       <div className="about-picture">
@@ -357,7 +469,10 @@ export const Head = () => (
   <>
     <title>Stance Pilates | Private Studio Southwest Las Vegas</title>
     meta
-    <meta name="description" content="Exclusive 1-on-1 training in Southwest Las Vegas (89113). Personalized sessions using the Pilates Reformer and Cadillac for strength, back pain relief, and control." />
+    <meta
+      name="description"
+      content="Exclusive 1-on-1 training in Southwest Las Vegas (89113). Personalized sessions using the Pilates Reformer and Cadillac for strength, back pain relief, and control."
+    />
   </>
 );
 
