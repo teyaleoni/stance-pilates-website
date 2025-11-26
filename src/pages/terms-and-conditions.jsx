@@ -81,9 +81,9 @@ export default function PrivacyPolicy() {
                 emergencies, at the sole discretion of Stance Pilates.
               </li>
               <li>
-                Cancellations must be made according to the policies outlined on
-                our booking platform, Janeapp. Late cancellations or no-shows
-                may incur a fee as detailed during the booking process.
+                Cancellations must be made at least 24 hours in advance. Cancellations made within this window will
+                result in the forfeiture of the session or a charge of the full
+                session rate.
               </li>
             </ol>
           </li>
@@ -203,6 +203,18 @@ export default function PrivacyPolicy() {
                 Stance Pilates services are offered exclusively to individuals
                 aged 18 years and older. By participating in our classes, you
                 confirm that you meet this age requirement.
+              </li>
+            </ol>
+          </li>
+          <li>
+            Media Release
+            <ol>
+              <li>
+                By participating in sessions, you grant Stance Pilates
+                permission to use photographs or video recordings taken during
+                classes for marketing and promotional purposes (e.g., website,
+                social media). If you prefer not to be photographed, please
+                inform your instructor prior to the start of your session.
               </li>
             </ol>
           </li>
