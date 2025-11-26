@@ -3,7 +3,8 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `gatsby-stance-site`,
+    title: `Stance Pilates | Private Studio Southwest Las Vegas`,
+    description: `Exclusive 1-on-1 training in Southwest Las Vegas (89113). Personalized sessions using the Pilates Reformer and Cadillac for strength, back pain relief, and control.`,
     siteUrl: `https://stancepilates.com`,
   },
   plugins: [
