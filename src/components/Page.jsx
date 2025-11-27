@@ -17,8 +17,8 @@ const NavItems = ({ hrefPrefix = "" }) => (
 
     <a href={`${hrefPrefix}#faq`}>FAQ</a>
     <a href={`#contact`}>Contact</a>
-    <a target={"_blank"} href={C.BOOKING_URL}>
-      <p style={{ fontWeight: "700" }}>Book</p>
+    <a target={"_blank"} href={C.BOOKING_URL} style={{fontWeight:"700"}}>
+      Book
     </a>
     {/* <a href={`${hrefPrefix}#contact`}>Blog</a> */}
     <a
@@ -97,7 +97,7 @@ export default function Page({ children, navHrefPrefix }) {
         <div
           style={{
             display: "flex",
-            gap: "2rem",
+            gap: "1.5rem",
             alignItems: "center",
             justifyContent: "center",
             padding: "2rem",

@@ -9,11 +9,6 @@ export default function ContactInfo({ children, at }) {
       <div>
         <img src={logoFooter} alt="" style={{ maxHeight: "4vh" }} />
       </div>
-      <div
-        style={{
-          marginTop: "1rem",
-        }}
-      ></div>
       <div>
         <p>
           <a href={C.GOOGLE_MAPS_URL} target="_blank">
