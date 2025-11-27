@@ -1,5 +1,6 @@
 import React from "react";
 import Page from "../components/Page";
+import * as C from "../constants";
 
 export default function PrivacyPolicy() {
   return (
@@ -151,7 +152,7 @@ export default function PrivacyPolicy() {
                 <li>
                   Request the deletion of your personal data (subject to any
                   legal or contractual obligations). To exercise these rights,
-                  please contact us at info@stancepilates.com.
+                  please contact us at {C.EMAIL_ADDRESS}.
                 </li>
               </ul>
             </div>
@@ -171,7 +172,7 @@ export default function PrivacyPolicy() {
               compensation to you, and you confirm that your submission does not
               violate any third-party rights. If you would prefer not to have
               your comments or testimonials used in this way, please contact us
-              at info@stancepilates.com.
+              at {C.EMAIL_ADDRESS}.
             </div>
           </li>
 
@@ -202,7 +203,7 @@ export default function PrivacyPolicy() {
               the California Consumer Privacy Act (CCPA), including the right to
               know what personal information we collect, the right to request
               deletion, and the right to opt out of data sales. Please contact
-              us at info@stancepilates.com to exercise these rights.
+              us at {C.EMAIL_ADDRESS} to exercise these rights.
             </div>
           </li>
 
@@ -221,9 +222,9 @@ export default function PrivacyPolicy() {
               If you have any questions or concerns about this Privacy Policy or
               your personal data, please contact us at:
             </div>
-            <div>Email: info@stancepilates.com</div>
-            <div>Phone: 702-608-2065</div>
-            <div>Website: stancepilates.com</div>
+            <div>Email: {C.EMAIL_ADDRESS}</div>
+            <div>Phone: {C.PHONE_NUMBER}</div>
+            <div>Website: {C.DOMAIN_NAME}</div>
           </li>
         </ol>
       </section>

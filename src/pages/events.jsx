@@ -1,11 +1,10 @@
 import React from "react";
-import Page from "../components/Page";
-import pelvicFloorImage from "../images/pelvic-floor-workshop.jpg";
-import parallelEventImage from "../images/parallel-launch.jpg";
-import uncommonsImage from "../images/uncommons-event.jpg";
-import tbaImage from "../images/tba.png";
-import blueChipImage from "../images/blue-chip-event.png";
 import FlodeskForm from "../components/FlodeskForm";
+import Page from "../components/Page";
+import * as C from "../constants";
+import parallelEventImage from "../images/parallel-launch.jpg";
+import pelvicFloorImage from "../images/pelvic-floor-workshop.jpg";
+import uncommonsImage from "../images/uncommons-event.jpg";
 
 export default function events() {
   return (
@@ -98,7 +97,7 @@ export default function events() {
           bridal gathering, or a private event, we offer tailored Pilates
           sessions designed to build connection and resilience.
         </p>
-        <p>Inquire for Rates & Availability: info@stancepilates.com</p>
+        <p>Inquire for Rates & Availability: {C.EMAIL_ADDRESS}</p>
       </section>
     </Page>
   );

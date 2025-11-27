@@ -1,43 +1,23 @@
 // TODO:
 // Website wants:
-// - add instagram in nav bar
 // - add google reviews
 // - add location with google map in footer
-import * as React from "react";
-import InstagramIcon from "../InstagramIcon";
+import React from "react";
 import Faq from "../components/Faq";
 import FlodeskForm from "../components/FlodeskForm";
 import Page from "../components/Page";
 import PricingCard, {
   PricingCtaHeightProvider,
 } from "../components/PricingCard";
-import {
-  EMAIL_ADDRESS,
-  GOOGLE_MAPS_URL,
-  INSTAGRAM_HANDLE,
-  INSTAGRAM_URL,
-  PHONE_NUMBER,
-} from "../constants";
 import aboutImg from "../images/lunge-cropped.jpg";
 import headerImg from "../images/sitting-1024.jpg";
-import logoFooter from "../images/stance-logo.svg";
 import studioImage from "../images/studio-current.jpg";
-import workshopImage from "../images/workshops.jpg";
 import teachingImage from "../images/teya-teaching.jpg";
 
 import "../styles/global.css";
 
 const IndexPage = () => (
   <Page>
-    {/* <div>
-      <h2 style={{ 
-        color: "red",
-        textAlign: 'center',
-        margin: '1rem 1rem 0 1rem' 
-        }}>
-        <a href="/studio-update">Important Studio Update<br/>Click to Read!</a>
-      </h2>
-    </div> */}
     <section id="home" className="grid-row">
       <div>
         <h1>Built for a Life in Motion</h1>
@@ -200,7 +180,7 @@ const IndexPage = () => (
     </section>
     <section id="studio" className="grid-row">
       <div>
-        <h2 style={{marginBottom:"1rem"}}>The Studio</h2>
+        <h2 style={{ marginBottom: "1rem" }}>The Studio</h2>
         <h3>A space built for focused movement.</h3>
         <p>
           We utilize BASI Systems equipment—the gold standard for durability and
@@ -380,14 +360,14 @@ const IndexPage = () => (
         <Faq question="Do you sell Pilates gift certificates?">
           <p>
             Yes. Giving the gift of movement is a wonderful way to support a
-            friend or loved one. <br/>
+            friend or loved one. <br />
             <a
               className="linky"
               target="_blank"
               rel="noreferrer"
               href="https://stancepilates.janeapp.com/online_gift_cards/new"
             >
-               Purchase one here
+              Purchase one here
             </a>
           </p>
         </Faq>
@@ -418,47 +398,6 @@ const IndexPage = () => (
     </section>
     <section>
       <FlodeskForm formName="home" />
-    </section>
-    {/* CONTACT */}
-    <section id="contact">
-      <div>
-        <div>
-          <img src={logoFooter} alt="" style={{ maxHeight: "4vh" }} />
-        </div>
-        <div
-          style={{
-            marginTop: "1rem",
-          }}
-        ></div>
-        <div>
-          <p>
-            <a href={GOOGLE_MAPS_URL} target="_blank">
-              6675 S Tenaya Way #200 <br />
-              Las Vegas, NV 89113 <br />
-            </a>
-          </p>
-          <p>
-            {" "}
-            <a href={`mailto:${EMAIL_ADDRESS}`}>{EMAIL_ADDRESS}</a>
-          </p>
-          <p>{PHONE_NUMBER}</p>
-        </div>
-        <div className="social">
-          <a
-            className="instagram-link"
-            target="_blank"
-            rel="noreferrer"
-            href={INSTAGRAM_URL}
-          >
-            <InstagramIcon /> @{INSTAGRAM_HANDLE}
-          </a>
-        </div>
-        <p style={{ fontSize: ".8rem" }}>
-          Proudly serving Southwest Las Vegas, <br />
-          South Summerlin, Rhodes Ranch, Mountain's Edge,
-          <br /> and Spring Valley (89113)
-        </p>
-      </div>
     </section>
   </Page>
 );

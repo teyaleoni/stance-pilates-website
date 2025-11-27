@@ -1,5 +1,6 @@
 import React from "react";
 import Page from "../components/Page";
+import * as C from "../constants";
 
 export default function PrivacyPolicy() {
   return (
@@ -81,9 +82,9 @@ export default function PrivacyPolicy() {
                 emergencies, at the sole discretion of Stance Pilates.
               </li>
               <li>
-                Cancellations must be made at least 24 hours in advance. Cancellations made within this window will
-                result in the forfeiture of the session or a charge of the full
-                session rate.
+                Cancellations must be made at least 24 hours in advance.
+                Cancellations made within this window will result in the
+                forfeiture of the session or a charge of the full session rate.
               </li>
             </ol>
           </li>
@@ -347,9 +348,9 @@ export default function PrivacyPolicy() {
               Conditions, or need to get in touch with us for any reason, please
               contact us at:
             </div>
-            <div>Email: info@stancepilates.com</div>
-            <div>Phone: 702-608-2065</div>
-            <div>Website: stancepilates.com</div>
+            <div>Email: {C.EMAIL_ADDRESS}</div>
+            <div>Phone: {C.PHONE_NUMBER}</div>
+            <div>Website: {C.DOMAIN_NAME}</div>
           </li>
         </ol>
       </section>

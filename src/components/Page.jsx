@@ -1,12 +1,13 @@
 import * as React from "react";
+import * as C from "../constants";
+import logo from "../images/stance-logo.svg";
+import InstagramIcon from "./InstagramIcon";
 import "../styles/global.css";
+import { cx } from "../utility/classNames";
 import Fixer from "./Fixer";
 import MenuIcon from "./MenuIcon";
 import * as classes from "./Page.module.css";
-import { INSTAGRAM_HANDLE, INSTAGRAM_URL } from "../constants";
-import InstagramIcon from "../InstagramIcon";
-import logo from "../images/stance-logo.svg";
-import { cx } from "../utility/classNames";
+import ContactInfo from "./ContactInfo";
 
 const NavItems = ({ hrefPrefix = "" }) => (
   <>
@@ -15,16 +16,16 @@ const NavItems = ({ hrefPrefix = "" }) => (
     <a href={`${hrefPrefix}events`}>Events</a>
 
     <a href={`${hrefPrefix}#faq`}>FAQ</a>
-    <a href={`${hrefPrefix}#contact`}>Contact</a>
-    <a target={"_blank"} href={`https://stancepilates.janeapp.com/`}>
-      <p style={{fontWeight: "700"}}>Book</p>
+    <a href={`#contact`}>Contact</a>
+    <a target={"_blank"} href={C.BOOKING_URL}>
+      <p style={{ fontWeight: "700" }}>Book</p>
     </a>
     {/* <a href={`${hrefPrefix}#contact`}>Blog</a> */}
     <a
       className="instagram-link"
       target="_blank"
       rel="noreferrer"
-      href={INSTAGRAM_URL}
+      href={C.INSTAGRAM_URL}
     >
       <InstagramIcon />
     </a>
@@ -90,6 +91,8 @@ export default function Page({ children, navHrefPrefix }) {
 
       <main id="scroll">
         {children}
+
+        <ContactInfo />
 
         <div
           style={{
