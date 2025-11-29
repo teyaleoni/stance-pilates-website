@@ -9,6 +9,7 @@ import Page from "../components/Page";
 import PricingCard, {
   PricingCtaHeightProvider,
 } from "../components/PricingCard";
+import JobCard from "../components/JobCard";
 import aboutImg from "../images/lunge-cropped.jpg";
 import headerImg from "../images/sitting-1024.jpg";
 import studioImage from "../images/studio-current.jpg";
@@ -104,77 +105,51 @@ const IndexPage = () => (
             gap: "2rem",
           }}
         >
-          <div className="stance-job-card elevated bg-white">
-            <h3>01. The High-Performance Professional</h3>
-            <p className="stance-card">
-              <b>You are:</b> A software engineer, a nurse, or an executive
-              making decisions all day.
-            </p>
-            <p className="stance-card">
-              <b>The Struggle:</b> You are active, but your job fights back. The
+          <JobCard
+            number="01."
+            job="The High-Performance
+              Professional"
+            youAre="A software engineer, a nurse, or an executive
+              making decisions all day."
+            struggle="You are active, but your job fights back. The
               mental load of your day leaves you disconnected from your physical
-              self, "reverting" your progress and leaving you stiff.
-            </p>
-            <p className="stance-card">
-              <b>The Stance Solution:</b> We provide the maintenance your body
+              self, &ldquo;reverting&rdquo; your progress and leaving you stiff."
+            solution="We provide the maintenance your body
               requires and the guidance your mind craves. We take the wheel on
               programming so you can stop managing the world and start tuning
               into yourself. You walk in carrying the weight of decision
-              fatigue, and you walk out grounded, connected, and clear.
-            </p>
-            <p className="stance-card-i">
-              <i>
-                "I love the luxury of being guided. For one hour, I don't have
+              fatigue, and you walk out grounded, connected, and clear."
+            quote="I love the luxury of being guided. For one hour, I don't have
                 to plan—I just have to be present."
-              </i>
-            </p>
-          </div>
-          <div className="stance-job-card elevated bg-white">
-            <h3>02. The Elite & The Active</h3>
-            <p className="stance-card">
-              <b>You are:</b> A Pro Athlete, a 100-mile-a-week cyclist, or a
-              gym-goer chasing a PR.
-            </p>
-            <p className="stance-card">
-              <b>The Struggle:</b> You don't need "more cardio." You need the
-              missing link in your strength. You might be an Olympic lifter who
-              has never felt their deep core, or a pro player looking for
-              low-impact movement on a recovery day.
-            </p>
-            <p className="stance-card">
-              <b>The Stance Solution:</b> We don't replace your training; we
-              bulletproof it. By cueing the deep muscles you’ve never felt
-              before, we help you lift heavier, ride longer, and stay in the
-              game without the wear and tear.
-            </p>
-            <p className="stance-card-i">
-              <i>
-                "Your core engagement helped me lift more weight at the gym."
-              </i>
-            </p>
-          </div>
-          <div className="stance-job-card elevated bg-white">
-            <h3>03. The Structural & Specific</h3>
-            <p className="stance-card">
-              <b>You are:</b> Someone who needs a safe harbor. Maybe you have
-              Scoliosis, Sciatica, or a body that rejects generic workouts.{" "}
-            </p>
-            <p className="stance-card">
-              <b>The Struggle:</b> You want to move, but most fitness classes
+          ></JobCard>
+          <JobCard
+            number="02."
+            job="The Elite & The Active"
+            youAre="A Pro Athlete, a
+              100-mile-a-week cyclist, or a gym-goer chasing a PR."
+            struggle="You don't need &ldquo;more cardio.&rdquo; You need the missing link in your strength.
+              You might be an Olympic lifter who has never felt their deep core,
+              or a pro player looking for low-impact movement on a recovery day."
+            solution="We
+              don't replace your training; we bulletproof it. By cueing the deep
+              muscles you’ve never felt before, we help you lift heavier, ride
+              longer, and stay in the game without the wear and tear."
+            quote="Your core engagement helped me lift more weight at the gym."
+          ></JobCard>
+          <JobCard
+            number="03."
+            job="The Structural &
+              Specific"
+            youAre="Someone who needs a safe harbor. Maybe you have
+              Scoliosis, Sciatica, or a body that rejects generic workouts."
+            struggle="You want to move, but most fitness classes
               hurt. You are looking for a studio that understands anatomy and
-              has the specific equipment to support your unique spine.{" "}
-            </p>
-            <p className="stance-card">
-              {" "}
-              <b>The Stance Solution: </b>
-              Precision is our love language. We design a practice that agrees
+              has the specific equipment to support your unique spine."
+            solution=" Precision is our love language. We design a practice that agrees
               with your body, using the apparatus to support you where you are
-              weak and challenge you where you are strong.
-            </p>
-            <p className="stance-card-i">
-              <i>"Pilates is the only workout that agrees with my body."</i>
-            </p>
-          </div>
+              weak and challenge you where you are strong."
+            quote="Pilates is the only workout that agrees with my body."
+          ></JobCard>
         </div>
       </div>
     </section>

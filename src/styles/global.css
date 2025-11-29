@@ -317,12 +317,6 @@ p {
   padding: 1rem;
 }
 
-.stance-job-card {
-  border-radius: 0.5rem;
-  padding: 1rem;
-  border-top: 3px solid #7e8a9b;
-}
-
 .elevated {
   box-shadow: 0 1rem 2rem rgb(0 0 0 / 0.07);
 }
@@ -368,10 +362,34 @@ p {
 }
 
 .stance-card {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+.stance-job-card {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border-top: 1.8px solid var(--color-terracotta);
 }
 
 .stance-card-i {
   margin-top: 1.2rem;
   font-size: 1.25rem;
+  text-align: center;
+}
+
+.stance-job-title {
+  color: var(--color-terracotta);
+  margin-bottom: 1rem;
+}
+
+.stance-job-bold {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.stance-job-line {
+  height: .5px; 
+  background-color: #E5E5E5; 
+  border: none;
+  width: 80%;
 }
