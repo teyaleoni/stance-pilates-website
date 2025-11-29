@@ -125,15 +125,10 @@ const IndexPage = () => (
           <JobCard
             number="02."
             job="The Elite & The Active"
-            youAre="A Pro Athlete, a
-              100-mile-a-week cyclist, or a gym-goer chasing a PR."
+            youAre="An MMA fighter, a Pro Athlete, a 100-mile-a-week cyclist, or a gym-goer chasing a PR."
             struggle="You don't need &ldquo;more cardio.&rdquo; You need the missing link in your strength.
-              You might be an Olympic lifter who has never felt their deep core,
-              or a pro player looking for low-impact movement on a recovery day."
-            solution="We
-              don't replace your training; we bulletproof it. By cueing the deep
-              muscles you’ve never felt before, we help you lift heavier, ride
-              longer, and stay in the game without the wear and tear."
+              You might be a fighter who needs hip mobility, or a pro player looking for low-impact movement on a recovery day."
+            solution="We don't replace your training; we bulletproof it. By cueing the deep muscles you’ve never felt before, we help you lift heavier, move faster, and stay in the game without the wear and tear."
             quote="Your core engagement helped me lift more weight at the gym."
           ></JobCard>
           <JobCard
@@ -141,7 +136,7 @@ const IndexPage = () => (
             job="The Structural &
               Specific"
             youAre="Someone who needs a safe harbor. Maybe you have
-              Scoliosis, Sciatica, or a body that rejects generic workouts."
+              scoliosis, sciatica, or a body that rejects generic workouts."
             struggle="You want to move, but most fitness classes
               hurt. You are looking for a studio that understands anatomy and
               has the specific equipment to support your unique spine."
