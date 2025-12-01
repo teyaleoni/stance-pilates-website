@@ -17,10 +17,10 @@ const NavItems = ({ hrefPrefix = "" }) => (
 
     <a href={`${hrefPrefix}#faq`}>FAQ</a>
     <a href={`#contact`}>Contact</a>
-    <a target={"_blank"} href={C.BOOKING_URL} style={{fontWeight:"700"}}>
+    <a href={`${hrefPrefix}blog`}>Blog</a>
+    <a target={"_blank"} href={C.BOOKING_URL}>
       Book
     </a>
-    {/* <a href={`${hrefPrefix}#contact`}>Blog</a> */}
     <a
       className="instagram-link"
       target="_blank"
