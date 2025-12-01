@@ -20,6 +20,7 @@ export default function BlogIndex() {
             A space for reflection. Exploring the intersection of Pilates and
             the ongoing process of building a life in motion.
           </p>
+          <hr style={{padding:"0 1rem 0 1rem"}}></hr>
         </div>
 
         {/* <!-- FEATURED POST (Your "Origin Story") --> */}
@@ -70,9 +71,9 @@ export default function BlogIndex() {
             </article>
 
             {/* <!-- ARTICLE 3 (Placeholder) --> */}
-            <article class="article-card">
+            <div></div>
+            {/* <article class="article-card">
               <a href=""></a>
-              {/* <!-- Placeholder Slate Image --> */}
               <div class="article-image"></div>
               <span class="category-tag">Recovery</span>
               <h3 class="card-title">Coming Soon: The Art of Decompression</h3>
@@ -81,12 +82,12 @@ export default function BlogIndex() {
                 desk worker and the high-performer.
               </p>
               <div class="card-link">Read More</div>
-            </article>
+            </article> */}
 
             {/* <!-- ARTICLE 4 (Placeholder) --> */}
-            <article class="article-card">
+            <div></div>
+            {/* <article class="article-card">
               <a href=""></a>
-              {/* <!-- Placeholder Light Grey Image --> */}
               <div class="article-image"></div>
               <span class="category-tag">Studio Life</span>
               <h3 class="card-title">
@@ -97,7 +98,7 @@ export default function BlogIndex() {
                 tool Joseph Pilates designed.
               </p>
               <div class="card-link">Read More</div>
-            </article>
+            </article> */}
           </div>
         </section>
       </div>

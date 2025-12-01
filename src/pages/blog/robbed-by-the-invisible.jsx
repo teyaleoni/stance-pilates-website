@@ -22,7 +22,7 @@ export default function RobbedByTheInvisible() {
       <p>
         I wasn't just a kid who took ballet once a week. I was operating at a
         high caliber. I started dancing when I was three years old and entered
-        the competitive world at nine. I had the discipline, the drive, and the
+        the competitive world at eight. I had the discipline, the drive, and the
         trajectory.
       </p>
 
@@ -110,30 +110,34 @@ export default function RobbedByTheInvisible() {
       <p>
         I see that younger version of myself now: a defeated girl grasping for a
         dream that was no longer hers, trying to convince herself that
-        everything happens for a reason. My entire sense of self was wrapped up
-        in that one title, leaving me to ask:
-        <strong>"If I am not a dancer, then who am I?"</strong>
+        everything happens for a reason.
       </p>
 
+      <p>
+        My entire sense of self was wrapped up in that one title, leaving me to
+        ask:
+        <strong> "If I am not a dancer, then who am I?"</strong>
+      </p>
       <h3>The Search for Answers</h3>
 
       <p>
         I had to learn, out of necessity, how to master my own nervous system.
         For years, I lived with a pipeline of worries. Would I ever be able to
-        dance again? Would I get to be independent? Could I have children one
+        dance again? Would I get to have independence? Could I have children one
         day?
       </p>
 
       <p>
-        At the beginning of my diagnosis, I couldn't even walk down the street
-        or get too emotional about something without risking an episode. That
-        was my starting line.
+        At the beginning of my diagnosis, I couldn't even take a lap around the
+        small park in the community or get too emotional about something without
+        risking an episode. That was my starting line.
       </p>
 
       <p>
         Over time, I worked my way up. I built enough stamina to try
-        everything—Muay Thai, swimming, pole dancing, cycling. I loved them, but
-        they didn’t love me back. I was stuck in a cycle of pushing too hard,
+        everything—Muay Thai, swimming, personal training, cycling. I felt
+        empowered to be able to move again. But none of them were sustainable or
+        compatible for my body. I was stuck in a cycle of pushing too hard,
         crashing, and recovering.
       </p>
 
@@ -152,17 +156,20 @@ export default function RobbedByTheInvisible() {
       <p>But even then, I hit a wall.</p>
 
       <p>
-        I started developing a bad shoulder injury from overuse. I knew I wasn't
-        engaging my core correctly; I was just "muscling through" the movements.
-        When I reached out to the studio for a private lesson to learn the
-        mechanics, they dismissed me. "Just take a 101 class," they said.
+        I started developing a bad shoulder injury from overuse. I also knew I
+        wasn't engaging my core correctly; I was just "muscling through" the
+        movements. When I reached out to the studio for a private lesson to
+        learn the mechanics, they dismissed me. "Just take a 101 class," they
+        said.
       </p>
 
       <p>
-        I was disappointed. As a dance teacher myself, I know what it takes for
-        an adult to carve out time to show up for a class. To be dismissed
-        without a single question about <em>why</em> I was struggling felt like
-        a door slamming shut.
+        I was disappointed. I had been showing up weekly, committed to the work.
+        As an adult jazz teacher myself, I know the sacrifice it takes for a student to carve
+        out time for a class. I make it a rule never to turn a student away; if
+        I can't answer a question, I find a resource who can. To be dismissed
+        without a single inquiry about <em>why</em> I was struggling felt like a door
+        slamming shut.
       </p>
 
       <blockquote>
@@ -186,9 +193,8 @@ export default function RobbedByTheInvisible() {
       </p>
 
       <p>
-        We might be listening to Fleetwood Mac, A Tribe Called Quest, or
-        Paramore, but my goal is always the same: to help you find your limits
-        safely, so we can eventually push past them.
+        My goal is always the same: to help you find your limits safely, so we
+        can eventually push past them.
       </p>
 
       <h3>My Reality Today</h3>
@@ -246,8 +252,7 @@ export default function RobbedByTheInvisible() {
         Ten years ago, I thought my life was over because I lost the chance to
         perform for strangers in a stadium. Today, I realize I have a far more
         important audience. When I turn on the music in the kitchen and dance
-        with my daughter. I am strong, I am present, and
-        I am joyful.
+        with my daughter. I am strong, I am present, and I am joyful.
       </p>
 
       <p>
@@ -271,7 +276,7 @@ export default function RobbedByTheInvisible() {
           If I could go back to that defeated young Teya, grasping at a life
           slipping through her fingers, I would tell her this: <br />
           <blockquote>
-            "The storm will pass, and one day you will be brave enough to carve
+            "This storm will pass, and soon you will be brave enough to carve
             a path that is entirely your own."
           </blockquote>
         </p>
@@ -283,7 +288,7 @@ export default function RobbedByTheInvisible() {
         capable of.
       </p>
 
-      <p>It’s time to take it back.</p>
+      <strong>It’s time to take it back.</strong>
     </div>
   );
   return (

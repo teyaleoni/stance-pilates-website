@@ -35,23 +35,7 @@ export default function BlogArticle({ title, postDate, readTime, content }) {
                 /> */}
           {content}
         </div>
-
-        {/* <!-- FOOTER CTA --> */}
-        {/* <div class="blog-article-footer">
-          <div class="footer-cta">
-            <h4>Never Miss a Story.</h4>
-            <p>
-              enjoy this post? Join our newsletter to get the next one delivered
-              right to you. No spam, just honest talk about movement and life.
-            </p>
-            <a href="https://stancepilates.janeapp.com/" class="btn-cta">
-              SUBSCRIBE
-            </a>
-          </div>
-        </div> */}
-        {/* <section>
-        </section> */}
-          <FlodeskForm formName="blog" />
+        <FlodeskForm formName="blog" />
         <ScrollToTopButton />
       </div>
     </Page>
