@@ -65,8 +65,15 @@ const IndexPage = () => (
         </p>
         <p>
           Ten years ago, my professional dance career ended with a diagnosis of
-          Paroxysmal Dyskinesia—a movement disorder that left me feeling like a
-          stranger in my own body.
+          Paroxysmal Dyskinesia—a movement disorder{" "}
+          <span>(
+            <a href={`/blog/robbed-by-the-invisible`}>
+              <em style={{ textDecoration: "underline" }}>
+                click here to read more
+              </em>
+            </a>){" "}
+          </span>
+          that left me feeling like a stranger in my own body.
         </p>
         <p style={{ fontWeight: "700" }}>
           But I didn't just choose this path; I needed it. I learned the hard
