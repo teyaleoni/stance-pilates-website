@@ -8,6 +8,7 @@ const singleSessionPrice = 100;
 export default function PricingCard({
   heading,
   bundleSize,
+  bundleSizeDuet,
   price,
   endDate,
   expiry,
@@ -41,11 +42,22 @@ export default function PricingCard({
       >
         <h3>
           {heading ||
-            (bundleSize === 1
-              ? "Single Session"
-              : `${bundleSize}-Session Bundle`)}
-          <br />${price}
+            (bundleSizeDuet
+              ? bundleSizeDuet === 1
+                ? "Duet Session"
+                : `${bundleSizeDuet}-Session Bundle`
+              : bundleSize === 1
+                ? "Single Session"
+                : `${bundleSize}-Session Bundle`)}
+          <br />
+          {/* 2. The Price with "/ person" added dynamically */}${price}
+          {bundleSizeDuet ? (
+            <span style={{ fontSize: "0.6em" }}> / person</span>
+          ) : (
+            ""
+          )}
         </h3>
+
         {savings > 0 && !noSavingsBadge && (
           <div className="savings-badge" style={{}}>
             Save ${savings}
@@ -111,7 +123,7 @@ export function PricingCtaHeightProvider({ children }) {
   // }, [heights]);
   const maxHeight = React.useMemo(
     () => Math.max(...Object.values(heights)),
-    [heights],
+    [heights]
   );
 
   return (

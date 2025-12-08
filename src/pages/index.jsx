@@ -66,12 +66,14 @@ const IndexPage = () => (
         <p>
           Ten years ago, my professional dance career ended with a diagnosis of
           Paroxysmal Dyskinesia—a movement disorder{" "}
-          <span>(
+          <span>
+            (
             <a href={`/blog/robbed-by-the-invisible`}>
               <em style={{ textDecoration: "underline" }}>
                 click here to read more
               </em>
-            </a>){" "}
+            </a>
+            ){" "}
           </span>
           that left me feeling like a stranger in my own body.
         </p>
@@ -280,6 +282,40 @@ const IndexPage = () => (
             >
               Deepen your practice. Our best value for clients committed to
               lasting resilience and precision.
+            </PricingCard>
+          </div>
+        </PricingCtaHeightProvider>
+      </div>
+      <div style={{ display: "grid", gap: "1rem" }}>
+        <h3 style={{ color: "var(--color-terracotta)" }}>
+          Duet pricing (2 people)
+        </h3>
+        <PricingCtaHeightProvider>
+          <div className="grid-row-4" style={{ gap: "1rem" }}>
+            <PricingCard
+              bundleSizeDuet={1}
+              price={70}
+              expiry="1 month"
+              cta="PURCHASE"
+              noSavingsBadge="true"
+            >
+              Experience the Pilates method with a partner. You will learn the
+              order and own your workout with expert hands-on coaching. <br />
+              <br />
+              Billing Note: Booking client pays the full fee of $140 in total.
+            </PricingCard>
+            <PricingCard
+              bundleSizeDuet={3}
+              price={195}
+              expiry="45 days"
+              cta="PURCHASE"
+              noSavingsBadge="true"
+            >
+              Build independence together. This bundle is the perfect way to
+              establish your foundation at a preferred
+              rate.
+              <br /> <br />
+              Billing Note: Booking client pays the full fee of $390 in total.
             </PricingCard>
           </div>
         </PricingCtaHeightProvider>
