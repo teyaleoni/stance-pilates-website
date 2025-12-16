@@ -36,7 +36,7 @@ const IndexPage = () => (
       <div className="nottoowide">
         <h1>Precision. Control. Freedom.</h1>
         <p style={{ textTransform: "uppercase" }}>
-          Private Pilates Sessions in Southwest Las Vegas
+          Private & Duet Pilates Sessions in Southwest Las Vegas
         </p>
         <p style={{ fontFamily: "Lato", fontSize: "1.25rem" }}>
           Dedicated to the art of control. We build the structural foundation
@@ -93,7 +93,7 @@ const IndexPage = () => (
           I learned that safety lies in the details. That experience gave me a
           keen eye for the micro-misalignments that often go unnoticed in group
           settings. I use that focus to ensure you are always supported, never
-          dismissed, and moving with true intention in every private session.
+          dismissed, and moving with true intention in every session.
         </p>
         <p>
           Whether you are reclaiming your body from an injury or fine-tuning for
@@ -222,7 +222,7 @@ const IndexPage = () => (
         <h2>Invest in Your Practice.</h2>
         <p>
           More than just a workout. Stance is a partnership. We provide a
-          private, focused space where you can leave the outside world at the
+          focused, exclusive space where you can leave the outside world at the
           door. We handle the plan and the precision, so you can quiet your mind
           and reconnect with your body.
         </p>
@@ -312,8 +312,7 @@ const IndexPage = () => (
               noSavingsBadge="true"
             >
               Build independence together. This bundle is the perfect way to
-              establish your foundation at a preferred
-              rate.
+              establish your foundation at a preferred rate.
               <br /> <br />
               Billing Note: Booking client pays the full fee of $390 in total.
             </PricingCard>
@@ -336,14 +335,14 @@ const IndexPage = () => (
           </p>
         </Faq>
 
-        <Faq question="Why choose private training over a group class?">
+        <Faq question="Why choose personalized training (Privates & Duets) over a large group class?">
           <p>
-            Pilates is a discipline of detail. In a private session, we can
-            correct physical imbalances and ensure you are engaging the correct
-            muscles without strain. This 1-on-1 focus allows us to address
-            specific needs—whether back pain relief, posture correction, injury
-            rehabilitation, or sport-specific conditioning—ensuring you build
-            resilience safely.
+            Pilates is a discipline of detail. In a private or duet session, we
+            can correct physical imbalances and ensure you are engaging the
+            correct muscles without strain. This private focus allows us to
+            address specific needs—whether back pain relief, posture correction,
+            injury rehabilitation, or sport-specific conditioning—ensuring you
+            build resilience safely.
           </p>
         </Faq>
 
@@ -356,11 +355,18 @@ const IndexPage = () => (
           </p>
         </Faq>
 
-        <Faq question="Can I share a package with another person?">
+        <Faq question="Can I share a package with a friend?">
+          <p><strong>For Private Sessions:</strong></p>
           <p>
-            No. Our session series are designed for your individual progression
-            and mastery. To ensure the highest level of personalization and
-            focus, packages are non-transferable and cannot be shared.
+            Packages are designed for your individual progression and are
+            non-transferable to another person.
+          </p>
+          <p><strong>For Duet Sessions:</strong></p>
+          <p>
+            One client acts as the primary booker. The full session fee (or
+            credit) is charged to the account holder who secures the slot. We do
+            not split payments in-studio, so please settle up with your partner
+            privately.
           </p>
         </Faq>
 
