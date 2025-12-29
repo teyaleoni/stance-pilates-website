@@ -7,6 +7,7 @@ import React from "react";
 import Page from "../../components/Page";
 import "../../styles/global.css";
 import babyImage from "../../images/baby-teya.png";
+import lantanasImage from "../../images/lantanas.jpg";
 import privateSessionImage from "../../images/teaching.jpg";
 
 export default function BlogIndex() {
@@ -20,7 +21,7 @@ export default function BlogIndex() {
             A space for reflection. Exploring the intersection of Pilates and
             the ongoing process of building a life in motion.
           </p>
-          <hr style={{padding:"0 1rem 0 1rem"}}></hr>
+          <hr style={{ padding: "0 1rem 0 1rem" }}></hr>
         </div>
 
         {/* <!-- FEATURED POST (Your "Origin Story") --> */}
@@ -47,9 +48,23 @@ export default function BlogIndex() {
           {/* <!-- RECENT POSTS GRID (Future Content) --> */}
           <h3 class="recent-grid-title">Recent Articles</h3>
           <div class="article-grid">
-            {/* <!-- ARTICLE 2 (The Educational Piece) --> */}
             <article class="article-card">
-              {/* <!-- Placeholder Beige Image --> */}
+              <img
+                src={lantanasImage}
+                alt="Picture of the debris from a lantana plant"
+                class="article-image"
+              ></img>
+              <span class="category-tag">The Mindset</span>
+              <h3 class="card-title">Pruning in the Dark</h3>
+              <p class="card-excerpt">
+                Moving beyond the surface to navigate the lows of motherhood and
+                business. Why choosing drastic movement is the most efficient
+                path to clearing mental clutter and tending to your roots.
+              </p>
+              <a class="card-link" href="/blog/pruning-in-the-dark">Read More</a>
+            </article>
+
+            <article class="article-card">
               <img
                 src={privateSessionImage}
                 alt="Private Pilates Session"
@@ -71,18 +86,6 @@ export default function BlogIndex() {
             </article>
 
             {/* <!-- ARTICLE 3 (Placeholder) --> */}
-            <div></div>
-            {/* <article class="article-card">
-              <a href=""></a>
-              <div class="article-image"></div>
-              <span class="category-tag">Recovery</span>
-              <h3 class="card-title">Coming Soon: The Art of Decompression</h3>
-              <p class="card-excerpt">
-                Why your spine needs space, not just strength. A guide for the
-                desk worker and the high-performer.
-              </p>
-              <div class="card-link">Read More</div>
-            </article> */}
 
             {/* <!-- ARTICLE 4 (Placeholder) --> */}
             <div></div>
