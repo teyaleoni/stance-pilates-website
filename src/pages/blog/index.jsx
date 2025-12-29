@@ -57,11 +57,13 @@ export default function BlogIndex() {
               <span class="category-tag">The Mindset</span>
               <h3 class="card-title">Pruning in the Dark</h3>
               <p class="card-excerpt">
-                Moving beyond the surface to navigate the lows of motherhood and
-                business. Why choosing drastic movement is the most efficient
-                path to clearing mental clutter and tending to your roots.
+                Moving beyond the surface to process the things we carry. Why I
+                turn to drastic movement to clear mental clutter and tend to my
+                roots.
               </p>
-              <a class="card-link" href="/blog/pruning-in-the-dark">Read More</a>
+              <a class="card-link" href="/blog/pruning-in-the-dark">
+                Read More
+              </a>
             </article>
 
             <article class="article-card">
