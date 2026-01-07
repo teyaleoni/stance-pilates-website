@@ -7,7 +7,7 @@ export default function ContactInfo({ children, at }) {
   return (
     <section id="contact">
       <div>
-        <img src={logoFooter} alt="" style={{ maxHeight: "4vh" }} />
+        <img src={logoFooter} alt="stance pilates logo" style={{ maxHeight: "4vh" }} />
       </div>
       <div>
         <p>

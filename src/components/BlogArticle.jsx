@@ -15,7 +15,7 @@ export default function BlogArticle({ title, postDate, readTime, content }) {
           <h1 class="blog-article-title">{title}</h1>
 
           <div class="author-meta">
-            <img src={authorImage} alt="Teya" class="author-img" />
+            <img src={authorImage} alt="image of author" class="author-img" />
             <div class="meta-text">
               <span class="author-name">Teya</span>
               <span class="post-date">
