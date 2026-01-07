@@ -30,7 +30,7 @@ const IndexPage = () => (
           restores your natural freedom of movement.
         </p>
       </div>
-      <img src={headerImg} alt="" width="100%" />
+      <img src={headerImg} alt="image of Teya sitting down on mat" width="100%" />
     </section>
     <section id="greeting">
       <div className="nottoowide">
@@ -54,7 +54,7 @@ const IndexPage = () => (
 
     <section id="about" className="grid-row">
       <div className="about-picture">
-        <img src={aboutImg} alt="me" width="100%" />
+        <img src={aboutImg} alt="image of instructor" width="100%" />
       </div>
       <div className="about-container-text">
         <h2>Why Stance is Different.</h2>
@@ -170,7 +170,7 @@ const IndexPage = () => (
         </p>
       </div>
       <div className="about-picture">
-        <img src={studioImage} alt="me" width="100%" />
+        <img src={studioImage} alt="image of instructor" width="100%" />
       </div>
     </section>
     <section id="testimonials">

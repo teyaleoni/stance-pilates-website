@@ -35,7 +35,7 @@ const NavItems = ({ hrefPrefix = "" }) => (
 const LogoLink = ({ minWidth }) => (
   <div style={{ display: "grid", paddingTop: 4, alignItems: "center" }}>
     <a href="/" style={{ display: "contents" }}>
-      <img src={logo} alt="" width="100%" style={{ minWidth }} />
+      <img src={logo} alt="stance pilates logo" width="100%" style={{ minWidth }} />
     </a>
   </div>
 );
@@ -59,7 +59,7 @@ export default function Page({ children, navHrefPrefix }) {
             <NavItems hrefPrefix={navHrefPrefix} />
           </nav>
           <div className="logo-mirror-space">
-            <img src={logo} alt="" width="100%" />
+            <img src={logo} alt="stance pilates logo" width="100%" />
           </div>
         </header>
         <header className="narrow" style={{ height: 40, paddingRight: 40 }}>

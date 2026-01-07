@@ -69,6 +69,11 @@ nav {
   }
 }
 
+:focus {
+  outline: 2px dashed #000000; /* Dashed instead of Solid */
+  outline-offset: 4px;
+}
+
 nav > a {
   display: grid;
   align-content: center;
@@ -616,7 +621,7 @@ blockquote {
   font-style: italic;
   font-size: 1.25rem;
   color: #555;
-  font-weight: 'bolder';
+  font-weight: "bolder";
 }
 
 /* IMAGE STYLING */
@@ -643,4 +648,3 @@ hr {
   background: #e0e0e0;
   margin: 2em 0;
 }
-

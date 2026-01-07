@@ -30,7 +30,7 @@ export default function events() {
         <h1>Past Highlights</h1>
         <div className="grid-row">
           <div className="grid-row">
-            <img src={uncommonsImage} alt="me" width="100%" />
+            <img src={uncommonsImage} alt="highlight image of event" width="100%" />
             <div>
               <h3>Community Mat Series</h3>
               <p>
@@ -49,7 +49,7 @@ export default function events() {
             </div>
           </div>
           <div className="grid-row">
-            <img src={pelvicFloorImage} alt="me" width="100%" />
+            <img src={pelvicFloorImage} alt="highlight image of event" width="100%" />
             <div className="about-picture">
               <h3>Pelvic Health Workshop</h3>
               <p>
@@ -69,7 +69,7 @@ export default function events() {
             </div>
           </div>
           <div className="grid-row">
-            <img src={parallelEventImage} alt="me" width="100%" />
+            <img src={parallelEventImage} alt="highlight image of event" width="100%" />
             <div>
               <h3>Parallel Launch Event</h3>
               <p>
