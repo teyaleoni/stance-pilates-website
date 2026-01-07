@@ -30,7 +30,11 @@ const IndexPage = () => (
           restores your natural freedom of movement.
         </p>
       </div>
-      <img src={headerImg} alt="image of Teya sitting down on mat" width="100%" />
+      <img
+        src={headerImg}
+        alt="Teya sitting cross-legged on a pilates mat in a bright studio, looking confident"
+        width="100%"
+      />
     </section>
     <section id="greeting">
       <div className="nottoowide">
@@ -54,7 +58,11 @@ const IndexPage = () => (
 
     <section id="about" className="grid-row">
       <div className="about-picture">
-        <img src={aboutImg} alt="image of instructor" width="100%" />
+        <img
+          src={aboutImg}
+          alt="Portrait of Teya Lorts, Stance Pilates founder"
+          width="100%"
+        />
       </div>
       <div className="about-container-text">
         <h2>Why Stance is Different.</h2>
@@ -65,17 +73,8 @@ const IndexPage = () => (
         </p>
         <p>
           Ten years ago, my professional dance career ended with a diagnosis of
-          Paroxysmal Dyskinesia—a movement disorder{" "}
-          <span>
-            (
-            <a href={`/blog/robbed-by-the-invisible`}>
-              <em style={{ textDecoration: "underline" }}>
-                click here to read more
-              </em>
-            </a>
-            ){" "}
-          </span>
-          that left me feeling like a stranger in my own body.
+          Paroxysmal Dyskinesia—a movement disorder that left me feeling like a
+          stranger in my own body.
         </p>
         <p style={{ fontWeight: "700" }}>
           But I didn't just choose this path; I needed it. I learned the hard
@@ -170,7 +169,11 @@ const IndexPage = () => (
         </p>
       </div>
       <div className="about-picture">
-        <img src={studioImage} alt="image of instructor" width="100%" />
+        <img
+          src={studioImage}
+          alt="Close-up of BASI Systems Pilates reformer with wood finish and cream upholstery"
+          width="100%"
+        />
       </div>
     </section>
     <section id="testimonials">
@@ -356,12 +359,16 @@ const IndexPage = () => (
         </Faq>
 
         <Faq question="Can I share a package with a friend?">
-          <p><strong>For Private Sessions:</strong></p>
+          <p>
+            <strong>For Private Sessions:</strong>
+          </p>
           <p>
             Packages are designed for your individual progression and are
             non-transferable to another person.
           </p>
-          <p><strong>For Duet Sessions:</strong></p>
+          <p>
+            <strong>For Duet Sessions:</strong>
+          </p>
           <p>
             One client acts as the primary booker. The full session fee (or
             credit) is charged to the account holder who secures the slot. We do
@@ -411,8 +418,11 @@ const IndexPage = () => (
         </a>
       </div>
       <div className="about-picture">
-        {/* <img src={workshopImage} alt="me" width="100%" /> */}
-        <img src={teachingImage} alt="me" width="100%" />
+        <img
+          src={teachingImage}
+          alt="Group of people doing pilates on mats at an outdoor community event"
+          width="100%"
+        />
       </div>
     </section>
     <section>
