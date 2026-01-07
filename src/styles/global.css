@@ -70,8 +70,8 @@ nav {
 }
 
 :focus {
-  outline: 2px dashed #000000; /* Dashed instead of Solid */
-  outline-offset: 4px;
+  outline: 3px solid #005f73;
+  outline-offset: 2px;
 }
 
 nav > a {
@@ -284,6 +284,14 @@ p {
   --shadow-opacity: 0.25;
   box-shadow: 8px 0 16px rgb(0 0 0 / var(--shadow-opacity));
   transition: all 200ms;
+  /* 1. Force the menu to never be taller than the screen */
+    max-height: 100dvh; 
+
+    /* 2. The Magic Fix: Allow vertical scrolling inside this box */
+    overflow-y: auto; 
+
+    /* 3. Smooth scrolling for iPhone/iPad users */
+    -webkit-overflow-scrolling: touch;
 }
 .closed {
   transform: translateX(100%);
