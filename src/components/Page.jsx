@@ -103,6 +103,9 @@ export default function Page({ children, navHrefPrefix }) {
           <div>
             <a href="/terms-and-conditions">Terms and Conditions</a>
           </div>
+          <div>
+            <a href="/accessibility">Accessibility</a>
+          </div>
         </div>
       </main>
     </div>

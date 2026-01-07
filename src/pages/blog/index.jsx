@@ -27,7 +27,7 @@ export default function BlogIndex() {
         {/* <!-- FEATURED POST (Your "Origin Story") --> */}
         <section class="featured-post">
           {/* <!-- Replace 'dancer-photo.jpg' with your B&W childhood photo --> */}
-          <img src={babyImage} alt="Young dancer" class="featured-image" />
+          <img src={babyImage} alt="Teya as a young dancer in a dance costume" class="featured-image" />
 
           <div class="featured-content">
             <span class="category-tag">Founder Stories</span>
@@ -51,7 +51,7 @@ export default function BlogIndex() {
             <article class="article-card">
               <img
                 src={lantanasImage}
-                alt="Picture of the debris from a lantana plant"
+                alt="Picture of debris from a lantana plant"
                 class="article-image"
               ></img>
               <span class="category-tag">The Mindset</span>
@@ -69,7 +69,7 @@ export default function BlogIndex() {
             <article class="article-card">
               <img
                 src={privateSessionImage}
-                alt="Private Pilates Session"
+                alt="Teya teaching a private session with a client on a reformer"
                 class="article-image"
               ></img>
               <span class="category-tag">The Method</span>

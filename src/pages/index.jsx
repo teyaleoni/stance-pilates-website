@@ -264,6 +264,7 @@ const IndexPage = () => (
               price={100}
               expiry="1 month"
               cta="PURCHASE"
+              aria-label="Purchase Single Session Bundle"
             >
               A focused, standalone session. Ideal for an initial assessment or
               a specific tune-up.
@@ -392,6 +393,7 @@ const IndexPage = () => (
               target="_blank"
               rel="noreferrer"
               href="https://stancepilates.janeapp.com/online_gift_cards/new"
+              style={{color: '#98523c'}}
             >
               Purchase one here
             </a>

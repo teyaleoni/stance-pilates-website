@@ -15,10 +15,14 @@ export default function PricingCard({
   cta,
   children,
   noSavingsBadge = false,
+  "aria-label": ariaLabel, // 1. We extract the label here
+  ...props
 }) {
   const savings = bundleSize * singleSessionPrice - price;
-
   const { innerTextRef, outerMinHeight } = useSynchronizedHeight();
+  const finalLabel =
+    ariaLabel ||
+    `Purchase ${heading || (bundleSize ? `${bundleSize}-Session Bundle` : "Session")}`;
 
   return (
     <div
@@ -31,6 +35,7 @@ export default function PricingCard({
         position: "relative",
         gridTemplateRows: "1fr auto",
       }}
+      {...props}
     >
       <div
         style={{
@@ -76,7 +81,7 @@ export default function PricingCard({
           </div>
         </div>
       </div>
-      <a href={BOOKING_URL} className="button">
+      <a href={BOOKING_URL} className="button" aria-label={finalLabel}>
         <div
           style={{
             minHeight: finite(outerMinHeight),
