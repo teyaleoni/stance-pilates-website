@@ -22,7 +22,8 @@ const FlodeskCode = `
   })(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
 `;
 
-exports.onRenderBody = ({ setHeadComponents }) => {
+exports.onRenderBody = ({ setHeadComponents, setHtmlAttributes }) => {
+  setHtmlAttributes({ lang: "en" });
   setHeadComponents([
     <script
       key="flodesk"

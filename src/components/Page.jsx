@@ -21,14 +21,6 @@ const NavItems = ({ hrefPrefix = "" }) => (
     <a target={"_blank"} href={C.BOOKING_URL}>
       Book
     </a>
-    <a
-      className="instagram-link"
-      target="_blank"
-      rel="noreferrer"
-      href={C.INSTAGRAM_URL}
-    >
-      <InstagramIcon />
-    </a>
   </>
 );
 
