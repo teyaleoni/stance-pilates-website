@@ -339,14 +339,43 @@ const IndexPage = () => (
           </p>
         </Faq>
 
-        <Faq question="Why choose personalized training (Privates & Duets) over a large group class?">
+        <Faq question="Will I get more out of a Private Session than a Group Class?">
           <p>
-            Pilates is a discipline of detail. In a private or duet session, we
-            can correct physical imbalances and ensure you are engaging the
-            correct muscles without strain. This private focus allows us to
-            address specific needs—whether back pain relief, posture correction,
-            injury rehabilitation, or sport-specific conditioning—ensuring you
-            build resilience safely.
+            Group classes are wonderful for fitness and flow, but they often
+            move too fast to really teach you <em>why</em> you are doing a
+            movement.
+          </p>
+          <p>
+            Private sessions are an education. They are designed to increase
+            your <strong>body awareness</strong> so you aren't just going
+            through the motions.
+          </p>
+          <p>Here is how the experience differs:</p>
+          <ul>
+            <li>
+              <strong>Internal vs. External Focus:</strong> In a group, you
+              often have to look around to follow the choreography. In a private
+              session, I teach you how to feel the movement from the inside out.
+              You stop relying on the mirror and start relying on your own
+              muscles.
+            </li>
+            <li>
+              <strong>The "Why":</strong> It isn't just a workout; it’s a lab.
+              If a movement feels weird, we pause. I explain the mechanics and
+              help you understand <em>your</em> unique bone structure, so the
+              exercise actually makes sense to your brain and body.
+            </li>
+            <li>
+              <strong>Safety & Strategy:</strong> You won't just get a good
+              workout; you will get a "user manual" for your body. You will
+              learn exactly how to modify exercises for your specific tightness
+              or injuries, giving you the tools to keep yourself safe in any
+              class you take.
+            </li>
+          </ul>
+          <p>
+            It’s the difference between following a routine and truly
+            understanding your body.
           </p>
         </Faq>
 
@@ -393,7 +422,7 @@ const IndexPage = () => (
               target="_blank"
               rel="noreferrer"
               href="https://stancepilates.janeapp.com/online_gift_cards/new"
-              style={{color: '#98523c'}}
+              style={{ color: "#98523c" }}
             >
               Purchase one here
             </a>
