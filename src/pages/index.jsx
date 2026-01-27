@@ -456,9 +456,9 @@ const IndexPage = () => (
         />
       </div>
     </section>
-    <section>
+    {/* <section>
       <FlodeskForm formName="home" />
-    </section>
+    </section> */}
   </Page>
 );
 

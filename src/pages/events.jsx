@@ -23,9 +23,9 @@ export default function events() {
           </div>
         </div>
       </section>
-      <section>
+      {/* <section>
         <FlodeskForm formName="event" />
-      </section>
+      </section> */}
       <section className="content-block">
         <h1>Past Highlights</h1>
         <div className="grid-row">

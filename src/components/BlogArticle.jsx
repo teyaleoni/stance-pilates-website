@@ -35,7 +35,7 @@ export default function BlogArticle({ title, postDate, readTime, content }) {
                 /> */}
           {content}
         </div>
-        <FlodeskForm formName="blog" />
+        {/* <FlodeskForm formName="blog" /> */}
         <ScrollToTopButton />
       </div>
     </Page>
