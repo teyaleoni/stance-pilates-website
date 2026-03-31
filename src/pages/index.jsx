@@ -49,7 +49,7 @@ const IndexPage = () => (
       <a
         className="button cta"
         target={"_blank"}
-        href={`https://stancepilates.janeapp.com/`}
+        href={`https://stancepilates.janeapp.com/locations/stance-pilates/book#staff_member/1/treatment/1`}
       >
         START YOUR PRACTICE
       </a>
