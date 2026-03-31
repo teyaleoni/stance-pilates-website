@@ -43,8 +43,7 @@ const IndexPage = () => (
           Private & Duet Pilates Sessions in Southwest Las Vegas
         </p>
         <p style={{ fontFamily: "Lato", fontSize: "1.25rem" }}>
-          Dedicated to the art of control. We build the structural foundation
-          for a life in motion.
+          Experience the Pilates Method in a distraction-free environment. No crowds. No noise. Just precision.
         </p>
       </div>
       <a

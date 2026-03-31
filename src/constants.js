@@ -1,4 +1,4 @@
-export const BOOKING_URL = "https://stancepilates.janeapp.com/";
+export const BOOKING_URL = "https://stancepilates.janeapp.com/locations/stance-pilates/book#staff_member/1/treatment/1";
 export const INSTAGRAM_HANDLE = "stance.pilates";
 export const INSTAGRAM_URL = `https://www.instagram.com/${INSTAGRAM_HANDLE}`;
 export const DOMAIN_NAME = "stancepilates.com";
