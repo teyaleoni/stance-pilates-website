@@ -1,0 +1,35 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import ScrollToTopButton from "../components/ScrollToTopButton.astro";
+import authorImage from "../assets/author-blog-64.jpg";
+
+interface Props {
+  title: string;
+  postDate: string;
+  readTime: string;
+}
+
+const { title, postDate, readTime } = Astro.props;
+---
+
+<BaseLayout title="Stance Pilates Blog" navHrefPrefix="/">
+  <div class="blog-article-container">
+    <div class="blog-article-header">
+      <h1 class="blog-article-title">{title}</h1>
+
+      <div class="author-meta">
+        <img src={authorImage.src} alt="image of author" class="author-img" />
+        <div class="meta-text">
+          <span class="author-name">Teya</span>
+          <span class="post-date">{postDate} · {readTime}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-article-content">
+      <slot />
+    </div>
+
+    <ScrollToTopButton />
+  </div>
+</BaseLayout>

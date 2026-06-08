@@ -1,0 +1,76 @@
+---
+import { BOOKING_URL } from "../constants";
+
+interface Props {
+  heading?: string;
+  bundleSize?: number;
+  bundleSizeDuet?: number;
+  price: number;
+  endDate?: string;
+  expiry?: string;
+  cta: string;
+  noSavingsBadge?: boolean;
+  "aria-label"?: string;
+}
+
+const {
+  heading,
+  bundleSize,
+  bundleSizeDuet,
+  price,
+  endDate,
+  expiry,
+  cta,
+  noSavingsBadge = false,
+  "aria-label": ariaLabel,
+} = Astro.props;
+
+const singleSessionPrice = 100;
+const savings = (bundleSize ?? 0) * singleSessionPrice - price;
+const showBadge = savings > 0 && !noSavingsBadge;
+
+const title = heading
+  ? heading
+  : bundleSizeDuet
+    ? bundleSizeDuet === 1
+      ? "Duet Session"
+      : `${bundleSizeDuet}-Session Bundle`
+    : bundleSize === 1
+      ? "Single Session"
+      : `${bundleSize}-Session Bundle`;
+
+const finalLabel =
+  ariaLabel ||
+  `Purchase ${heading || (bundleSize ? `${bundleSize}-Session Bundle` : "Session")}`;
+---
+
+<div
+  class="card elevated"
+  style="display: grid; background-color: white; gap: 1rem; align-content: space-between; position: relative; grid-template-rows: 1fr auto;"
+>
+  <div
+    style="display: grid; gap: 1rem; align-content: start; grid-template-rows: auto 1fr;"
+  >
+    <h3>
+      {title}<br />${price}{
+        bundleSizeDuet && <span style="font-size: 0.6em;"> / person</span>
+      }
+    </h3>
+
+    {showBadge && <div class="savings-badge">Save ${savings}</div>}
+
+    <div style="display: grid; gap: 1rem; align-content: space-between;">
+      <div><slot /></div>
+      <div style="font-style: italic;">
+        {endDate ? `Valid through ${endDate}` : `Expires in ${expiry}`}
+      </div>
+    </div>
+  </div>
+
+  <a
+    href={BOOKING_URL}
+    class="button"
+    aria-label={finalLabel}
+    style="display: grid; align-items: center; text-align: center;">{cta}</a
+  >
+</div>

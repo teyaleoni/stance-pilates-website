@@ -1,103 +1,196 @@
-:root {
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ *
+ * Design tokens. Mirrors the original :root variables. Exposing them
+ * via @theme also generates Tailwind utilities (bg-offwhite, text-terracotta,
+ * font-jost, ...).
+ * ------------------------------------------------------------------ */
+@theme {
   --color-dark: rgb(31, 29, 26);
   --color-blue-steel: #7e8a9b;
   --color-offwhite: rgb(241, 238, 234);
   --color-terracotta: #98523c;
   --color-slate-grey: #707c8f;
-  --color-black: #333333;
   --color-beige-bg: #f2f0eb;
+  /* original used --color-black: #333 (a soft black); renamed so it does not
+     clobber Tailwind's real black and to match the stray --color-soft-black ref */
+  --color-soft-black: #333333;
+
+  --font-roboto: "Roboto", sans-serif;
+  --font-jost: "Jost", sans-serif;
+  --font-lato: "Lato", sans-serif;
+}
+
+/* Plain CSS variables used by custom rules below (not Tailwind tokens). */
+:root {
   --side-space: 2rem;
   --expand-duration: 0.2s;
+  --inset: 1rem;
 }
-
-* {
-  box-sizing: border-box;
-}
-
 @media (min-width: 48rem) {
   :root {
     --side-space: 5rem;
   }
 }
-
-body {
-  margin: unset;
-  color: var(--color-black);
-  font-family: Roboto;
-  font-weight: 300;
-}
-
-header {
-  position: relative;
-  background: white;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  padding: 0 var(--side-space);
-  box-shadow: 0 -8px 16px rgb(0 0 0 / 0.25);
-}
- li {
-  margin-bottom: 1rem;
- }
-.bg-white {
-  background-color: white;
-}
-.bg-offwhite {
-  background-color: var(--color-offwhite);
-}
-
-main {
-  overflow-y: auto;
-  scroll-behavior: smooth;
-}
-
-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-
-.spaced {
-  gap: 1rem;
-}
-
-.spaced-responsive {
-  gap: 0;
-}
 @media (min-width: 64rem) {
-  .spaced-responsive {
-    gap: 1rem;
+  :root {
+    --inset: 2rem;
   }
 }
 
-:focus {
-  outline: 3px solid #005f73;
-  outline-offset: 2px;
+/* ------------------------------------------------------------------ *
+ * Base layer.
+ * Tailwind's preflight strips default margins from <p>, removes list
+ * markers from <ul>/<ol>, etc. This content-heavy site relied on those
+ * UA defaults for vertical rhythm, so we restore them here alongside the
+ * original element styling.
+ * ------------------------------------------------------------------ */
+@layer base {
+  body {
+    color: var(--color-soft-black);
+    font-family: var(--font-roboto);
+    font-weight: 300;
+  }
+
+  /* Restore default paragraph spacing + original type scale. */
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6em;
+    margin: 1em 0;
+  }
+
+  /* Restore list markers + spacing removed by preflight. */
+  ul {
+    list-style: disc;
+    margin: 1em 0;
+    padding-inline-start: 40px;
+  }
+  ol {
+    list-style: decimal;
+    margin: 1em 0;
+    padding-inline-start: 40px;
+  }
+  li {
+    margin-bottom: 1rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: 0;
+    font-family: var(--font-lato);
+    line-height: 1.2;
+  }
+  h1 {
+    font-family: var(--font-jost);
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  a:hover {
+    opacity: 0.7;
+  }
+
+  button {
+    padding: unset;
+    margin: unset;
+    background: unset;
+    color: unset;
+    border: unset;
+    cursor: pointer;
+  }
+
+  :focus {
+    outline: 3px solid #005f73;
+    outline-offset: 2px;
+  }
+
+  blockquote {
+    border-left: 3px solid var(--color-soft-black);
+    margin: 2em 0;
+    padding-left: 20px;
+    font-style: italic;
+    font-size: 1.25rem;
+    color: #555;
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 2em 0;
+  }
 }
 
-nav > a {
-  display: grid;
-  align-content: center;
-  padding: 0.5rem;
+/* ------------------------------------------------------------------ *
+ * Layout chrome: the 100vh app shell, fixed-style header, scrollable
+ * main, and the section rhythm (responsive side padding + alternating
+ * backgrounds). The original used a JS "Fixer" to fake a fixed header;
+ * the grid (auto 1fr) + main overflow achieves the same with no JS.
+ * ------------------------------------------------------------------ */
+@layer base {
+  .app-shell {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
+
+  header {
+    position: relative;
+    background: white;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0 var(--side-space);
+    box-shadow: 0 -8px 16px rgb(0 0 0 / 0.25);
+  }
+
+  main {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  nav > a {
+    display: grid;
+    align-content: center;
+    padding: 0.5rem;
+  }
+
+  section {
+    padding: 2rem var(--side-space);
+    display: grid;
+  }
+  section:nth-of-type(2n) {
+    background-color: var(--color-offwhite);
+  }
 }
 
-.linky {
-  color: var(--color-blue-steel);
-  text-decoration: underline;
-}
-
+/* Header: wide (desktop) vs narrow (mobile) variants + logo. */
 .logo {
-  font-family: "Jost";
+  font-family: var(--font-jost);
   margin: 0.5rem 0;
 }
-
 .logo-mirror-space {
   display: none;
   opacity: 0;
   user-select: none;
 }
-
 header.wide {
   display: none;
   gap: 1rem;
@@ -120,160 +213,7 @@ header.wide {
   }
 }
 
-button {
-  padding: unset;
-  margin: unset;
-  background: unset;
-  color: unset;
-  border: unset;
-  cursor: pointer;
-}
-
-section {
-  padding: 2rem var(--side-space);
-  display: grid;
-}
-
-section:nth-of-type(2n) {
-  background-color: var(--color-offwhite);
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-  list-style: none;
-}
-a:hover {
-  opacity: 0.7;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  margin: unset;
-  font-family: Lato;
-  line-height: 1.2;
-}
-
-h1 {
-  font-family: Jost;
-  font-size: 2.5rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-p {
-  font-size: 1.1rem;
-  line-height: 1.6em;
-}
-
-#home {
-  align-items: center;
-}
-
-#greeting {
-  display: grid;
-  justify-content: center;
-  text-align: center;
-}
-
-#greeting > p {
-  font-size: 1.3rem;
-  max-width: 64rem;
-}
-
-#testimonials {
-  display: grid;
-  gap: 1rem;
-}
-
-.social {
-  margin-top: 2rem;
-}
-
-.instagram-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.button {
-  background-color: var(--color-terracotta);
-  color: white;
-  font-family: Jost;
-  border: none;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-}
-.button:hover {
-  opacity: 0.8;
-}
-
-.cta {
-  padding: 0.75rem 4rem;
-}
-@media (min-width: 48rem) {
-  .cta {
-    justify-self: center;
-  }
-}
-
-.savings-badge {
-  font-family: Jost;
-  background-color: var(--color-terracotta);
-  color: white;
-  position: absolute;
-  z-index: 1;
-  padding: 0.2rem 0.7rem;
-  border-radius: 2rem;
-  top: -10px;
-  right: -10px;
-}
-
-.grid-row,
-.grid-row-lg {
-  display: grid;
-  gap: 3rem;
-}
-@media (min-width: 48rem) {
-  .grid-row {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (min-width: 64rem) {
-  .grid-row-lg {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.grid-row-4 {
-  display: grid;
-}
-@media (min-width: 48rem) {
-  .grid-row-4 {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (min-width: 64rem) {
-  .grid-row-4 {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.nottoowide {
-  max-width: 56rem;
-  margin: auto;
-}
-
+/* Mobile slide-in nav drawer. */
 #nav-drawer {
   z-index: 2;
   position: fixed;
@@ -286,69 +226,123 @@ p {
   --shadow-opacity: 0.25;
   box-shadow: 8px 0 16px rgb(0 0 0 / var(--shadow-opacity));
   transition: all 200ms;
-  /* 1. Force the menu to never be taller than the screen */
-    max-height: 100dvh; 
-
-    /* 2. The Magic Fix: Allow vertical scrolling inside this box */
-    overflow-y: auto; 
-
-    /* 3. Smooth scrolling for iPhone/iPad users */
-    -webkit-overflow-scrolling: touch;
+  max-height: 100dvh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
-.closed {
+#nav-drawer.closed {
   transform: translateX(100%);
   --shadow-opacity: 0;
 }
-
 @media (min-width: 48rem) {
   #nav-drawer {
     display: none;
   }
 }
 
-.svg-icon {
-  user-select: none;
-  width: 1em;
-  height: 1em;
-  display: inline-block;
-  fill: currentColor;
-  flex-shrink: 0;
-  font-size: 1.5rem;
-}
+/* ------------------------------------------------------------------ *
+ * Reusable components (buttons, cards, badges, icons).
+ * ------------------------------------------------------------------ */
+@layer components {
+  .button {
+    background-color: var(--color-terracotta);
+    color: white;
+    font-family: var(--font-jost);
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+  }
+  .button:hover {
+    opacity: 0.8;
+  }
 
-.row-responsive {
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 48rem) {
-  .row-responsive {
-    flex-direction: row;
+  .cta {
+    padding: 0.75rem 4rem;
+  }
+  @media (min-width: 48rem) {
+    .cta {
+      justify-self: center;
+    }
+  }
+
+  .card {
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+  .elevated {
+    box-shadow: 0 1rem 2rem rgb(0 0 0 / 0.07);
+  }
+
+  .savings-badge {
+    font-family: var(--font-jost);
+    background-color: var(--color-terracotta);
+    color: white;
+    position: absolute;
+    z-index: 1;
+    padding: 0.2rem 0.7rem;
+    border-radius: 2rem;
+    top: -10px;
+    right: -10px;
+  }
+
+  .linky {
+    color: var(--color-blue-steel);
+    text-decoration: underline;
+  }
+
+  .svg-icon {
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentColor;
+    flex-shrink: 0;
+    font-size: 1.5rem;
+  }
+
+  .instagram-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
   }
 }
 
-.grow {
-  flex: 1;
-}
-
-.card {
-  border-radius: 0.5rem;
-  padding: 1rem;
-}
-
-.elevated {
-  box-shadow: 0 1rem 2rem rgb(0 0 0 / 0.07);
-}
-
-.blog-post-list-title {
+/* ------------------------------------------------------------------ *
+ * "Who is Stance For?" persona cards (JobCard).
+ * ------------------------------------------------------------------ */
+.stance-card {
   margin-bottom: 1rem;
 }
-
-.intro-call {
-  color: blue;
-  font-weight: bolder;
-  text-decoration: underline;
+.stance-job-card {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border-top: 1.8px solid var(--color-terracotta);
+}
+.stance-card-i {
+  margin-top: 1.2rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
+.stance-job-title {
+  color: var(--color-terracotta);
+  margin-bottom: 1rem;
+}
+.stance-job-bold {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.stance-job-line {
+  height: 0.5px;
+  background-color: #e5e5e5;
+  border: none;
+  width: 80%;
 }
 
+/* ------------------------------------------------------------------ *
+ * Policy pages: list spacing + nested decimal numbering (CSS counters).
+ * ------------------------------------------------------------------ */
 .policy > * > li {
   margin: 1em 0;
 }
@@ -374,50 +368,13 @@ p {
   margin-right: 1em;
 }
 
-.content-block {
-  display: grid;
-  gap: 1rem;
-}
-
-.stance-card {
-  margin-bottom: 1rem;
-}
-
-.stance-job-card {
-  border-radius: 0.5rem;
-  padding: 1rem;
-  border-top: 1.8px solid var(--color-terracotta);
-}
-
-.stance-card-i {
-  margin-top: 1.2rem;
-  font-size: 1.25rem;
-  text-align: center;
-}
-
-.stance-job-title {
-  color: var(--color-terracotta);
-  margin-bottom: 1rem;
-}
-
-.stance-job-bold {
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.stance-job-line {
-  height: 0.5px;
-  background-color: #e5e5e5;
-  border: none;
-  width: 80%;
-}
-
-/* blog homepage*/
+/* ------------------------------------------------------------------ *
+ * Blog index (featured post + recent grid) and article typography.
+ * ------------------------------------------------------------------ */
 .blog-header {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  /* border-bottom: 1px solid #e0e0e0; */
   padding: 1.8rem 1rem 0 1rem;
 }
 .blog-title {
@@ -431,7 +388,6 @@ p {
   color: var(--color-slate-grey);
 }
 
-/* FEATURED POST SECTION */
 .featured-post {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -439,26 +395,19 @@ p {
   align-items: center;
   margin-bottom: 2.2rem;
 }
-
 @media (max-width: 768px) {
   .featured-post {
     grid-template-columns: 1fr;
     gap: 30px;
   }
 }
-
 .featured-image {
   width: 100%;
   height: 400px;
-  background-color: #e0e0e0; /* Placeholder for B&W Dancer Photo */
+  background-color: #e0e0e0;
   object-fit: cover;
   border-radius: 4px;
 }
-
-/* .featured-content {
-  padding: 20px;
-} */
-
 .category-tag {
   font-size: 0.75rem;
   text-transform: uppercase;
@@ -468,59 +417,47 @@ p {
   display: block;
   font-weight: bold;
 }
-
 .featured-title {
   font-size: 2.5rem;
   line-height: 1.2;
   margin: 0 0 20px 0;
-  color: var(--color-black);
+  color: var(--color-soft-black);
 }
-
 .featured-excerpt {
   font-size: 1.1rem;
   color: #555;
   margin-bottom: 30px;
 }
-
 .read-btn {
   display: inline-block;
   padding: 12px 24px;
-  background-color: var(--color-black);
+  background-color: var(--color-soft-black);
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 0.85rem;
   font-weight: bold;
-  /* transition: background 0.3s; */
 }
 .read-btn:hover {
   background-color: var(--color-terracotta);
 }
 
-/* RECENT POSTS GRID */
 .recent-grid-title {
   font-size: 2rem;
   margin-bottom: 40px;
   border-bottom: 1px solid #eee;
   padding-bottom: 10px;
 }
-
 .article-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 40px;
 }
-
-/* STANDARD ARTICLE CARD */
 .article-card {
   display: flex;
   flex-direction: column;
-  /* transition: transform 0.3s ease; */
 }
-/* .article-card:hover {
-            transform: translateY(-5px);
-        } */
 .article-image {
   width: 100%;
   height: 250px;
@@ -529,7 +466,6 @@ p {
   margin-bottom: 20px;
   border-radius: 2px;
 }
-
 .blog-image {
   width: 100%;
   height: 500px;
@@ -559,102 +495,52 @@ p {
   color: var(--color-terracotta);
 }
 
-/* blog article */
+/* Blog article reading view. */
 .blog-article-container {
-  max-width: 700px; /* Optimal reading width, like Medium */
+  max-width: 700px;
   margin: 0 auto;
   padding: 2.5rem 1.25rem 2.5rem 1.25rem;
 }
-
-/* HEADER SECTION */
-
 .blog-article-header {
   margin-bottom: 25px;
-  border-bottom: 1px solid #e0e0e0; /* Light grey line */
+  border-bottom: 1px solid #e0e0e0;
   padding-bottom: 35px;
 }
-
 .blog-article-title {
   line-height: 1.1;
   margin-bottom: 15px;
   color: #111;
 }
-
-.blog-article-subtitle {
-  font-size: 1.35rem;
-  line-height: 1.4;
-  color: #757575; /* Softer grey for subtitle */
-  font-weight: 400;
-}
-
-/* AUTHOR META */
 .author-meta {
   display: flex;
   align-items: center;
 }
-
 .author-img {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background-color: var(--color-late-grey); /* Placeholder */
   margin-right: 12px;
   object-fit: cover;
 }
-
 .meta-text {
   font-size: 0.9rem;
 }
-
 .author-name {
   font-weight: bold;
   display: block;
 }
-
 .post-date {
   color: #757575;
 }
-
-/* MAIN CONTENT STYLES */
 .blog-article-content {
-  font-size: 1.125rem; /* ~18px */
+  font-size: 1.125rem;
   line-height: 1.8;
   color: #292929;
   margin-bottom: 5rem;
 }
-
-/* BLOCKQUOTE STYLING */
-blockquote {
-  border-left: 3px solid var(--color-black); /* Minimalist line */
-  margin: 2em 0;
-  padding-left: 20px;
-  font-style: italic;
-  font-size: 1.25rem;
-  color: #555;
-  font-weight: "bolder";
-}
-
-/* IMAGE STYLING */
 .blog-article-hero-image {
   width: 100%;
   height: auto;
   margin-bottom: 40px;
   display: block;
-}
-
-.image-caption {
-  font-family: var(--font-sans);
-  font-size: 0.85rem;
-  color: #757575;
-  text-align: center;
-  margin-top: 10px;
-  display: block;
-}
-
-/* DIVIDER */
-hr {
-  border: 0;
-  height: 1px;
-  background: #e0e0e0;
-  margin: 2em 0;
 }

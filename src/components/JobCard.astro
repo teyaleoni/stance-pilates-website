@@ -1,0 +1,31 @@
+---
+interface Props {
+  number: string;
+  job: string;
+  youAre: string;
+  struggle: string;
+  solution: string;
+  quote: string;
+}
+
+const { number, job, youAre, struggle, solution, quote } = Astro.props;
+---
+
+<div class="stance-job-card elevated bg-white">
+  <h1 class="stance-job-title">{number}</h1>
+  <h2>{job}</h2>
+  <p class="stance-card">
+    <span class="stance-job-bold">You are:</span>
+    {youAre}
+  </p>
+  <p class="stance-card">
+    <span class="stance-job-bold">The Struggle:</span>
+    {struggle}
+  </p>
+  <p class="stance-card">
+    <span class="stance-job-bold">The Stance Solution:</span>
+    {solution}
+  </p>
+  <hr class="stance-job-line" />
+  <p class="stance-card-i"><i>&ldquo;{quote}&rdquo;</i></p>
+</div>
