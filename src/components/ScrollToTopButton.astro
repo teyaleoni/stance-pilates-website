@@ -1,0 +1,39 @@
+---
+
+---
+
+<button
+  type="button"
+  id="to-top"
+  class="to-top inactive"
+  aria-label="Scroll to top"
+>
+  🔝
+</button>
+
+<style>
+  .to-top {
+    position: fixed;
+    bottom: var(--inset);
+    right: var(--inset);
+    transition: opacity 0.3s;
+    font-size: 1.5rem;
+    opacity: 1;
+  }
+  .to-top.inactive {
+    opacity: 0;
+    pointer-events: none;
+  }
+</style>
+
+<script>
+  const scroll = document.getElementById("scroll");
+  const btn = document.getElementById("to-top");
+  const update = () =>
+    btn?.classList.toggle("inactive", (scroll?.scrollTop ?? 0) < 32);
+  scroll?.addEventListener("scroll", update);
+  update();
+  btn?.addEventListener("click", () =>
+    scroll?.scrollTo({ behavior: "smooth", top: 0 }),
+  );
+</script>

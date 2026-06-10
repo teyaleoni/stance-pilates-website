@@ -1,0 +1,97 @@
+---
+interface Props {
+  question: string;
+}
+
+const { question } = Astro.props;
+---
+
+<div class="faq" data-open="false">
+  <button type="button" class="faq-heading" aria-expanded="false">
+    <h3 class="faq-question">{question}</h3>
+    <div class="faq-arrow">
+      <div class="seg seg-left"></div>
+      <div class="seg seg-right"></div>
+    </div>
+  </button>
+  <div class="faq-body">
+    <div class="faq-body-inner">
+      <slot />
+    </div>
+  </div>
+</div>
+
+<style>
+  .faq {
+    display: grid;
+  }
+  .faq :global(p) {
+    margin: 0;
+    padding-top: 1em;
+  }
+
+  .faq-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  .faq-question {
+    text-align: left;
+  }
+
+  /* Smoothly animate open/close with grid track sizing — no JS measurement. */
+  .faq-body {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows var(--expand-duration);
+  }
+  .faq[data-open="true"] .faq-body {
+    grid-template-rows: 1fr;
+  }
+  .faq-body-inner {
+    overflow: hidden;
+    min-height: 0;
+  }
+
+  /* Up/down chevron. */
+  .faq-arrow {
+    display: flex;
+    width: 24px;
+  }
+  .faq-arrow .seg {
+    flex: 1;
+    background: black;
+    height: 3px;
+    border-radius: 2px;
+    transition: transform var(--expand-duration);
+  }
+  .faq-arrow .seg-left {
+    margin-right: -1px;
+    transform-origin: center right;
+    transform: rotate(45deg);
+  }
+  .faq-arrow .seg-right {
+    margin-left: -1px;
+    transform-origin: center left;
+    transform: rotate(-45deg);
+  }
+  .faq[data-open="true"] .faq-arrow .seg-left {
+    transform: rotate(-45deg);
+  }
+  .faq[data-open="true"] .faq-arrow .seg-right {
+    transform: rotate(45deg);
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>(".faq").forEach((faq) => {
+    const btn = faq.querySelector(".faq-heading");
+    btn?.addEventListener("click", (e) => {
+      e.preventDefault();
+      const open = faq.getAttribute("data-open") === "true";
+      faq.setAttribute("data-open", String(!open));
+      btn.setAttribute("aria-expanded", String(!open));
+    });
+  });
+</script>
