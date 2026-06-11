@@ -1,31 +1,19 @@
 ---
 interface Props {
-  number: string;
   job: string;
-  youAre: string;
-  struggle: string;
-  solution: string;
+  body: string[];
   quote: string;
 }
 
-const { number, job, youAre, struggle, solution, quote } = Astro.props;
+const { job, body, quote } = Astro.props;
 ---
 
 <div class="stance-job-card elevated bg-white">
-  <h1 class="stance-job-title">{number}</h1>
+  <div class="stance-job-title"><slot name="icon" /></div>
   <h2>{job}</h2>
-  <p class="stance-card">
-    <span class="stance-job-bold">You are:</span>
-    {youAre}
-  </p>
-  <p class="stance-card">
-    <span class="stance-job-bold">The Struggle:</span>
-    {struggle}
-  </p>
-  <p class="stance-card">
-    <span class="stance-job-bold">The Stance Solution:</span>
-    {solution}
-  </p>
+  <div class="stance-job-body">
+    {body.map((para) => <p class="stance-card">{para}</p>)}
+  </div>
   <hr class="stance-job-line" />
-  <p class="stance-card-i"><i>&ldquo;{quote}&rdquo;</i></p>
+  <blockquote class="stance-card-i">{quote}</blockquote>
 </div>

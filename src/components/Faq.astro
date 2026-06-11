@@ -24,6 +24,7 @@ const { question } = Astro.props;
 <style>
   .faq {
     display: grid;
+    border-bottom: 1px solid #e9e5e1;
   }
   .faq :global(p) {
     margin: 0;
@@ -35,9 +36,20 @@ const { question } = Astro.props;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+    width: 100%;
+    padding: 0.85rem 0;
+    cursor: pointer;
+    text-align: left;
   }
   .faq-question {
     text-align: left;
+    font-size: 1.15rem;
+    line-height: 1.4;
+    transition: color 150ms ease;
+  }
+  .faq-heading:hover .faq-question,
+  .faq[data-open="true"] .faq-question {
+    color: var(--color-terracotta);
   }
 
   /* Smoothly animate open/close with grid track sizing — no JS measurement. */
@@ -53,15 +65,21 @@ const { question } = Astro.props;
     overflow: hidden;
     min-height: 0;
   }
+  /* Bottom spacing lives on the inner content so it collapses with the
+     answer when closed (padding on .faq-body-inner would not collapse). */
+  .faq-body-inner > :global(:last-child) {
+    padding-bottom: 1.3rem;
+  }
 
   /* Up/down chevron. */
   .faq-arrow {
     display: flex;
-    width: 24px;
+    width: 18px;
+    flex-shrink: 0;
   }
   .faq-arrow .seg {
     flex: 1;
-    background: black;
+    background: var(--color-terracotta);
     height: 3px;
     border-radius: 2px;
     transition: transform var(--expand-duration);

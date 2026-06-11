@@ -10,6 +10,9 @@ interface Props {
   expiry?: string;
   cta: string;
   noSavingsBadge?: boolean;
+  highlight?: boolean;
+  tag?: string;
+  hidePerSession?: boolean;
   "aria-label"?: string;
 }
 
@@ -22,12 +25,18 @@ const {
   expiry,
   cta,
   noSavingsBadge = false,
+  highlight = false,
+  tag,
+  hidePerSession = false,
   "aria-label": ariaLabel,
 } = Astro.props;
 
 const singleSessionPrice = 100;
 const savings = (bundleSize ?? 0) * singleSessionPrice - price;
 const showBadge = savings > 0 && !noSavingsBadge;
+
+const showPerSession = !!bundleSize && bundleSize > 1 && !hidePerSession;
+const perSession = showPerSession ? Math.round(price / bundleSize) : 0;
 
 const title = heading
   ? heading
@@ -45,32 +54,36 @@ const finalLabel =
 ---
 
 <div
-  class="card elevated"
-  style="display: grid; background-color: white; gap: 1rem; align-content: space-between; position: relative; grid-template-rows: 1fr auto;"
+  class:list={[
+    "card",
+    "elevated",
+    "pricing-card",
+    { "pricing-card-highlight": highlight },
+  ]}
 >
-  <div
-    style="display: grid; gap: 1rem; align-content: start; grid-template-rows: auto 1fr;"
-  >
-    <h3>
-      {title}<br />${price}{
-        bundleSizeDuet && <span style="font-size: 0.6em;"> / person</span>
-      }
-    </h3>
+  {showBadge && <div class="savings-badge">Save ${savings}</div>}
+  {tag && <span class="pricing-tag">{tag}</span>}
 
-    {showBadge && <div class="savings-badge">Save ${savings}</div>}
-
-    <div style="display: grid; gap: 1rem; align-content: space-between;">
-      <div><slot /></div>
-      <div style="font-style: italic;">
-        {endDate ? `Valid through ${endDate}` : `Expires in ${expiry}`}
-      </div>
-    </div>
+  <div class="pricing-card-head">
+    <h3 class="pricing-card-title">{title}</h3>
+    <p class="pricing-price">
+      ${price}
+      {bundleSizeDuet && <span class="pricing-price-unit">/ person</span>}
+    </p>
+    {
+      showPerSession && (
+        <p class="pricing-per-session">${perSession} / session</p>
+      )
+    }
   </div>
 
-  <a
-    href={BOOKING_URL}
-    class="button"
-    aria-label={finalLabel}
-    style="display: grid; align-items: center; text-align: center;">{cta}</a
-  >
+  <div class="pricing-card-desc"><slot /></div>
+
+  <p class="pricing-card-expiry">
+    {endDate ? `Valid through ${endDate}` : `Expires in ${expiry}`}
+  </p>
+
+  <a href={BOOKING_URL} class="button pricing-card-cta" aria-label={finalLabel}>
+    {cta}
+  </a>
 </div>

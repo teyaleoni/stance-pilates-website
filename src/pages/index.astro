@@ -3,223 +3,231 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Faq from "../components/Faq.astro";
 import PricingCard from "../components/PricingCard.astro";
 import JobCard from "../components/JobCard.astro";
+import BriefcaseIcon from "../components/icons/BriefcaseIcon.astro";
+import DumbbellIcon from "../components/icons/DumbbellIcon.astro";
+import SpineIcon from "../components/icons/SpineIcon.astro";
 import { BOOKING_URL, GIFT_CARD_URL } from "../constants";
 import aboutImg from "../assets/lunge-cropped.jpg";
 import headerImg from "../assets/sitting-1024.jpg";
-import studioImage from "../assets/studio-current.jpg";
 import teachingImage from "../assets/teya-teaching.jpg";
+import studio0605 from "../assets/IMG_0605.jpg";
+import studio0604 from "../assets/IMG_0604.jpg";
+import studio0607 from "../assets/IMG_0607.jpg";
+import studio0608 from "../assets/IMG_0608.jpg";
+import studio0612 from "../assets/IMG_0612.jpg";
+import studio0614 from "../assets/IMG_0614.jpg";
+
+const studioImages = [
+  studio0604,
+  studio0605,
+  studio0607,
+  studio0608,
+  studio0612,
+  studio0614,
+];
 ---
 
 <BaseLayout
-  title="Stance Pilates | Private Studio Southwest Las Vegas"
+  title="Stance Pilates | Private Pilates Studio in Southwest Las Vegas"
   description="Exclusive 1-on-1 training in Southwest Las Vegas (89113). Personalized sessions using the Pilates Reformer and Cadillac for strength, back pain relief, and control."
 >
   <section id="home" class="grid items-center gap-12 md:grid-cols-2">
     <div>
-      <h1>Built for a Life in Motion</h1>
-      <p class="text-[1.3rem]">Be a participant, not an observer.</p>
+      <p class="hero-eyebrow">Stance Pilates</p>
+      <h1 class="accent-heading">The Private Classical Studio</h1>
       <p>
-        We move beyond generic fitness to focus on precision and deep
-        connection. Whether you are recovering from the daily grind or training
-        for elite performance, we build a structural foundation that restores
-        your natural freedom of movement.
+        A Southwest Las Vegas Pilates studio offering focused, one-on-one
+        instruction designed to help you build deep strength and everyday
+        capability.
       </p>
     </div>
     <img
+      class="feature-img"
       src={headerImg.src}
       alt="Teya sitting cross-legged on a pilates mat in a bright studio, looking confident"
-      width="100%"
     />
   </section>
 
   <section id="greeting" class="grid justify-center text-center">
     <div class="mx-auto max-w-[56rem]">
-      <h1>Precision. Control. Freedom.</h1>
-      <p class="uppercase">
-        Private &amp; Duet Pilates Sessions in Southwest Las Vegas
-      </p>
-      <p class="font-lato text-[1.25rem]">
-        Experience the Pilates Method in a distraction-free environment. No
-        crowds. No noise. Just precision.
+      <h1 class="section-title accent-heading">Why Classical Pilates?</h1>
+      <p>
+        Classical Pilates builds deep, lasting strength and mobility. It is a
+        precise, proven system designed by Joseph Pilates where every exercise
+        purposefully prepares your body for the next. <br /><br />Why the
+        Classical method? Because it works. There is no guesswork. The original
+        system guarantees clear, intentional movement designed to refine your
+        posture, balance, flexibility, and core strength.
       </p>
     </div>
-    <a class="button cta" target="_blank" href={BOOKING_URL}>
-      START YOUR PRACTICE
+    <a class="button cta mt-6" target="_blank" href={BOOKING_URL}>
+      Start your Practice
     </a>
   </section>
 
   <section id="about" class="grid gap-12 md:grid-cols-2">
-    <div class="about-picture">
+    <div class="about-picture relative">
       <img
         src={aboutImg.src}
         alt="Portrait of Teya Lorts, Stance Pilates founder"
-        width="100%"
+        class="w-full object-cover md:absolute md:inset-0 md:h-full"
       />
     </div>
     <div class="about-container-text">
-      <h2>Why Stance is Different.</h2>
-      <p>Hi, I'm Teya.</p>
+      <h2 class="section-title accent-heading">Hi, I'm Teya.</h2>
       <p>
-        My approach to Pilates wasn't born from a desire to be fit; it was born
-        from a need to regain control.
+        My path to Pilates began from a need to regain control. After a movement
+        disorder diagnosis ended my professional dance career, I had to be
+        determined to find my way back. I learned that movement is medicine, but
+        only if the precision is exact.
       </p>
       <p>
-        Ten years ago, my professional dance career ended with a diagnosis of
-        Paroxysmal Dyskinesia—a movement disorder that left me feeling like a
-        stranger in my own body.
-      </p>
-      <p class="font-bold">
-        But I didn't just choose this path; I needed it. I learned the hard way
-        that movement is medicine—but only if the dosage is correct.
+        I know how high the stakes are when it comes to your health. A generic
+        group class failed me when I needed it most, proving that casual
+        instruction can be dangerous. I became a teacher to ensure you are never
+        dismissed.
       </p>
       <p>
-        When I first found Pilates, I thought I had found the answer—until I hit
-        a wall. I was straining my neck in a group class, and when I asked for
-        help, I was dismissed. I realized then that generic instruction wasn't
-        just ineffective for me; it was dangerous.
-      </p>
-      <p>I became a teacher to be the guide I never had.</p>
-      <p>
-        To manage my condition, I had to become an expert in my own mechanics. I
-        learned that safety lies in the details. That experience gave me a keen
-        eye for the micro-misalignments that often go unnoticed in group
-        settings. I use that focus to ensure you are always supported, never
-        dismissed, and moving with true intention in every session.
-      </p>
-      <p>
-        Whether you are reclaiming your body from an injury or fine-tuning for
-        elite performance, I am here to help you build a foundation that lasts.
+        Today, I use my experience to catch the subtle imbalances that others
+        miss. Whether you are recovering from an injury or conditioning for
+        elite athletic performance, I am here to help you secure a foundation
+        you can completely rely on.
       </p>
     </div>
   </section>
 
   <section>
     <div>
-      <div class="mb-4">
-        <h1>Who is Stance For?</h1>
+      <div class="mb-10 text-center">
+        <h1 class="section-title accent-heading">Who is Stance For?</h1>
+        <p class="mx-auto max-w-[42rem]">
+          Whoever you are, the practice meets you where you stand. Here are
+          three people who find their footing at Stance Pilates.
+        </p>
       </div>
-      <div class="grid grid-cols-[repeat(auto-fit,minmax(16rem,1fr))] gap-8">
+      <div class="grid grid-cols-[repeat(auto-fit,minmax(18rem,1fr))] gap-10">
         <JobCard
-          number="01."
           job="The High-Performance Professional"
-          youAre="A software engineer, a nurse, or an executive making decisions all day."
-          struggle="You are active, but your job fights back. The mental load of your day leaves you disconnected from your physical self, “reverting” your progress and leaving you stiff."
-          solution="We provide the maintenance your body requires and the guidance your mind craves. We take the wheel on programming so you can stop managing the world and start tuning into yourself. You walk in carrying the weight of decision fatigue, and you walk out grounded, connected, and clear."
-          quote="I love the luxury of being guided. For one hour, I don't have to plan—I just have to be present."
-        />
+          body={[
+            "For executives, clinicians, and professionals making decisions all day. While you are active, the mental load of your career often causes physical stiffness and disconnects you from your body.",
+            "In the studio, you channel that focus inward to actively command your mechanics. You walk in carrying the weight of decision fatigue and walk out feeling grounded, connected, and physically clear.",
+          ]}
+          quote="I love the luxury of being guided. For one hour, I do not have to plan, I just have to be present."
+        >
+          <BriefcaseIcon slot="icon" />
+        </JobCard>
         <JobCard
-          number="02."
           job="The Elite & The Active"
-          youAre="An MMA fighter, a Pro Athlete, a 100-mile-a-week cyclist, or a gym-goer chasing a PR."
-          struggle="You don't need “more cardio.” You need the missing link in your strength. You might be a fighter who needs hip mobility, or a pro player looking for low-impact movement on a recovery day."
-          solution="We don't replace your training; we bulletproof it. By cueing the deep muscles you’ve never felt before, we help you lift heavier, move faster, and stay in the game without the wear and tear."
+          body={[
+            "For athletes, fighters, cyclists, and dedicated gym-goers. You do not need more conditioning; you need the missing link in your deep structural strength.",
+            "By targeting the stabilizing muscles that traditional training overlooks, this practice improves your mobility and helps you move faster, lift heavier, and stay in the game without the wear and tear.",
+          ]}
           quote="Your core engagement helped me lift more weight at the gym."
-        />
+        >
+          <DumbbellIcon slot="icon" />
+        </JobCard>
         <JobCard
-          number="03."
           job="The Structural & Specific"
-          youAre="Someone who needs a safe harbor. Maybe you have scoliosis, sciatica, or a body that rejects generic workouts."
-          struggle="You want to move, but most fitness classes hurt. You are looking for a studio that understands anatomy and has the specific equipment to support your unique spine."
-          solution="Precision is our love language. We design a practice that agrees with your body, using the apparatus to support you where you are weak and challenge you where you are strong."
+          body={[
+            "For individuals navigating scoliosis, sciatica, or injuries. When generic fitness classes cause pain, you need a studio that understands specific anatomy.",
+            "This practice utilizes the full system of classical apparatuses to support your unique spine, protecting your joints by strengthening you where you are weak and challenging you where you are strong.",
+          ]}
           quote="Pilates is the only workout that agrees with my body."
-        />
+        >
+          <SpineIcon slot="icon" />
+        </JobCard>
       </div>
     </div>
   </section>
 
   <section id="studio" class="grid gap-12 md:grid-cols-2">
     <div>
-      <h2 class="mb-4">The Studio</h2>
-      <h3>A space built for focused movement.</h3>
+      <h2 class="section-title accent-heading mb-7">The Studio</h2>
       <p>
-        We utilize BASI Systems equipment—the gold standard for durability and
-        feel. Whether on the Pilates Reformer, Cadillac, or Wunda Chair, our
-        setup ensures that every movement is supported, aligned, and purposeful.
-        Experience the difference of a private studio designed for true control.
+        Pilates is frequently reduced to just the Reformer or the Cadillac, but
+        it was designed as an interconnected system of multiple apparatuses. We
+        have a full classical suite featuring the premium Contrology line.
+      </p>
+      <p>
+        Having access to the entire system means your practice is never limited
+        to a single machine. Every unique piece of equipment provides distinct
+        feedback, allowing you to experience the method exactly as it was
+        intended for true Pilates workout.
       </p>
     </div>
-    <div class="about-picture">
-      <img
-        src={studioImage.src}
-        alt="Close-up of BASI Systems Pilates reformer with wood finish and cream upholstery"
-        width="100%"
-      />
-    </div>
-  </section>
-
-  <section id="testimonials" class="gap-4">
-    <h1>What my clients are saying...</h1>
-    <div class="grid gap-12 lg:grid-cols-2">
-      <div>
-        <h2>Annabelle B.</h2>
-        <p>
-          "I came to Teya with persistent back injuries that had haunted me for
-          a decade. Her approach is nothing short of remarkable—I now live
-          pain-free, something I hadn't thought possible."
-        </p>
+    <div class="studio-media">
+      <div class="studio-carousel" data-carousel>
+        <button
+          class="carousel-arrow studio-arrow studio-arrow-prev"
+          type="button"
+          aria-label="Previous photo"
+          data-carousel-prev
+        >
+          &lsaquo;
+        </button>
+        <div class="studio-track" data-carousel-track>
+          {
+            studioImages.map((image, i) => (
+              <img
+                class="studio-slide"
+                src={image.src}
+                alt={`Stance Pilates studio photo ${i + 1}`}
+                loading={i === 0 ? "eager" : "lazy"}
+              />
+            ))
+          }
+        </div>
+        <button
+          class="carousel-arrow studio-arrow studio-arrow-next"
+          type="button"
+          aria-label="Next photo"
+          data-carousel-next
+        >
+          &rsaquo;
+        </button>
       </div>
-      <div>
-        <h2>Maryloie E.</h2>
-        <p>
-          "Teya tailored each session to what my body needed. After every
-          session, my body felt stronger... she set me up for success."
-        </p>
-      </div>
-      <div>
-        <h2>Chelsea W.</h2>
-        <p>
-          "Teya will fix your form like no other—something you’ll never get in a
-          group Pilates class. She helped me strengthen and stretch areas that
-          desperately needed it."
-        </p>
-      </div>
+      <div class="carousel-dots" data-carousel-dots></div>
     </div>
   </section>
 
   <section id="quote">
     <div class="mx-auto max-w-[56rem]">
-      <h3 class="text-[1.75rem] leading-[1.4] italic">
+      <p class="text-slate-grey text-[1.2rem] leading-[1.6] italic">
         "We retire too early and we die too young. Our prime of life should be
         in the 70’s and old age should not come until we are almost 100."
-      </h3>
-      <p class="text-right">- Joseph Pilates</p>
+      </p>
+      <p class="text-slate-grey text-right text-[0.95rem]">- Joseph Pilates</p>
     </div>
   </section>
 
   <section id="pricing" class="gap-8">
-    <div class="max-w-[37rem]">
-      <h2>Invest in Your Practice.</h2>
-      <p>
-        More than just a workout. Stance is a partnership. We provide a focused,
-        exclusive space where you can leave the outside world at the door. We
-        handle the plan and the precision, so you can quiet your mind and
-        reconnect with your body.
-      </p>
+    <div class="mx-auto max-w-[37rem] text-center">
+      <h2 class="section-title accent-heading">Pricing</h2>
     </div>
 
     <div class="grid gap-4">
-      <h3 class="text-terracotta">New client special</h3>
-      <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      <h3 class="pricing-group-title">New client special</h3>
+      <div class="grid w-full max-w-sm gap-4">
         <PricingCard
           bundleSize={4}
           price={299}
           expiry="1 month"
           cta="PURCHASE"
           noSavingsBadge
+          highlight
+          tag="Start Here"
         >
           The essential starting point. We use these sessions to assess your
           unique mechanics, establish your foundation, and align your body for a
           safe, effective practice.
-          <br />
-          <br />
-          **One-time purchase per client.
+          <span class="pricing-note">One-time purchase per client.</span>
         </PricingCard>
       </div>
     </div>
 
     <div class="grid gap-4">
-      <h3 class="text-terracotta">Regular pricing</h3>
-      <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      <h3 class="pricing-group-title">Regular pricing</h3>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <PricingCard
           bundleSize={1}
           price={100}
@@ -235,6 +243,7 @@ import teachingImage from "../assets/teya-teaching.jpg";
           price={450}
           expiry="3 months"
           cta="PURCHASE"
+          hidePerSession
         >
           Build momentum. Establish a consistent routine to see improvements in
           strength and control.
@@ -244,6 +253,9 @@ import teachingImage from "../assets/teya-teaching.jpg";
           price={850}
           expiry="4 months"
           cta="PURCHASE"
+          highlight
+          tag="Best Value"
+          hidePerSession
         >
           Deepen your practice. Our best value for clients committed to lasting
           resilience and precision.
@@ -252,8 +264,8 @@ import teachingImage from "../assets/teya-teaching.jpg";
     </div>
 
     <div class="grid gap-4">
-      <h3 class="text-terracotta">Duet pricing (2 people)</h3>
-      <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      <h3 class="pricing-group-title">Duet pricing (2 people)</h3>
+      <div class="grid w-full max-w-2xl gap-4 sm:grid-cols-2">
         <PricingCard
           bundleSizeDuet={1}
           price={70}
@@ -262,9 +274,10 @@ import teachingImage from "../assets/teya-teaching.jpg";
           noSavingsBadge
         >
           Experience the Pilates method with a partner. You will learn the order
-          and own your workout with expert hands-on coaching. <br />
-          <br />
-          Billing Note: Booking client pays the full fee of $140 in total.
+          and own your workout with expert hands-on coaching.
+          <span class="pricing-note">
+            Booking client pays the full fee of $140 in total.
+          </span>
         </PricingCard>
         <PricingCard
           bundleSizeDuet={3}
@@ -275,9 +288,9 @@ import teachingImage from "../assets/teya-teaching.jpg";
         >
           Build independence together. This bundle is the perfect way to
           establish your foundation at a preferred rate.
-          <br />
-          <br />
-          Billing Note: Booking client pays the full fee of $390 in total.
+          <span class="pricing-note">
+            Booking client pays the full fee of $390 in total.
+          </span>
         </PricingCard>
       </div>
     </div>
@@ -285,112 +298,232 @@ import teachingImage from "../assets/teya-teaching.jpg";
 
   <section id="faq">
     <div class="mx-auto grid max-w-[56rem] gap-8">
-      <h2>FAQ</h2>
-      <Faq question="What can I expect from my first session?">
-        <p>
-          We begin with an assessment of your movement patterns and goals.
-          Unlike a group class where you might get lost in the crowd, this
-          session is designed to make you an active participant in your own
-          body. You will move through a personalized sequence on the Pilates
-          Reformer and apparatus, focusing on control and precision. You should
-          leave feeling refreshed, lighter, and more capable than when you
-          walked in.
-        </p>
-      </Faq>
+      <h2 class="section-title accent-heading text-center">FAQ</h2>
+      <div class="faq-list">
+        <Faq question="What can I expect from my first session?">
+          <p>
+            We begin with an assessment of your movement patterns and goals.
+            Unlike a group class where you might get lost in the crowd, this
+            session is designed to make you an active participant in your own
+            body. You will move through a personalized sequence on the Pilates
+            Reformer and apparatus, focusing on control and precision. You
+            should leave feeling refreshed, lighter, and more capable than when
+            you walked in.
+          </p>
+        </Faq>
 
-      <Faq
-        question="Will I get more out of a Private Session than a Group Class?"
-      >
-        <p>
-          Group classes are wonderful for fitness and flow, but they often move
-          too fast to really teach you <em>why</em> you are doing a movement.
-        </p>
-        <p>
-          Private sessions are an education. They are designed to increase your
-          <strong>body awareness</strong> so you aren't just going through the motions.
-        </p>
-        <p>Here is how the experience differs:</p>
-        <ul>
-          <li>
-            <strong>Internal vs. External Focus:</strong> In a group, you often have
-            to look around to follow the choreography. In a private session, I teach
-            you how to feel the movement from the inside out. You stop relying on
-            the mirror and start relying on your own muscles.
-          </li>
-          <li>
-            <strong>The "Why":</strong> It isn't just a workout; it’s a lab. If a
-            movement feels weird, we pause. I explain the mechanics and help you understand
-            <em>your</em> unique bone structure, so the exercise actually makes sense
-            to your brain and body.
-          </li>
-          <li>
-            <strong>Safety & Strategy:</strong> You won't just get a good workout;
-            you will get a "user manual" for your body. You will learn exactly how
-            to modify exercises for your specific tightness or injuries, giving you
-            the tools to keep yourself safe in any class you take.
-          </li>
-        </ul>
-        <p>
-          It’s the difference between following a routine and truly
-          understanding your body.
-        </p>
-      </Faq>
+        <Faq
+          question="Will I get more out of a Private Session than a Group Class?"
+        >
+          <p>
+            Group classes are wonderful for fitness and flow, but they often
+            move too fast to really teach you <em>why</em> you are doing a movement.
+          </p>
+          <p>
+            Private sessions are an education. They are designed to increase
+            your
+            <strong>body awareness</strong> so you aren't just going through the motions.
+          </p>
+          <p>Here is how the experience differs:</p>
+          <ul>
+            <li>
+              <strong>Internal vs. External Focus:</strong> In a group, you often
+              have to look around to follow the choreography. In a private session,
+              I teach you how to feel the movement from the inside out. You stop relying
+              on the mirror and start relying on your own muscles.
+            </li>
+            <li>
+              <strong>The "Why":</strong> It isn't just a workout; it’s a lab. If
+              a movement feels weird, we pause. I explain the mechanics and help you
+              understand
+              <em>your</em> unique bone structure, so the exercise actually makes
+              sense to your brain and body.
+            </li>
+            <li>
+              <strong>Safety & Strategy:</strong> You won't just get a good workout;
+              you will get a "user manual" for your body. You will learn exactly how
+              to modify exercises for your specific tightness or injuries, giving
+              you the tools to keep yourself safe in any class you take.
+            </li>
+          </ul>
+          <p>
+            It’s the difference between following a routine and truly
+            understanding your body.
+          </p>
+        </Faq>
 
-      <Faq question="Do I need an initial consultation before booking?">
-        <p>
-          Your first session is your consultation. We use the first appointment
-          to assess your posture, alignment, and range of motion while moving.
-          This allows us to build a program that supports your life in motion
-          immediately.
-        </p>
-      </Faq>
+        <Faq question="Do I need an initial consultation before booking?">
+          <p>
+            Your first session is your consultation. We use the first
+            appointment to assess your posture, alignment, and range of motion
+            while moving. This allows us to build a program that supports your
+            life in motion immediately.
+          </p>
+        </Faq>
 
-      <Faq question="Can I share a package with a friend?">
-        <p>
-          <strong>For Private Sessions:</strong>
-        </p>
-        <p>
-          Packages are designed for your individual progression and are
-          non-transferable to another person.
-        </p>
-        <p>
-          <strong>For Duet Sessions:</strong>
-        </p>
-        <p>
-          One client acts as the primary booker. The full session fee (or
-          credit) is charged to the account holder who secures the slot. We do
-          not split payments in-studio, so please settle up with your partner
-          privately.
-        </p>
-      </Faq>
+        <Faq question="Can I share a package with a friend?">
+          <p>
+            <strong>For Private Sessions:</strong>
+          </p>
+          <p>
+            Packages are designed for your individual progression and are
+            non-transferable to another person.
+          </p>
+          <p>
+            <strong>For Duet Sessions:</strong>
+          </p>
+          <p>
+            One client acts as the primary booker. The full session fee (or
+            credit) is charged to the account holder who secures the slot. We do
+            not split payments in-studio, so please settle up with your partner
+            privately.
+          </p>
+        </Faq>
 
-      <Faq question="What should I wear?">
-        <p>
-          Wear comfortable, form-fitting clothing that allows you to move with
-          freedom and ease. Grip socks are not required.
-        </p>
-      </Faq>
+        <Faq question="What should I wear?">
+          <p>
+            Wear comfortable, form-fitting clothing that allows you to move with
+            freedom and ease. Grip socks are not required.
+          </p>
+        </Faq>
 
-      <Faq question="Do you sell Pilates gift certificates?">
-        <p>
-          Yes. Giving the gift of movement is a wonderful way to support a
-          friend or loved one. <br />
-          <a
-            class="linky text-terracotta"
-            target="_blank"
-            rel="noreferrer"
-            href={GIFT_CARD_URL}
-          >
-            Purchase one here
-          </a>
-        </p>
-      </Faq>
+        <Faq question="Do you sell Pilates gift certificates?">
+          <p>
+            Yes. Giving the gift of movement is a wonderful way to support a
+            friend or loved one. <br />
+            <a
+              class="linky text-terracotta"
+              target="_blank"
+              rel="noreferrer"
+              href={GIFT_CARD_URL}
+            >
+              Purchase one here
+            </a>
+          </p>
+        </Faq>
+      </div>
+      <p class="faq-footer text-center">
+        Still have a question? <a class="linky text-terracotta" href="#contact"
+          >Get in touch</a
+        > — I'm always happy to help.
+      </p>
     </div>
   </section>
 
+  <section id="testimonials" class="gap-4">
+    <div class="mb-6 text-center">
+      <h1 class="section-title accent-heading">
+        What my clients are saying...
+      </h1>
+    </div>
+    <div class="testimonial-carousel" data-carousel>
+      <button
+        class="carousel-arrow"
+        type="button"
+        aria-label="Previous testimonial"
+        data-carousel-prev
+      >
+        &lsaquo;
+      </button>
+      <div class="testimonial-track" data-carousel-track>
+        <figure class="testimonial-slide">
+          <blockquote>
+            "I came to Teya with persistent back injuries that had haunted me
+            for a decade. Her approach is nothing short of remarkable—I now live
+            pain-free, something I hadn't thought possible."
+          </blockquote>
+          <figcaption>Annabelle B.</figcaption>
+        </figure>
+        <figure class="testimonial-slide">
+          <blockquote>
+            "Teya tailored each session to what my body needed. After every
+            session, my body felt stronger... she set me up for success."
+          </blockquote>
+          <figcaption>Maryloie E.</figcaption>
+        </figure>
+        <figure class="testimonial-slide">
+          <blockquote>
+            "Teya will fix your form like no other—something you’ll never get in
+            a group Pilates class. She helped me strengthen and stretch areas
+            that desperately needed it."
+          </blockquote>
+          <figcaption>Chelsea W.</figcaption>
+        </figure>
+      </div>
+      <button
+        class="carousel-arrow"
+        type="button"
+        aria-label="Next testimonial"
+        data-carousel-next
+      >
+        &rsaquo;
+      </button>
+    </div>
+    <div class="carousel-dots" data-carousel-dots></div>
+  </section>
+
+  <script>
+    document
+      .querySelectorAll<HTMLElement>("[data-carousel]")
+      .forEach((root) => {
+        const track = root.querySelector<HTMLElement>("[data-carousel-track]");
+        const dotsWrap = root.parentElement?.querySelector<HTMLElement>(
+          "[data-carousel-dots]",
+        );
+        if (!track || !dotsWrap) return;
+
+        const slides = Array.from(track.children);
+        const prev = root.querySelector("[data-carousel-prev]");
+        const next = root.querySelector("[data-carousel-next]");
+        let index = 0;
+
+        const dots = slides.map((_, i) => {
+          const dot = document.createElement("button");
+          dot.type = "button";
+          dot.className = "carousel-dot";
+          dot.setAttribute("aria-label", `Go to testimonial ${i + 1}`);
+          dot.addEventListener("click", () => goTo(i));
+          dotsWrap.appendChild(dot);
+          return dot;
+        });
+
+        function update() {
+          dots.forEach((dot, i) =>
+            dot.classList.toggle("is-active", i === index),
+          );
+        }
+
+        function goTo(i: number) {
+          index = Math.max(0, Math.min(slides.length - 1, i));
+          track!.scrollTo({
+            left: index * track!.clientWidth,
+            behavior: "smooth",
+          });
+          update();
+        }
+
+        prev?.addEventListener("click", () => goTo(index - 1));
+        next?.addEventListener("click", () => goTo(index + 1));
+
+        let frame = 0;
+        track.addEventListener("scroll", () => {
+          cancelAnimationFrame(frame);
+          frame = requestAnimationFrame(() => {
+            const i = Math.round(track.scrollLeft / track.clientWidth);
+            if (i !== index) {
+              index = i;
+              update();
+            }
+          });
+        });
+
+        update();
+      });
+  </script>
+
   <section id="events" class="grid gap-12 md:grid-cols-2">
     <div>
-      <h1>Workshops & Community</h1>
+      <h1 class="section-title accent-heading">Workshops & Community</h1>
       <div>
         <p>
           We believe that freedom of movement belongs to everyone. That is why

@@ -7,13 +7,12 @@ import privateSessionImage from "../../assets/teaching.jpg";
 
 <BaseLayout title="Stance Pilates Blog" navHrefPrefix="/">
   <div class="blog-container">
-    <div class="blog-header">
-      <h1 class="blog-title">Notes from the Studio.</h1>
+    <div class="blog-header text-center">
+      <h1 class="blog-title accent-heading">Notes from the Studio.</h1>
       <p class="blog-subtext">
         A space for reflection. Exploring the intersection of Pilates and the
         ongoing process of building a life in motion.
       </p>
-      <hr style="padding: 0 1rem 0 1rem;" />
     </div>
 
     <section class="featured-post">
@@ -33,50 +32,57 @@ import privateSessionImage from "../../assets/teaching.jpg";
           trust my own body. This is the story of how I found my way back—and
           why movement is only medicine if the dosage is correct.
         </p>
-        <a href="/blog/robbed-by-the-invisible" class="read-btn">
+        <a href="/blog/robbed-by-the-invisible" class="button">
           Read the Story
         </a>
       </div>
     </section>
 
     <section>
-      <h3 class="recent-grid-title">Recent Articles</h3>
+      <h3 class="recent-grid-title accent-heading">Recent Articles</h3>
       <div class="article-grid">
-        <article class="article-card">
+        <article class="article-card elevated">
           <img
             src={lantanasImage.src}
             alt="Picture of debris from a lantana plant"
             class="article-image"
           />
-          <span class="category-tag">The Mindset</span>
-          <h3 class="card-title">Pruning in the Dark</h3>
-          <p class="card-excerpt">
-            Moving beyond the surface to process the things we carry. Why I turn
-            to drastic movement to clear mental clutter and tend to my roots.
-          </p>
-          <a class="card-link" href="/blog/pruning-in-the-dark"> Read More </a>
+          <div class="article-card-body">
+            <span class="category-tag">The Mindset</span>
+            <h3 class="card-title">Pruning in the Dark</h3>
+            <p class="card-excerpt">
+              Moving beyond the surface to process the things we carry. Why I
+              turn to drastic movement to clear mental clutter and tend to my
+              roots.
+            </p>
+            <a class="card-link" href="/blog/pruning-in-the-dark">
+              Read More &rsaquo;
+            </a>
+          </div>
         </article>
 
-        <article class="article-card">
+        <article class="article-card elevated">
           <img
             src={privateSessionImage.src}
             alt="Teya teaching a private session with a client on a reformer"
             class="article-image"
           />
-          <span class="category-tag">The Method</span>
-          <h3 class="card-title">
-            Beyond the Basics: Why Private Sessions Are the Key to True
-            Connection
-          </h3>
-          <p class="card-excerpt">
-            Moving beyond generic fitness to build a practice that lasts. Why
-            focused attention is the most efficient path to connecting to your
-            body.
-          </p>
-          <a class="card-link" href="/blog/beyond-the-basics"> Read More </a>
+          <div class="article-card-body">
+            <span class="category-tag">The Method</span>
+            <h3 class="card-title">
+              Beyond the Basics: Why Private Sessions Are the Key to True
+              Connection
+            </h3>
+            <p class="card-excerpt">
+              Moving beyond generic fitness to build a practice that lasts. Why
+              focused attention is the most efficient path to connecting to your
+              body.
+            </p>
+            <a class="card-link" href="/blog/beyond-the-basics">
+              Read More &rsaquo;
+            </a>
+          </div>
         </article>
-
-        <div></div>
       </div>
     </section>
   </div>

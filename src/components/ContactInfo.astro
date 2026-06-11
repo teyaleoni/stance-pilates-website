@@ -2,41 +2,168 @@
 import logoFooter from "../assets/stance-logo.svg";
 import InstagramIcon from "./icons/InstagramIcon.astro";
 import * as C from "../constants";
+
+const presentYear = new Date().getFullYear();
 ---
 
-<section id="contact">
-  <div>
-    <img
-      src={logoFooter.src}
-      alt="stance pilates logo"
-      style="max-height: 4vh;"
-    />
-  </div>
-  <div>
-    <p>
-      <a href={C.GOOGLE_MAPS_URL} target="_blank">
-        6675 S Tenaya Way #200 <br />
-        Las Vegas, NV 89113 <br />
+<footer id="contact" class="contact-footer">
+  <div class="contact-grid">
+    <div class="contact-brand">
+      <img class="contact-logo" src={logoFooter.src} alt="Stance Pilates" />
+      <p class="contact-area">
+        Proudly serving Southwest Las Vegas — South Summerlin, Rhodes Ranch,
+        Mountain's Edge, and Spring Valley (89113).
+      </p>
+      <a
+        class="contact-ig"
+        href={C.INSTAGRAM_URL}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <InstagramIcon /> @{C.INSTAGRAM_HANDLE}
       </a>
-    </p>
-    <p>
+    </div>
+
+    <div class="contact-col">
+      <p class="contact-col-title">Location</p>
+      <a href={C.GOOGLE_MAPS_URL} target="_blank" rel="noreferrer">
+        6675 S Tenaya Way #200<br />Las Vegas, NV 89113
+      </a>
+    </div>
+
+    <div class="contact-col">
+      <p class="contact-col-title">Contact</p>
       <a href={`mailto:${C.EMAIL_ADDRESS}`}>{C.EMAIL_ADDRESS}</a>
+      <a href={`tel:${C.PHONE_NUMBER}`}>{C.PHONE_NUMBER}</a>
+    </div>
+  </div>
+
+  <div class="contact-legal">
+    <p class="contact-copyright">
+      &copy; {presentYear} Stance Pilates. All rights reserved.
     </p>
-    <p>{C.PHONE_NUMBER}</p>
+    <nav class="contact-legal-links" aria-label="Legal">
+      <a href="/privacy-policy">Privacy Policy</a>
+      <a href="/terms-and-conditions">Terms &amp; Conditions</a>
+      <a href="/accessibility">Accessibility</a>
+    </nav>
   </div>
-  <div class="social" style="margin-top: 2rem;">
-    <a
-      class="instagram-link"
-      target="_blank"
-      rel="noreferrer"
-      href={C.INSTAGRAM_URL}
-    >
-      <InstagramIcon /> @{C.INSTAGRAM_HANDLE}
-    </a>
-  </div>
-  <p style="font-size: .8rem;">
-    Proudly serving Southwest Las Vegas, <br />
-    South Summerlin, Rhodes Ranch, Mountain's Edge,
-    <br /> and Spring Valley (89113)
-  </p>
-</section>
+</footer>
+
+<style>
+  .contact-footer {
+    background-color: var(--color-terracotta);
+    padding: 2.25rem var(--side-space) 1.75rem;
+    color: white;
+    font-family: var(--font-roboto);
+    font-weight: 300;
+  }
+  @media (min-width: 48rem) {
+    .contact-footer {
+      padding: 3.5rem var(--side-space) 2.25rem;
+    }
+  }
+
+  .contact-grid {
+    display: grid;
+    gap: 1.75rem;
+  }
+  @media (min-width: 48rem) {
+    .contact-grid {
+      grid-template-columns: 1.7fr 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+  }
+
+  .contact-logo {
+    width: 175px;
+    max-width: 60%;
+    height: auto;
+    margin-bottom: 1.35rem;
+    /* Render the blue-steel logo as white so it reads on terracotta. */
+    filter: brightness(0) invert(1);
+  }
+  .contact-area {
+    margin: 0 0 1.35rem;
+    max-width: 24rem;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: rgb(255 255 255 / 0.82);
+  }
+  .contact-ig {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgb(255 255 255 / 0.9);
+    transition: opacity 150ms ease;
+  }
+  .contact-ig:hover {
+    opacity: 0.75;
+  }
+
+  .contact-col {
+    display: grid;
+    gap: 0.65rem;
+    align-content: start;
+    font-size: 0.95rem;
+  }
+  .contact-col-title {
+    font-family: var(--font-jost);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.78rem;
+    color: rgb(255 255 255 / 0.68);
+    margin: 0 0 1rem;
+  }
+  .contact-col a {
+    width: fit-content;
+    line-height: 1.55;
+    color: rgb(255 255 255 / 0.9);
+    transition: opacity 150ms ease;
+  }
+  .contact-col a:hover {
+    opacity: 0.7;
+  }
+  .contact-legal {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgb(255 255 255 / 0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.85rem;
+    text-align: center;
+    font-size: 0.72rem;
+    color: rgb(255 255 255 / 0.8);
+  }
+  @media (min-width: 48rem) {
+    .contact-legal {
+      margin-top: 2.75rem;
+      flex-direction: row;
+      justify-content: center;
+      gap: 0.6rem 1.5rem;
+    }
+  }
+  .contact-copyright {
+    margin: 0;
+    font-size: inherit;
+  }
+  .contact-legal-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.35rem 0.9rem;
+  }
+  @media (min-width: 48rem) {
+    .contact-legal-links {
+      gap: 1.25rem;
+    }
+  }
+  .contact-legal-links a {
+    transition: opacity 150ms ease;
+  }
+  .contact-legal-links a:hover {
+    opacity: 0.7;
+  }
+</style>

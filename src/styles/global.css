@@ -152,8 +152,9 @@
     display: flex;
     justify-content: center;
     align-items: stretch;
-    padding: 0 var(--side-space);
-    box-shadow: 0 -8px 16px rgb(0 0 0 / 0.25);
+    padding: 0.4rem var(--side-space);
+    border-bottom: 1px solid rgb(0 0 0 / 0.06);
+    box-shadow: 0 4px 16px rgb(0 0 0 / 0.05);
   }
 
   main {
@@ -172,12 +173,48 @@
     padding: 0.5rem;
   }
 
+  /* Header + mobile drawer nav links: match the site's Jost, uppercase,
+     letter-spaced labels with terracotta hovers. */
+  header nav > a,
+  #nav-drawer > a {
+    font-family: var(--font-jost);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.8rem;
+    color: var(--color-soft-black);
+    transition: color 150ms ease;
+  }
+  header nav > a:hover,
+  #nav-drawer > a:hover {
+    color: var(--color-terracotta);
+  }
+
+  /* Primary "Book" action styled as a compact CTA button. */
+  header nav > a.nav-book,
+  #nav-drawer > a.nav-book {
+    align-self: center;
+    background-color: var(--color-terracotta);
+    color: white;
+    border-radius: 4px;
+    padding: 0.5rem 1.2rem;
+  }
+  header nav > a.nav-book:hover,
+  #nav-drawer > a.nav-book:hover {
+    color: white;
+    opacity: 0.85;
+  }
+
   section {
-    padding: 2rem var(--side-space);
+    padding: clamp(1.75rem, 3.5vw, 3rem) var(--side-space);
     display: grid;
   }
   section:nth-of-type(2n) {
     background-color: var(--color-offwhite);
+  }
+
+  /* The Joseph Pilates quote is a slim page breaker — keep it compact. */
+  #quote {
+    padding-block: clamp(1rem, 2vw, 1.5rem);
   }
 }
 
@@ -245,21 +282,30 @@ header.wide {
  * ------------------------------------------------------------------ */
 @layer components {
   .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--color-terracotta);
     color: white;
     font-family: var(--font-jost);
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    line-height: 1;
     border: none;
     text-decoration: none;
     cursor: pointer;
     border-radius: 4px;
-    padding: 0.5rem 1rem;
+    padding: 0.85rem 1.75rem;
   }
   .button:hover {
     opacity: 0.8;
   }
 
+  /* Prominent CTA: same height/treatment as .button, just wider. */
   .cta {
-    padding: 0.75rem 4rem;
+    padding-inline: 3rem;
   }
   @media (min-width: 48rem) {
     .cta {
@@ -310,34 +356,442 @@ header.wide {
 }
 
 /* ------------------------------------------------------------------ *
- * "Who is Stance For?" persona cards (JobCard).
+ * Feature sections above the cards — share the card section's soft,
+ * elevated, rounded vibe (rounded imagery, terracotta heading accents,
+ * a panelled callout).
  * ------------------------------------------------------------------ */
-.stance-card {
-  margin-bottom: 1rem;
+.feature-img,
+.about-picture {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 0.07);
 }
-.stance-job-card {
-  border-radius: 0.5rem;
-  padding: 1rem;
-  border-top: 1.8px solid var(--color-terracotta);
+.feature-img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
-.stance-card-i {
-  margin-top: 1.2rem;
-  font-size: 1.25rem;
+
+.hero-eyebrow {
+  font-family: var(--font-jost);
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.85rem;
+  color: var(--color-terracotta);
+  margin: 0 0 0.75rem;
+}
+
+.section-title {
+  font-family: var(--font-jost);
+  font-size: clamp(1.85rem, 1.35rem + 1.8vw, 2.3rem);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.accent-heading::after {
+  content: "";
+  display: block;
+  width: 5.5rem;
+  height: 2px;
+  margin-top: 1rem;
+  background-color: var(--color-terracotta);
+}
+.text-center .accent-heading::after,
+.accent-heading.text-center::after {
+  margin-inline: auto;
+}
+
+/* ------------------------------------------------------------------ *
+ * Testimonials carousel.
+ * ------------------------------------------------------------------ */
+.testimonial-carousel {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 46rem;
+  margin: 0 auto;
+}
+.testimonial-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.testimonial-track::-webkit-scrollbar {
+  display: none;
+}
+.testimonial-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  margin: 0;
+  padding: 0 0.5rem;
   text-align: center;
 }
-.stance-job-title {
+.testimonial-slide blockquote {
+  margin: 0;
+  padding-left: 0;
+  border-left: none;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  font-style: italic;
+  color: #4a4a4a;
+}
+.testimonial-slide figcaption {
+  margin-top: 1.5rem;
+  font-family: var(--font-lato);
+  font-weight: bold;
+  letter-spacing: 0.04em;
   color: var(--color-terracotta);
+}
+.carousel-arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-jost);
+  font-size: 2.25rem;
+  line-height: 1;
+  color: var(--color-terracotta);
+  padding: 0 0.5rem;
+  transition: opacity 150ms;
+}
+.carousel-arrow:hover {
+  opacity: 0.6;
+}
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.75rem;
+}
+.carousel-dot {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border: none;
+  border-radius: 9999px;
+  background-color: #d8d2cc;
+  cursor: pointer;
+  transition: background-color 150ms;
+}
+.carousel-dot.is-active {
+  background-color: var(--color-terracotta);
+}
+
+/* ------------------------------------------------------------------ *
+ * Studio photo carousel.
+ * ------------------------------------------------------------------ */
+.studio-media {
+  display: grid;
+  gap: 1rem;
+}
+.studio-carousel {
+  position: relative;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 0.07);
+}
+.studio-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.studio-track::-webkit-scrollbar {
+  display: none;
+}
+.studio-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+/* Frame the final photo lower so it shows more of the bottom area. */
+.studio-slide:last-child {
+  object-position: center 62%;
+}
+.studio-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 0;
+  border-radius: 9999px;
+  background-color: rgb(255 255 255 / 0.85);
+  color: var(--color-terracotta);
+  font-size: 1.7rem;
+  line-height: 1;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.15);
+}
+.studio-arrow:hover {
+  background-color: white;
+  opacity: 1;
+}
+.studio-arrow-prev {
+  left: 0.6rem;
+}
+.studio-arrow-next {
+  right: 0.6rem;
+}
+.studio-media .carousel-dots {
+  margin-top: 0;
+}
+
+/* ------------------------------------------------------------------ *
+ * Events page: highlight cards, empty state, recap links.
+ * ------------------------------------------------------------------ */
+.event-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background-color: white;
+}
+.event-card-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.event-card-body {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.65rem;
+  padding: 1.5rem;
+}
+.event-card-body h3 {
+  font-size: 1.3rem;
+}
+.event-card-body p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4a4a4a;
+}
+.event-recap {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+  font-family: var(--font-jost);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  color: var(--color-terracotta);
+  transition: gap 150ms ease;
+}
+.event-recap:hover {
+  gap: 0.65rem;
+}
+.events-empty {
+  border: 1px dashed rgb(0 0 0 / 0.18);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  text-align: center;
+}
+.events-empty-title {
+  margin: 0 0 0.5rem;
+  color: #5c5c5c;
+}
+.events-empty .event-recap {
+  margin-top: 0;
+}
+
+/* ------------------------------------------------------------------ *
+ * FAQ list (accordion dividers + closing prompt).
+ * ------------------------------------------------------------------ */
+.faq-list {
+  border-top: 1px solid #e9e5e1;
+}
+.faq-footer {
+  margin: 0;
+  color: #5c5c5c;
+}
+
+/* ------------------------------------------------------------------ *
+ * Pricing section: group labels + cards.
+ * ------------------------------------------------------------------ */
+.pricing-group-title {
+  font-family: var(--font-jost);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-terracotta);
+}
+.pricing-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  background-color: white;
+}
+.pricing-card-highlight {
+  border: 2px solid var(--color-terracotta);
+}
+.pricing-tag {
+  align-self: flex-start;
+  font-family: var(--font-jost);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: white;
+  background-color: var(--color-terracotta);
+  padding: 0.25rem 0.65rem;
+  border-radius: 2rem;
+}
+.pricing-card-head {
+  display: grid;
+  gap: 0.1rem;
+}
+.pricing-card-title {
+  font-size: 1.2rem;
+  line-height: 1.25;
+}
+.pricing-price {
+  margin: 0;
+  font-family: var(--font-jost);
+  font-size: 1.9rem;
+  line-height: 1.1;
+  color: var(--color-soft-black);
+}
+.pricing-price-unit {
+  font-size: 0.5em;
+  color: #6a6a6a;
+}
+.pricing-per-session {
+  margin: 0.1rem 0 0;
+  font-size: 0.85rem;
+  color: var(--color-terracotta);
+}
+.pricing-card-desc {
+  flex: 1 1 auto;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4a4a4a;
+}
+.pricing-note {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #7a7a7a;
+}
+.pricing-card-expiry {
+  margin: 0;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #6a6a6a;
+}
+.pricing-card-cta {
+  width: 100%;
+  margin-top: 0.25rem;
+}
+
+/* ------------------------------------------------------------------ *
+ * "Who is Stance For?" persona cards (JobCard).
+ * ------------------------------------------------------------------ */
+.stance-job-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 0.75rem;
+  padding: 2.25rem 2rem;
+  border-top: 3px solid var(--color-terracotta);
+}
+.stance-job-title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 9999px;
+  color: var(--color-terracotta);
+  background-color: color-mix(
+    in srgb,
+    var(--color-terracotta) 12%,
+    transparent
+  );
+}
+.stance-job-card h2 {
+  font-size: 1.4rem;
+  line-height: 1.3;
   margin-bottom: 1rem;
+}
+.stance-job-body {
+  flex: 1 1 auto;
+  margin-bottom: 1.75rem;
+}
+.stance-card {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #4a4a4a;
+  margin: 0 0 1rem;
+}
+.stance-card:last-child {
+  margin-bottom: 0;
+}
+/* Scannable lead-in: the first line tells the reader who the card is for. */
+.stance-job-body p:first-child {
+  font-weight: 500;
+  color: var(--color-soft-black);
+}
+.stance-job-icon {
+  width: 1.85rem;
+  height: 1.85rem;
+  fill: currentColor;
+  display: block;
 }
 .stance-job-bold {
   text-transform: uppercase;
   font-weight: bold;
 }
 .stance-job-line {
-  height: 0.5px;
-  background-color: #e5e5e5;
+  height: 1px;
+  background-color: #e9e5e1;
   border: none;
-  width: 80%;
+  width: 100%;
+  margin: 0 0 1.5rem;
+}
+.stance-card-i {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 1.1rem;
+  line-height: 1.55;
+  font-style: italic;
+  color: var(--color-terracotta);
+}
+.stance-card-i::before {
+  content: "\201C";
+  display: block;
+  font-family: var(--font-jost);
+  font-style: normal;
+  font-size: 2.75rem;
+  line-height: 1;
+  color: var(--color-terracotta);
+  opacity: 0.35;
+  margin-bottom: -0.6rem;
 }
 
 /* ------------------------------------------------------------------ *
@@ -378,12 +832,12 @@ header.wide {
   padding: 1.8rem 1rem 0 1rem;
 }
 .blog-title {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
   color: var(--color-soft-black);
 }
 .blog-subtext {
-  font-size: 1.125rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   color: var(--color-slate-grey);
 }
@@ -406,19 +860,20 @@ header.wide {
   height: 400px;
   background-color: #e0e0e0;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 0.75rem;
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 0.07);
 }
 .category-tag {
+  font-family: var(--font-jost);
   font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0.14em;
   color: var(--color-terracotta);
-  margin-bottom: 15px;
   display: block;
-  font-weight: bold;
+  font-weight: 500;
 }
 .featured-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1.2;
   margin: 0 0 20px 0;
   color: var(--color-soft-black);
@@ -428,26 +883,9 @@ header.wide {
   color: #555;
   margin-bottom: 30px;
 }
-.read-btn {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: var(--color-soft-black);
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 0.85rem;
-  font-weight: bold;
-}
-.read-btn:hover {
-  background-color: var(--color-terracotta);
-}
-
 .recent-grid-title {
   font-size: 2rem;
   margin-bottom: 40px;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 10px;
 }
 .article-grid {
   display: grid;
@@ -457,14 +895,23 @@ header.wide {
 .article-card {
   display: flex;
   flex-direction: column;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background-color: white;
+}
+.article-card-body {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.55rem;
+  padding: 1.5rem;
 }
 .article-image {
   width: 100%;
-  height: 250px;
+  height: 230px;
   background-color: var(--color-slate-grey);
   object-fit: cover;
-  margin-bottom: 20px;
-  border-radius: 2px;
 }
 .blog-image {
   width: 100%;
@@ -473,26 +920,32 @@ header.wide {
   object-fit: cover;
 }
 .card-title {
+  font-size: 1.3rem;
   line-height: 1.3;
 }
 .card-excerpt {
-  font-size: 0.95rem;
-  color: #666;
-  margin-bottom: 15px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4a4a4a;
+  margin: 0;
 }
 .card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+  font-family: var(--font-jost);
   font-size: 0.8rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: bold;
-  color: var(--color-slate-grey);
+  letter-spacing: 0.08em;
+  color: var(--color-terracotta);
   text-decoration: none;
-  border-bottom: 1px solid transparent;
   width: fit-content;
+  transition: gap 150ms ease;
 }
 .article-card:hover .card-link {
-  border-bottom: 1px solid var(--color-terracotta);
-  color: var(--color-terracotta);
+  gap: 0.65rem;
 }
 
 /* Blog article reading view. */
@@ -533,9 +986,9 @@ header.wide {
   color: #757575;
 }
 .blog-article-content {
-  font-size: 1.125rem;
+  font-size: 1.1rem;
   line-height: 1.8;
-  color: #292929;
+  color: var(--color-soft-black);
   margin-bottom: 5rem;
 }
 .blog-article-hero-image {

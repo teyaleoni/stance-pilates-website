@@ -30,7 +30,7 @@ const p = navHrefPrefix;
     <a href={`${p}#faq`}>FAQ</a>
     <a href="#contact">Contact</a>
     <a href={`${p}blog`}>Blog</a>
-    <a target="_blank" href={BOOKING_URL}>Book</a>
+    <a class="nav-book" target="_blank" href={BOOKING_URL}>Book</a>
   </nav>
   <div class="logo-mirror-space">
     <img src={logo.src} alt="stance pilates logo" width="100%" />
@@ -47,7 +47,7 @@ const p = navHrefPrefix;
     type="button"
     id="nav-toggle"
     aria-label="Toggle navigation menu"
-    style="position: absolute; padding: 10px; right: 0;"
+    style="position: absolute; padding: 10px; right: 0; top: 50%; transform: translateY(-50%);"
   >
     <MenuIcon />
   </button>
@@ -60,7 +60,7 @@ const p = navHrefPrefix;
   <a href={`${p}#faq`}>FAQ</a>
   <a href="#contact">Contact</a>
   <a href={`${p}blog`}>Blog</a>
-  <a target="_blank" href={BOOKING_URL}>Book</a>
+  <a class="nav-book" target="_blank" href={BOOKING_URL}>Book</a>
 </nav>
 
 <style>
@@ -68,6 +68,11 @@ const p = navHrefPrefix;
     display: grid;
     padding-top: 4px;
     align-items: center;
+  }
+  .logo-link img,
+  .logo-mirror-space img {
+    width: 130px;
+    min-width: 0;
   }
 </style>
 

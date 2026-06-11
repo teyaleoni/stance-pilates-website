@@ -4,105 +4,95 @@ import * as C from "../constants";
 import parallelEventImage from "../assets/parallel-launch.jpg";
 import pelvicFloorImage from "../assets/pelvic-floor-workshop.jpg";
 import uncommonsImage from "../assets/uncommons-event.jpg";
+
+const highlights = [
+  {
+    image: uncommonsImage,
+    title: "Community Mat Series",
+    alt: "Group mat Pilates class at a community event in Las Vegas",
+    body: "Partnering with The Assembly by Kiln and local vendors to make Pilates accessible to all levels in the heart of Las Vegas.",
+    href: "https://www.instagram.com/reel/DF89eVWSQqt/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    image: pelvicFloorImage,
+    title: "Pelvic Health Workshop",
+    alt: "Pelvic health Pilates workshop in the studio",
+    body: "An educational deep-dive co-hosted with Dr. Catrina Fabian, DPT — combining clinical insight with Pilates principles for a 90-minute specialized masterclass.",
+    href: "https://www.instagram.com/reel/DEyTLYbyMQA/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    image: parallelEventImage,
+    title: "Parallel Launch Event",
+    alt: "Mat Pilates flow at the Parallel Grip Socks launch event",
+    body: "Celebrating the launch of Parallel Grip Socks with a dedicated mat flow at Millennium Dance Complex.",
+    href: "https://www.instagram.com/reel/DEF1Gwox_u7/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
+];
 ---
 
 <BaseLayout title="Events | Stance Pilates" navHrefPrefix="/">
-  <section class="grid gap-4">
-    <h1>Workshops & Community</h1>
-    <p class="max-w-[48rem]">
-      Go beyond the weekly session. Join us for specialized in-studio workshops
-      designed to deepen your practice, refine your technique, and explore the
-      principles of movement in a community setting.
-    </p>
-    <div class="grid gap-12 md:grid-cols-2">
-      <div>
-        <h4>No upcoming dates currently scheduled.</h4>
-      </div>
+  <section class="grid gap-8">
+    <div class="mx-auto max-w-[48rem] text-center">
+      <h1 class="section-title accent-heading">Workshops &amp; Community</h1>
+      <p>
+        Go beyond the weekly session. Join us for specialized in-studio
+        workshops designed to deepen your practice, refine your technique, and
+        explore the principles of movement in a community setting.
+      </p>
+    </div>
+    <div class="events-empty mx-auto w-full max-w-[40rem]">
+      <p class="events-empty-title">
+        No upcoming dates are currently scheduled.
+      </p>
+      <a
+        class="event-recap"
+        href={C.INSTAGRAM_URL}
+        target="_blank"
+        rel="noreferrer"
+      >
+        Follow on Instagram for the next one &rsaquo;
+      </a>
     </div>
   </section>
 
-  <section class="grid gap-4">
-    <h1>Past Highlights</h1>
-    <div class="grid gap-12 md:grid-cols-2">
-      <div class="grid gap-12 md:grid-cols-2">
-        <img
-          src={uncommonsImage.src}
-          alt="highlight image of event"
-          width="100%"
-        />
-        <div>
-          <h3>Community Mat Series</h3>
-          <p>
-            Partnering with The Assembly by Kiln and local vendors to make
-            Pilates accessible to all levels in the heart of Las Vegas.
-          </p>
-          <a
-            class="linky"
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.instagram.com/reel/DF89eVWSQqt/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-          >
-            RECAP CLIP
-          </a>
-        </div>
-      </div>
-      <div class="grid gap-12 md:grid-cols-2">
-        <img
-          src={pelvicFloorImage.src}
-          alt="highlight image of event"
-          width="100%"
-        />
-        <div class="about-picture">
-          <h3>Pelvic Health Workshop</h3>
-          <p>
-            An educational deep-dive co-hosted with Dr. Catrina Fabian, DPT. We
-            combined clinical insight with Pilates principles for a 90-minute
-            specialized masterclass.
-          </p>
-          <a
-            class="linky"
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.instagram.com/reel/DEyTLYbyMQA/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-          >
-            RECAP CLIP
-          </a>
-        </div>
-      </div>
-      <div class="grid gap-12 md:grid-cols-2">
-        <img
-          src={parallelEventImage.src}
-          alt="highlight image of event"
-          width="100%"
-        />
-        <div>
-          <h3>Parallel Launch Event</h3>
-          <p>
-            Celebrating the launch of Parallel Grip Socks with a dedicated mat
-            flow at Millennium Dance Complex.
-          </p>
-          <p>
-            <a
-              class="linky"
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.instagram.com/reel/DEF1Gwox_u7/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-            >
-              RECAP CLIP
-            </a>
-          </p>
-        </div>
-      </div>
+  <section class="grid gap-10">
+    <div class="mx-auto max-w-[48rem] text-center">
+      <h1 class="section-title accent-heading">Past Highlights</h1>
+    </div>
+    <div class="grid grid-cols-[repeat(auto-fit,minmax(18rem,1fr))] gap-8">
+      {
+        highlights.map((event) => (
+          <article class="event-card elevated">
+            <img class="event-card-img" src={event.image.src} alt={event.alt} />
+            <div class="event-card-body">
+              <h3>{event.title}</h3>
+              <p>{event.body}</p>
+              <a
+                class="event-recap"
+                target="_blank"
+                rel="noreferrer"
+                href={event.href}
+              >
+                Recap Clip &rsaquo;
+              </a>
+            </div>
+          </article>
+        ))
+      }
     </div>
   </section>
 
-  <section>
-    <h1>Stance On Location</h1>
-    <p class="max-w-[44rem]">
-      Bring the method to you. Whether for a corporate wellness retreat, a
-      bridal gathering, or a private event, we offer tailored Pilates sessions
-      designed to build connection and resilience.
-    </p>
-    <p>Inquire for Rates & Availability: {C.EMAIL_ADDRESS}</p>
+  <section class="grid gap-6">
+    <div class="mx-auto max-w-[44rem] text-center">
+      <h1 class="section-title accent-heading">Stance On Location</h1>
+      <p>
+        Bring the method to you. Whether for a corporate wellness retreat, a
+        bridal gathering, or a private event, we offer tailored Pilates sessions
+        designed to build connection and resilience.
+      </p>
+      <a class="button" href={`mailto:${C.EMAIL_ADDRESS}`}>
+        Inquire About Rates
+      </a>
+    </div>
   </section>
 </BaseLayout>
