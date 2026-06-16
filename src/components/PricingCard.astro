@@ -9,7 +9,6 @@ interface Props {
   endDate?: string;
   expiry?: string;
   cta: string;
-  noSavingsBadge?: boolean;
   highlight?: boolean;
   tag?: string;
   hidePerSession?: boolean;
@@ -24,16 +23,11 @@ const {
   endDate,
   expiry,
   cta,
-  noSavingsBadge = false,
   highlight = false,
   tag,
   hidePerSession = false,
   "aria-label": ariaLabel,
 } = Astro.props;
-
-const singleSessionPrice = 100;
-const savings = (bundleSize ?? 0) * singleSessionPrice - price;
-const showBadge = savings > 0 && !noSavingsBadge;
 
 const showPerSession = !!bundleSize && bundleSize > 1 && !hidePerSession;
 const perSession = showPerSession ? Math.round(price / bundleSize) : 0;
@@ -61,7 +55,6 @@ const finalLabel =
     { "pricing-card-highlight": highlight },
   ]}
 >
-  {showBadge && <div class="savings-badge">Save ${savings}</div>}
   {tag && <span class="pricing-tag">{tag}</span>}
 
   <div class="pricing-card-head">

@@ -321,18 +321,6 @@ header.wide {
     box-shadow: 0 1rem 2rem rgb(0 0 0 / 0.07);
   }
 
-  .savings-badge {
-    font-family: var(--font-jost);
-    background-color: var(--color-terracotta);
-    color: white;
-    position: absolute;
-    z-index: 1;
-    padding: 0.2rem 0.7rem;
-    border-radius: 2rem;
-    top: -10px;
-    right: -10px;
-  }
-
   .linky {
     color: var(--color-blue-steel);
     text-decoration: underline;
@@ -889,7 +877,8 @@ header.wide {
 }
 .article-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 400px));
+  justify-content: start;
   gap: 40px;
 }
 .article-card {
