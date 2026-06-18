@@ -18,12 +18,30 @@ import studio0612 from "../assets/IMG_0612.jpg";
 import studio0614 from "../assets/IMG_0614.jpg";
 
 const studioImages = [
-  studio0604,
-  studio0605,
-  studio0607,
-  studio0608,
-  studio0612,
-  studio0614,
+  {
+    src: studio0604,
+    alt: "Classical Pilates studio in Southwest Las Vegas with traditional Reformers, a Ladder Barrel, and a mat area beneath anatomy charts",
+  },
+  {
+    src: studio0605,
+    alt: "Fully equipped classical Pilates studio featuring a Reformer, Cadillac trapeze table, Wunda Chair, and spine corrector",
+  },
+  {
+    src: studio0607,
+    alt: "Classical Pilates apparatus room with a Cadillac tower, Ladder Barrel, Wunda Chair, and Reformer",
+  },
+  {
+    src: studio0608,
+    alt: "Joseph Pilates' Contrology handbooks and a classical Pilates foot corrector displayed in the Stance Pilates studio",
+  },
+  {
+    src: studio0612,
+    alt: "Close-up of a Gratz foot corrector, classical Pilates equipment used to build foot and arch strength",
+  },
+  {
+    src: studio0614,
+    alt: "Classical Pilates Ped-o-Pull standing apparatus with leather handles beside a barrel reflected in the studio mirror",
+  },
 ];
 ---
 
@@ -170,8 +188,8 @@ const studioImages = [
             studioImages.map((image, i) => (
               <img
                 class="studio-slide"
-                src={image.src}
-                alt={`Stance Pilates studio photo ${i + 1}`}
+                src={image.src.src}
+                alt={image.alt}
                 loading={i === 0 ? "eager" : "lazy"}
               />
             ))
