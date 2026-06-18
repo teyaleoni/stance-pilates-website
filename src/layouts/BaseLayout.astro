@@ -8,6 +8,7 @@ import {
   EMAIL_ADDRESS,
   INSTAGRAM_URL,
   GOOGLE_MAPS_URL,
+  GOOGLE_BUSINESS_PROFILE_URL,
 } from "../constants";
 
 interface Props {
@@ -53,7 +54,27 @@ const structuredData = {
   ],
   founder: { "@type": "Person", name: "Teya Lorts" },
   hasMap: GOOGLE_MAPS_URL,
-  sameAs: [INSTAGRAM_URL, GOOGLE_MAPS_URL],
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: "Tuesday",
+      opens: "11:00",
+      closes: "19:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: "Thursday",
+      opens: "15:00",
+      closes: "19:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: "Saturday",
+      opens: "09:00",
+      closes: "13:00",
+    },
+  ],
+  sameAs: [INSTAGRAM_URL, GOOGLE_BUSINESS_PROFILE_URL, GOOGLE_MAPS_URL],
   knowsAbout: [
     "Classical Pilates",
     "Contrology",
