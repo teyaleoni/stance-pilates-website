@@ -14,13 +14,27 @@ import {
 interface Props {
   title: string;
   description?: string;
+  /** Absolute or root-relative path to the social share image. */
+  image?: string;
   /** Prefix for nav anchor links: "" on the home page, "/" elsewhere. */
   navHrefPrefix?: string;
 }
 
-const { title, description, navHrefPrefix = "" } = Astro.props;
+const {
+  title,
+  description,
+  image = "/og-image.jpg",
+  navHrefPrefix = "",
+} = Astro.props;
 
 const siteUrl = "https://stancepilates.com";
+
+// Canonical and social URLs, resolved against the configured site origin.
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? siteUrl).href;
+const socialImage = new URL(image, Astro.site ?? siteUrl).href;
+const metaDescription =
+  description ??
+  "Private, one-on-one classical Pilates in Southwest Las Vegas on the full Contrology apparatus suite.";
 
 // LocalBusiness structured data so search engines and AI can read the
 // studio's identity, location, and classical Pilates focus directly.
@@ -93,7 +107,24 @@ const structuredData = {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
-    {description && <meta name="description" content={description} />}
+    <meta name="description" content={metaDescription} />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Stance Pilates" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={metaDescription} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={socialImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={metaDescription} />
+    <meta name="twitter:image" content={socialImage} />
 
     <script
       is:inline

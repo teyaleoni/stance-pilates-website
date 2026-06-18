@@ -5,14 +5,19 @@ import authorImage from "../assets/author-blog-64.jpg";
 
 interface Props {
   title: string;
+  description?: string;
   postDate: string;
   readTime: string;
 }
 
-const { title, postDate, readTime } = Astro.props;
+const { title, description, postDate, readTime } = Astro.props;
 ---
 
-<BaseLayout title="Stance Pilates Blog" navHrefPrefix="/">
+<BaseLayout
+  title={`${title} | Stance Pilates`}
+  description={description}
+  navHrefPrefix="/"
+>
   <div class="blog-article-container">
     <div class="blog-article-header">
       <h1 class="blog-article-title">{title}</h1>
