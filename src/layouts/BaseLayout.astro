@@ -2,7 +2,13 @@
 import "../styles/global.css";
 import Nav from "../components/Nav.astro";
 import ContactInfo from "../components/ContactInfo.astro";
-import { GA_MEASUREMENT_ID } from "../constants";
+import {
+  GA_MEASUREMENT_ID,
+  PHONE_NUMBER,
+  EMAIL_ADDRESS,
+  INSTAGRAM_URL,
+  GOOGLE_MAPS_URL,
+} from "../constants";
 
 interface Props {
   title: string;
@@ -12,6 +18,52 @@ interface Props {
 }
 
 const { title, description, navHrefPrefix = "" } = Astro.props;
+
+const siteUrl = "https://stancepilates.com";
+
+// LocalBusiness structured data so search engines and AI can read the
+// studio's identity, location, and classical Pilates focus directly.
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "HealthClub",
+  "@id": `${siteUrl}/#studio`,
+  name: "Stance Pilates",
+  description:
+    "Private, one-on-one classical Pilates studio in Southwest Las Vegas, training clients on the full Contrology apparatus suite (Reformer, Cadillac, Wunda Chair, Ladder Barrel).",
+  url: siteUrl,
+  image: `${siteUrl}/icons/icon-512.png`,
+  logo: `${siteUrl}/icons/icon-512.png`,
+  telephone: `+1-${PHONE_NUMBER}`,
+  email: EMAIL_ADDRESS,
+  priceRange: "$$",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "6675 S Tenaya Way #200",
+    addressLocality: "Las Vegas",
+    addressRegion: "NV",
+    postalCode: "89113",
+    addressCountry: "US",
+  },
+  areaServed: [
+    "Southwest Las Vegas",
+    "South Summerlin",
+    "Rhodes Ranch",
+    "Mountain's Edge",
+    "Spring Valley",
+  ],
+  founder: { "@type": "Person", name: "Teya Lorts" },
+  hasMap: GOOGLE_MAPS_URL,
+  sameAs: [INSTAGRAM_URL, GOOGLE_MAPS_URL],
+  knowsAbout: [
+    "Classical Pilates",
+    "Contrology",
+    "Pilates Reformer",
+    "Cadillac trapeze table",
+    "Wunda Chair",
+    "Ladder Barrel",
+    "Private Pilates instruction",
+  ],
+};
 ---
 
 <!doctype html>
@@ -21,6 +73,12 @@ const { title, description, navHrefPrefix = "" } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
+
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={JSON.stringify(structuredData)}
+    />
 
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/icons/icon-192.png" />
