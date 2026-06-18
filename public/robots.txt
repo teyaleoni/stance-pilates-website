@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://stancepilates.com/sitemap-index.xml
+Sitemap: https://www.stancepilates.com/sitemap-index.xml

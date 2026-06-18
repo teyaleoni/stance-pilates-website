@@ -5,7 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://stancepilates.com",
+  site: "https://www.stancepilates.com",
   integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss()],
