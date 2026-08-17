@@ -6,6 +6,7 @@ import JobCard from "../components/JobCard.astro";
 import BriefcaseIcon from "../components/icons/BriefcaseIcon.astro";
 import DumbbellIcon from "../components/icons/DumbbellIcon.astro";
 import SpineIcon from "../components/icons/SpineIcon.astro";
+import AirplaneIcon from "../components/icons/AirplaneIcon.astro";
 import { BOOKING_URL, GIFT_CARD_URL } from "../constants";
 import aboutImg from "../assets/lunge-cropped.jpg";
 import headerImg from "../assets/sitting-1024.jpg";
@@ -156,6 +157,26 @@ const studioImages = [
         </JobCard>
       </div>
     </div>
+  </section>
+
+  <section id="visiting" class="grid justify-center text-center">
+    <div class="mx-auto max-w-[56rem]">
+      <div class="stance-job-title mx-auto mb-4">
+        <AirplaneIcon />
+      </div>
+      <h2 class="section-title">
+        Visiting Las Vegas? Don't Pause Your Practice.
+      </h2>
+      <p>
+        Don't let vacation or business travel break your routine. Whether you
+        are in Las Vegas for a conference, a weekend getaway, or an extended
+        stay, keep your routine strong with a customized, 1-on-1 private
+        Pilates session while you're in town.
+      </p>
+    </div>
+    <a class="button cta mt-6" target="_blank" href={BOOKING_URL}>
+      Book a Session
+    </a>
   </section>
 
   <section id="studio" class="grid gap-12 md:grid-cols-2">
